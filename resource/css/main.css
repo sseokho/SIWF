@@ -6,6 +6,42 @@ section h2 {
   text-align: center;
 }
 
+.count-sec__inner {
+  padding: 3rem 0;
+  width: 80rem;
+  max-width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: flex;
+  -ms-display: flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.count-sec .ment {
+  font-size: 3rem;
+  font-weight: 500;
+}
+.count-sec .__area ul {
+  display: -webkit-box;
+  display: flex;
+  -ms-display: flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+}
+.count-sec .__area ul li + li {
+  margin-left: 3rem;
+}
+.count-sec .__area ul li span {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
 .se1 {
   z-index: 1;
   position: relative;
@@ -2061,4 +2097,4 @@ section h2 {
   .container .se1 .banner_zone__inner .item ul li + li {
     margin-left: 1rem;
   }
-}
+}/*# sourceMappingURL=main.css.map */

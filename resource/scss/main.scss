@@ -1,4 +1,5 @@
-
+@charset 'utf-8';
+@import 'mixin';
 
 section{
     h2 {
@@ -7,6 +8,35 @@ section{
         letter-spacing: -1px;
         line-height: 100%;
         text-align: center;
+    }
+}
+.count-sec{
+    &__inner{
+        padding:3rem 0;
+        width:80rem;
+        max-width: 100%;
+        margin:0 auto;
+        @include d-flex;
+        @include justifyAlign(space-between,center);
+    }
+    .ment{
+        @include font(3,500);
+    }
+    
+    .__area{
+       
+        ul{
+            @include d-flex;
+            li{
+                & + li{
+                    margin-left:3rem;
+                }
+                span{
+                    @include font(2,300);
+                }
+            }
+        }
+
     }
 }
 .se1 {

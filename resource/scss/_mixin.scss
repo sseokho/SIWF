@@ -149,10 +149,10 @@ $color-main : #4568a9;
 
 @mixin pos($p:null, $t:null, $r:null, $b:null, $l:null){
     position:$p;
-    top:$t + px;
-    right:$r + px;
-    bottom:$b + px;
-    left:$l + px;
+    top:$t + rem;
+    right:$r + rem;
+    bottom:$b + rem;
+    left:$l + rem;
 };
 @mixin d-block {
     display:block;
@@ -198,15 +198,25 @@ $color-main : #4568a9;
 @mixin justify-end{
     justify-content:flex-end;
 }
+
+
+@mixin justifyAlign($j, $a){
+    justify: {
+        content:$j;
+    }
+    align: {
+        items:$a;
+    }
+}
 @mixin font($s, $w){
     font: {
-        size:$s + px;
+        size:$s + rem;
         weight:$w;
     }
 }
 @mixin border($w, $s, $c , $r){
     border: {
-        width:$w + px;
+        width:$w + rem;
         style:$s;
         color:#{'#'} + $c;
         radius:$r;

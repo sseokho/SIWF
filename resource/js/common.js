@@ -1,11 +1,16 @@
 $(document).ready(function () {
+    headerScript(); // 헤더 전용 스크립트
+    dDay();
     callPop();
     PopIfCheck();
     mnav();
     searchModal();
     toggleSite();
 
-    $(window).resize(function(){
+    
+
+
+    /*$(window).resize(function(){
 
         var width = window.innerWidth;
 
@@ -20,11 +25,57 @@ $(document).ready(function () {
         }
 
     }).resize();
+    */
 
 
 
 });
+function headerScript(){
+    $('.header').load('header.html', function() {
+        $('.navigation > li > a').on('click', function(){
+            $(this).next().toggleClass('active');
+        });
+    });
 
+};
+
+function dDay(){
+   //디데이 종료 일자 설정
+    var countDownDate = new Date("4 30, 2024 24:00:00").getTime();
+    //1초마다 갱신되도록 함수 생성,실행
+    const x = setInterval(function() {
+    // 오늘 날짜 등록
+    const now = new Date().getTime();
+
+    // 종료일자에서 현재일자를 뺀 시간
+    const distance = countDownDate - now;
+
+    // 각 변수에 일, 시, 분, 초를 등록
+    var d = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var s = Math.floor((distance % (1000 * 60)) / 1000);
+
+    if(distance<0){
+        document.querySelector(".days").innerHTML = "00";
+        document.querySelector(".hours").innerHTML = "00";
+        document.querySelector(".minutes").innerHTML = "00";
+        document.querySelector(".seconds").innerHTML = "00";
+    } else {
+        if(d<10){d="0"+d;}
+        if(h<10){h="0"+h;}
+        if(m<10){m="0"+m;}
+        if(s<10){s="0"+s;}
+
+        document.querySelector(".days").innerHTML = d;
+        document.querySelector(".hours").innerHTML = h;
+        document.querySelector(".minutes").innerHTML = m;
+        document.querySelector(".seconds").innerHTML = s;
+    }
+        //id가 d-day인 HTML코드에 내용 삽입
+        
+    },1000);
+}
 function callPop(){
 	$('.popup:not(.if-check)').on('click', function(){
 

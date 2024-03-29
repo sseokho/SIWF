@@ -95,10 +95,37 @@ ul{
 
     }
 }
-header {
+.header {
     background-color: #fff;
-    height:10rem;
+    height:20rem;
     border-bottom: 1px solid #eee;
+    &__top{
+        @include d-flex;
+        @include justifyAlign(space-between,center);
+        &--logo{
+            .logo{
+                width:4rem;
+                height:auto;
+            }
+        }
+        &--lanChange{
+            ul{
+                @include d-flex;
+                li{
+                    a{
+                        padding:0 1rem;
+                        @include font(1.5,300);
+                    }
+                    & + li{
+                        border-left:1px solid #000;
+                    }
+                }
+            }
+        }
+    }
+    &__bottom{
+        @include font(30,30);
+    }
     .gotoSite {
         position: relative;
         background-color:#4568a9;
@@ -172,14 +199,10 @@ header {
             }
 
             h1 {
-                margin-block-start:0;
-                margin-block-end:0;
-                margin-inline-start: 0;
-                margin-inline-end: 0;
                 line-height:100%;
                 margin:0;
                 padding:0;
-                width:24.4rem;
+                width:4.4rem;
                 height:6.8rem;
                 img{
                     width:100%;
@@ -256,22 +279,25 @@ header {
                         }
                     }
 
-                    .depth2 {
-                        display: none;
-                        padding: 0;
-                        width: 100%;
-                        background: transparent;
-                        margin-top: 0.2rem;
-                        padding-top: 2.3rem;
-                        height: 39rem;
-                        padding-bottom: 5.8rem;
-                        border-right: 1px solid rgba(255, 255, 255, 0.2);
-                        left: 50%;
-                        transform: translateX(-50%);
-                        top: 9.4rem;
-                        -webkit-box-sizing: border-box;
-                        box-sizing: border-box;
-                        background-color: #fff;
+                    .depth{
+                        
+                        &_2{
+                            display: none;
+                            padding: 0;
+                            width: 100%;
+                            background: transparent;
+                            margin-top: 0.2rem;
+                            padding-top: 2.3rem;
+                            height: 39rem;
+                            padding-bottom: 5.8rem;
+                            border-right: 1px solid rgba(255, 255, 255, 0.2);
+                            left: 50%;
+                            transform: translateX(-50%);
+                            top: 9.4rem;
+                            -webkit-box-sizing: border-box;
+                            box-sizing: border-box;
+                            background-color: #fff;
+                        }
                         &.active {
                             display: block;
                         }
@@ -312,7 +338,6 @@ header {
        }
        .topRight {
             align-items: center;
-            display:none;
             .menu {
                 width:auto;
                 a {
