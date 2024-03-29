@@ -1,0 +1,135 @@
+.sch-form__btn {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 2.2rem;
+  height: 100%;
+  margin-right: 1.8rem;
+  background: url("../image/common/icon/icon_sch.png") no-repeat center center;
+  background-size: contain;
+}
+
+.wrap .btn-wrap {
+  text-align: center;
+}
+.wrap .btn-wrap .btn--width-auto {
+  width: auto;
+  padding: 0 2rem;
+}
+.wrap .btn-wrap .btn--width-260 {
+  width: 26rem !important;
+}
+.wrap .btn-wrap .btn--height-100 {
+  height: 10rem;
+}
+.wrap .btn-wrap--center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.wrap .btn-wrap--center .btn + .btn {
+  margin-left: 0.5rem;
+}
+.wrap .btn-wrap--absolute {
+  position: absolute;
+}
+.wrap .btn--list {
+  width: 11rem;
+  height: 54px;
+  background-color: #555;
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 400;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.wrap .btn--list:hover {
+  background-color: #000;
+  color: #fff;
+}
+.wrap .btn--regis {
+  width: 35rem;
+  height: 7rem;
+  background-color: #000000;
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 700;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.wrap .btn--regis:hover {
+  background-color: #e5413e;
+  color: #fff;
+}
+.wrap .btn--list {
+  width: 11rem;
+  height: 5.2rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+.wrap .btn--download {
+  width: 117px;
+  height: 40px;
+  padding-left: 30px;
+  color: #4568a9;
+  font-size: 2.2rem;
+  border: 1px solid #4568a9;
+  background: #fff url(../image/common/icon/icon-download.png) no-repeat 20px center;
+}
+.wrap .btn--border-color-gray {
+  width: 14.4rem;
+  height: 5.4rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  border: 1px solid #d2d5dc;
+  color: #000000;
+}
+.wrap .btn--radius {
+  width: 19rem;
+  height: 5.6rem;
+  border-radius: 2rem 0 2rem 0;
+}
+.wrap .btn--color-aliceblue {
+  background: #8daae0;
+  color: #ffffff;
+  font-size: 1.8rem;
+}
+.wrap .btn-ps {
+  font-size: 1.6rem;
+  font-weight: 100;
+}
+
+@media (max-width: 1024px) {
+  .btn--download {
+    width: 11.7rem;
+    height: 4rem;
+    padding-left: 3rem;
+    font-size: 1.6rem;
+    background-size: 1.8rem 1.8rem;
+    background-position: 2rem center;
+  }
+  .btn--list {
+    width: 13.2rem;
+    height: 5.4rem;
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  input, select {
+    text-indent: 0.8rem;
+  }
+  .wrap .btn {
+    font-size: 1.6rem;
+    height: 5rem;
+  }
+  .wrap .btn-wrap--center {
+    margin-top: 3rem;
+  }
+  .wrap .btn--regis {
+    width: 100%;
+    height: 5rem;
+  }
+}

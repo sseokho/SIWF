@@ -1,0 +1,52 @@
+/* ========== reponsive =========== */
+/*
+* xs: 576px,// Small screen / phone
+* sm: 768px,// Medium screen / tablet
+* md: 1024px,// Large screen / desktop
+* lg: 1280px,// Extra large screen / wide desktop
+* ml: 1400px,// middle screen
+* xl: 1600px,
+* up:min-width / down:max-width / only:(min-width,max-width)
+*/
+/*
+html{
+    @include mobileS{
+        font-size:42.5%;
+    }
+    @include mobileL{
+        font-size:47.5%;
+    }
+    @include tablet{
+        font-size:55.5%;
+    }
+    @include labtop{
+        font-size:62.5%;
+    }
+}
+*/
+@media (max-width: 1200px) {
+  html, body {
+    font-size: 52.0833333333%;
+  }
+}
+/*mobile*/
+@media (min-width: 320px) and (max-width: 1024px) {
+  html, body {
+    font-size: 60.5%;
+  }
+}
+@media (min-width: 360px) and (max-width: 1024px) {
+  html, body {
+    font-size: 62.5%;
+  }
+}
+@media (min-width: 480px) and (max-width: 1024px) {
+  body, html {
+    font-size: 65%;
+  }
+}
+@media (min-width: 720px) and (max-width: 1024px) {
+  body, html {
+    font-size: 100%;
+  }
+}
