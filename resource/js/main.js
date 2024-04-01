@@ -20,7 +20,7 @@ $(document).ready(function() {
       });
 
 
-      $('.se1 .conBox__inner .item').removeClass('on');
+      $('.mainVisual .conBox__inner .item').removeClass('on');
       
 
 		}
@@ -28,7 +28,7 @@ $(document).ready(function() {
 
 			$('.tabcontent > div').show();
 
-      $('.se1 .conBox__inner .item').hover(function() {
+      $('.mainVisual .conBox__inner .item').hover(function() {
         $(this).addClass("on");
       }, function(){
         $(this).removeClass("on");
@@ -58,10 +58,11 @@ function mainSwiper() {
       },
       pagination: {
         el: '.swiper-pagination',
+        /*
         type: 'fraction',
         formatFractionCurrent: function (number) {
             return number;
-        }
+        }*/
       },
       navigation: {
         nextEl: '.swiper-button-next',
