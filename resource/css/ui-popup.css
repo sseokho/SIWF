@@ -17,19 +17,7 @@
   margin: 0 auto;
   z-index: 3;
 }
-.pop-wrap.modalPop {
-  position: fixed;
-  display: none;
-  z-index: 50;
-  border-radius: 3rem;
-  left: 0;
-  top: 0;
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  width: 100%;
-  height: 100%;
-}
-.pop-wrap.modalPop .pop-bg {
+.pop-wrap .pop-bg {
   position: fixed;
   top: 0;
   left: 0;
@@ -38,7 +26,7 @@
   background: rgba(0, 0, 0, 0.8);
   z-index: 90;
 }
-.pop-wrap.modalPop .pop-cont {
+.pop-wrap .pop-cont {
   background: #fff;
   position: absolute;
   top: 30%;
@@ -55,13 +43,13 @@
   z-index: 100;
   overflow: hidden;
 }
-.pop-wrap.modalPop .pop-cont .tit {
+.pop-wrap .pop-cont .tit {
   font-size: 2.2rem;
   font-weight: 400;
   text-align: center;
   line-height: 3rem;
 }
-.pop-wrap.modalPop .pop-cont .txt {
+.pop-wrap .pop-cont .txt {
   text-align: center;
   color: #333;
   text-align: center;
@@ -69,20 +57,32 @@
   font-size: 1.8rem;
   line-height: 3rem;
 }
-.pop-wrap.modalPop .pop-cont.private {
+.pop-wrap .pop-cont.private {
   padding: 6rem 0 4rem;
   width: 48rem;
 }
-.pop-wrap.modalPop .pop-cont.private .ui-form {
+.pop-wrap .pop-cont.private .ui-form {
   text-align: center;
 }
-.pop-wrap.modalPop .pop-cont.private .ui-form input {
+.pop-wrap .pop-cont.private .ui-form input {
   width: 36.5rem;
   color: #747478;
 }
-.pop-wrap.modalPop .pop-cont.pre {
+.pop-wrap .pop-cont.pre {
   padding: 5rem 0;
   width: 48rem;
+}
+.pop-wrap.modalPop {
+  position: fixed;
+  display: none;
+  z-index: 50;
+  border-radius: 3rem;
+  left: 0;
+  top: 0;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  width: 100%;
+  height: 100%;
 }
 .pop-cont {
   width: 44.9rem;

@@ -990,6 +990,61 @@ section{
     }
 }
 
+.info{
+    &-sec{
+        &__inner{
+            width:80rem;
+            margin:0 auto;
+            padding:5rem 0;
+        }
+        a{
+            display:block;
+            text-align: center;
+            padding:3.2rem;
+            width:max-content;
+            background: #000;
+            color: #fff;
+            margin:0 auto;
+            @include font(3,500);
+        }
+        &--way{
+            margin-bottom: 3rem;
+            .way{
+                &-tit,
+                &-txt{
+                    text-align: center;
+                }
+                &-tit{
+                    @include font(3,500);
+                    
+
+                }
+                &-txt{
+                    @include font(3,500);
+                    margin:3rem 0;
+                }
+            }
+        }
+        &--contact{
+            a{
+                margin-top: 3rem;
+            }
+            .contact{
+                &-tit,
+                &-txt{
+                    text-align: center;
+                }
+                &-tit{
+                    @include font(3,500);
+                }
+                &-txt{
+                    @include font(3,500);
+                }
+            }
+        }
+    }
+}
+
 .se3 {
     padding-bottom:10rem;
     h2 {

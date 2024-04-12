@@ -2,7 +2,6 @@ $(document).ready(function () {
     headerScript(); // 헤더 전용 스크립트
     dDay();
     callPop();
-    PopIfCheck();
     mnav();
     searchModal();
     toggleSite();
@@ -112,38 +111,7 @@ function callPop(){
 
 }
 
-function PopIfCheck() {
-    $('.popup.if-check').on('click', function(){
-        if($("#no").is(":checked")){
 
-            alert("개인정보 수집 이용에 동의해주세요");
-
-        }else{
-
-            var cp = $(this);
-            var tabDisable;
-            var nowScrollPos = $(window).scrollTop();
-            
-            $('body').css('overflow', 'hidden');
-            $("#" + $(this).data('id')).parents('.pop-wrap').show();
-            $("#" + $(this).data('id')).show();
-            $('.pop-cont .close button').focus();
-
-
-            function popClose(){
-                $('body').css('overflow', 'auto');
-                $(window).scrollTop(nowScrollPos);
-                $('.pop-wrap').hide();
-                $('.core, .abstract_cont').hide();
-                self.focus();
-                cp.focus();
-            };
-            $('.pop-wrap').find('.close, .close button').on('click', popClose);
-            $('.pop-wrap').find('.pop-bg').on('click', popClose);
-        }
-    });
-
-}
 
 function mnav() {
     $('header .nav .topRight .menu a.mo').click(function(){

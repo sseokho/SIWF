@@ -86,7 +86,7 @@ ul.lists.bar li:before {
 
 .header {
   background-color: #fff;
-  height: 20rem;
+  height: auto;
   border-bottom: 1px solid #eee;
 }
 .header__top {
@@ -106,24 +106,87 @@ ul.lists.bar li:before {
   width: 4rem;
   height: auto;
 }
-.header__top--lanChange ul {
+.header__top--Right {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__top--Right .menu {
+  width: auto;
   display: -webkit-box;
   display: flex;
   -ms-display: flexbox;
   display: -ms-flexbox;
   display: -webkit-flex;
 }
-.header__top--lanChange ul li a {
+.header__top--Right .menu a {
+  display: block;
+  width: 4.7rem;
+  height: 2.8rem;
+  background-size: contain;
+}
+.header__top--Right .menu a > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.header__top--Right .menu a.mo {
+  display: none;
+}
+.header__top--Right select {
+  margin-left: 5rem;
+  width: 13.2rem;
+  height: 4.2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-indent: 0;
+  border: 0;
+  border-bottom: 2px solid #000;
+  background: url(../image/common/icon/icon_arrowdown_b.png) no-repeat right 0.5rem center;
+}
+.header__bottom {
+  display: -webkit-box;
+  display: flex;
+  -ms-display: flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__bottom--logo {
+  display: -webkit-box;
+  display: flex;
+  -ms-display: flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+}
+.header__bottom--logo .logo {
+  width: 3rem;
+  height: 4rem;
+}
+.header__bottom--logo .standard-year {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+.header__bottom--lanChange ul {
+  display: -webkit-box;
+  display: flex;
+  -ms-display: flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+}
+.header__bottom--lanChange ul li a {
   padding: 0 1rem;
   font-size: 1.5rem;
   font-weight: 300;
 }
-.header__top--lanChange ul li + li {
+.header__bottom--lanChange ul li + li {
   border-left: 1px solid #000;
-}
-.header__bottom {
-  font-size: 30rem;
-  font-weight: 30;
 }
 .header .gotoSite {
   position: relative;
@@ -183,7 +246,6 @@ ul.lists.bar li:before {
 .header .nav .navWrap {
   position: relative;
   max-width: 100%;
-  width: 164rem;
   margin: 0 auto;
   height: 100%;
   -webkit-box-align: center;
@@ -238,18 +300,18 @@ ul.lists.bar li:before {
   content: "";
 }
 .header .nav .navWrap ul {
-  padding: 0 23rem 0 7rem;
+  padding: 0;
   left: 50%;
   height: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   z-index: 4;
 }
+.header .nav .navWrap ul.navigation li + li {
+  margin-left: 9rem;
+}
 .header .nav .navWrap ul li {
   position: relative;
-}
-.header .nav .navWrap ul li + li {
-  margin-left: 18rem;
 }
 .header .nav .navWrap ul li ::before {
   display: none;
@@ -331,35 +393,6 @@ ul.lists.bar li:before {
 }
 .header .nav .forumCon {
   display: none;
-}
-.header .nav .topRight {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.header .nav .topRight .menu {
-  width: auto;
-}
-.header .nav .topRight .menu a {
-  display: block;
-  width: 4.7rem;
-  height: 2.8rem;
-  background: url(../image/common/icon/icon_search_b.png) no-repeat center center;
-  background-size: contain;
-}
-.header .nav .topRight .menu a.mo {
-  display: none;
-}
-.header .nav .topRight select {
-  margin-left: 5rem;
-  width: 13.2rem;
-  height: 4.2rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  text-indent: 0;
-  border: 0;
-  border-bottom: 2px solid #000;
-  background: url(../image/common/icon/icon_arrowdown_b.png) no-repeat right 0.5rem center;
 }
 .header .m_nav {
   display: none;

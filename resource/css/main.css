@@ -995,6 +995,54 @@ section h2 {
   content: "";
 }
 
+.info-sec__inner {
+  width: 80rem;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+.info-sec a {
+  display: block;
+  text-align: center;
+  padding: 3.2rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background: #000;
+  color: #fff;
+  margin: 0 auto;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.info-sec--way {
+  margin-bottom: 3rem;
+}
+.info-sec--way .way-tit, .info-sec--way .way-txt {
+  text-align: center;
+}
+.info-sec--way .way-tit {
+  font-size: 3rem;
+  font-weight: 500;
+}
+.info-sec--way .way-txt {
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 3rem 0;
+}
+.info-sec--contact a {
+  margin-top: 3rem;
+}
+.info-sec--contact .contact-tit, .info-sec--contact .contact-txt {
+  text-align: center;
+}
+.info-sec--contact .contact-tit {
+  font-size: 3rem;
+  font-weight: 500;
+}
+.info-sec--contact .contact-txt {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
 .se3 {
   padding-bottom: 10rem;
 }
