@@ -53,6 +53,7 @@
 }
 .ui{
     &-form{
+        
         input,textarea,select{
             border:1px solid #EBEBEB;
             box-sizing: border-box;
@@ -116,11 +117,7 @@
             }
         }
     }
-    &-input{
-        height:5rem;        
-        &__full{
-            width:100%;
-        }
+    &-obj{
         &__width{
             &-m{
                 width:25rem;
@@ -129,6 +126,13 @@
                 width:40rem;
             }
         }
+    }
+    &-input{
+        height:5rem;        
+        &__full{
+            width:100%;
+        }
+        
         &__bg{
             &-gray{
                 background: #f8f8f8;

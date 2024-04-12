@@ -2,6 +2,11 @@
 @import 'mixin';
 
 /** 소통마당 > 공지사항 */
+.popup{
+    &.board-table{
+        padding:2rem;
+    }
+}
 .board-table{
     margin-top:3rem;
     
@@ -268,6 +273,45 @@
         
     }
     &__view{
+        table{
+            th{
+                padding-left:3.3rem;
+                text-align: left;
+                &:first-child,&:last-child{
+                    border-left:none;
+                }
+            }
+            tbody{
+                tr{
+                    &:nth-child(1){
+                        border-top:1px solid #DEDEDE;
+                    }
+                }
+            }
+            
+        }
+        .ver-th{
+            width: 28rem;
+        }
+        tr{
+            border-bottom:1px solid #DEDEDE;
+        }
+        th, td{
+            vertical-align: middle;
+        }
+        th{
+            height: 7rem;
+            border-right:1px solid #DEDEDE;
+            background: #ECF4FA;
+        }
+        td{
+            height: 7rem;
+            padding: 0 3rem;
+            padding-right:0;
+            text-align: left;
+        }
+    }
+    &--write{
         table{
             th{
                 padding-left:3.3rem;

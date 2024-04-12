@@ -146,7 +146,7 @@
                     </div>
                     <div class="info-sec--contact">
                         <p class="contact-tit">1:1 문의하기</p>
-                        <a href="javascript:void(0)" class="popup" data-id="layerpop-01">문의하기 바로가기</a>
+                        <a href="javascript:void(0)" class="popup" data-id="contact-pop">문의하기 바로가기</a>
                     </div>
                 </div>
             </section>
@@ -334,8 +334,70 @@
         <div class="pop-wrap">
             <div class="pop-bg"></div>
             <div class="pop-cont abstract_wrap">
-                <div class="abstract_cont" id="layerpop-01">
-                    <div class="">
+                <div class="abstract_cont contact" id="contact-pop">
+                    <div class="abstract_cont__inner">
+                        <p class="pop-tit">1:1문의하기</p>
+
+                        <div class="board-table board-table--write popup">
+                            <div class="board-table__inner">
+                                <table>
+                                    <caption>Q&A 등록</caption>
+                                    <colgroup>
+                                        <col class="ver-th">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>이메일</th>
+                                            <td>
+                                                <div class="ui-form">
+                                                    <input type="text" class="ui-input ui-obj__width-m">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>제목</th>
+                                            <td>
+                                                <div class="ui-form">
+                                                    <input type="text" class="ui-input ui-obj__width-m">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        
+                                        
+                                        <tr>
+                                            <th>내용</th>
+                                            <td>
+                                                <div class="ui-form">
+                                                    <textarea class="ui-form__textarea ui-obj__width-m"></textarea>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="popup-agree mt-50">
+                            <p>위 내용에 동의합니다.</p>
+                            <div class="ui-radio">
+                                <div class="ui-radio__inner">
+                                    <div class="ui-radio__item">
+                                        <input type="radio" class="ui-radio-input" id="yes" name="yes" checked="">
+                                        <label for="yes" class="ui-label">
+                                            <span class="ui-radio-object"></span>
+                                            <span class="ui-label__text">예</span>
+                                        </label>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="btn-wrap btn-wrap--center mt-70">
+                            <button type="button" class="btn btn--regis popup if-check">보내기</button>
+                        </div>
+
+
                     </div>
                 </div>
             </div>

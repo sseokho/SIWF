@@ -1,5 +1,9 @@
 @charset "UTF-8";
 /** 소통마당 > 공지사항 */
+.popup.board-table {
+  padding: 2rem;
+}
+
 .board-table {
   margin-top: 3rem;
 }
@@ -258,6 +262,36 @@
   background: #ECF4FA;
 }
 .board-table__view td {
+  height: 7rem;
+  padding: 0 3rem;
+  padding-right: 0;
+  text-align: left;
+}
+.board-table--write table th {
+  padding-left: 3.3rem;
+  text-align: left;
+}
+.board-table--write table th:first-child, .board-table--write table th:last-child {
+  border-left: none;
+}
+.board-table--write table tbody tr:nth-child(1) {
+  border-top: 1px solid #DEDEDE;
+}
+.board-table--write .ver-th {
+  width: 28rem;
+}
+.board-table--write tr {
+  border-bottom: 1px solid #DEDEDE;
+}
+.board-table--write th, .board-table--write td {
+  vertical-align: middle;
+}
+.board-table--write th {
+  height: 7rem;
+  border-right: 1px solid #DEDEDE;
+  background: #ECF4FA;
+}
+.board-table--write td {
   height: 7rem;
   padding: 0 3rem;
   padding-right: 0;

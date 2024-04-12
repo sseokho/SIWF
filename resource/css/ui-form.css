@@ -149,17 +149,17 @@
   font-size: 1.6rem;
   text-indent: 2rem;
 }
+.ui-obj__width-m {
+  width: 25rem;
+}
+.ui-obj__width-400 {
+  width: 40rem;
+}
 .ui-input {
   height: 5rem;
 }
 .ui-input__full {
   width: 100%;
-}
-.ui-input__width-m {
-  width: 25rem;
-}
-.ui-input__width-400 {
-  width: 40rem;
 }
 .ui-input__bg-gray {
   background: #f8f8f8;
