@@ -160,6 +160,18 @@ $color-main : #4568a9;
 @mixin d-grid {
     display:grid;
 }
+@mixin d-grid-column($y,$x){
+    display:grid;
+    grid-auto-flow:column;
+    grid-gap:$y + rem $x + rem;
+    gap:$y + rem $x + rem;
+}
+@mixin d-grid-column--repeat($num,$y,$x){
+    display:grid;
+    grid-template-columns: repeat($num,1fr);
+    grid-gap:$y + rem $x + rem;
+    gap:$y + rem $x + rem;
+}
 @mixin d-flex {
     display:flex;
     -ms-display: flexbox;
@@ -208,11 +220,13 @@ $color-main : #4568a9;
         items:$a;
     }
 }
-@mixin font($s, $w){
+@mixin font($s, $w, $c){
     font: {
         size:$s + rem;
         weight:$w;
+        
     }
+    color:$c;
 }
 @mixin border($w, $s, $c , $r){
     border: {

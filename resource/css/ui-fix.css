@@ -1,3 +1,56 @@
+/* input-width */
+.input-width-tiny {
+  width: 50px;
+}
+.input-width-small-mini {
+  width: 60px;
+}
+.input-width-small {
+  width: 70px;
+}
+.input-width-regular {
+  width: 80px;
+}
+.input-width-medium {
+  width: 90px;
+}
+.input-width-large {
+  width: 100px;
+}
+.input-width-big {
+  width: 200px;
+}
+.input-width-date {
+  width: 130px;
+}
+.input-width-date-select {
+  width: 70px;
+}
+.input-width-year-select {
+  width: 100px;
+}
+.input-height-tiny {
+  height: 50px;
+}
+.input-height-small-mini {
+  height: 60px;
+}
+.input-height-small {
+  height: 70px;
+}
+.input-height-regular {
+  height: 80px;
+}
+.input-height-medium {
+  height: 90px;
+}
+.input-height-large {
+  height: 100px;
+}
+.input-height-big {
+  height: 200px;
+}
+
 .ta-l {
   text-align: left;
 }
@@ -70,6 +123,23 @@
 }
 .mb-120 {
   margin-bottom: 12rem;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: flex;
+  -ms-display: flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+}
+
+.hidden {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  font-size: 0;
 }
 
 .txt-depth--01 {

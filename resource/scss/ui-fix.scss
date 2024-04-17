@@ -1,6 +1,74 @@
 @charset 'utf-8';
 @import 'mixin';
 
+
+/* input-width */
+
+.input{
+    &-width{
+        &-tiny{
+            width: 50px;
+        }
+        &-small-mini{
+            width: 60px;
+        }
+        &-small{
+            width: 70px;
+        }
+        &-regular{
+            width:80px;
+        }
+        &-medium{
+            width:90px;
+        }
+        &-large{
+            width:100px;
+        }
+        &-big{
+            width: 200px;
+        }
+        &-date{
+            width: 130px;
+            &-select{
+                width: 70px;
+            }
+        }
+        &-year{
+            &-select{
+                width: 100px;
+            }
+        }
+    }
+    &-height{
+        &-tiny{
+            height: 50px;
+        }
+        &-small-mini{
+            height: 60px;
+        }
+        &-small{
+            height: 70px;
+        }
+        &-regular{
+            height:80px;
+        }
+        &-medium{
+            height:90px;
+        }
+        &-large{
+            height: 100px;
+        }
+        &-big{
+            height: 200px;
+        }
+    }
+}
+
+
+
+
+
+
 // align
 .ta{
     &-l{
@@ -88,6 +156,12 @@
             margin-bottom:12rem;
         }
     }
+}
+.d-flex {
+    @include d-flex;
+}
+.hidden{
+    @include hidden;
 }
 
 //font

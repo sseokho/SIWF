@@ -1,6 +1,7 @@
 $(document).ready(function () {
     headerScript(); // 헤더 전용 스크립트
-    dDay();
+    tab();
+    /*dDay();*/
     callPop();
     mnav();
     searchModal();
@@ -38,6 +39,22 @@ function headerScript(){
 
 };
 
+function tab(){
+    var a = $(".board-tab__list .board-tab__item");
+    var b = a.length;
+    
+    for (let i=0;i<b;i++){
+        $('.board-tab__link').eq(0).addClass('active');
+        $('.board-tab-panel').eq(0).addClass('open');
+        $(".board-tab__link").eq(i).on('click',function(){
+            $('.board-tab__link').removeClass('active');
+            $('.board-tab__link').eq(i).addClass('active');
+            $('.board-tab-panel').removeClass('open');
+            $('.board-tab-panel').eq(i).addClass('open');
+        })
+    }
+}
+/*
 function dDay(){
    //디데이 종료 일자 설정
     var countDownDate = new Date("4 30, 2024 24:00:00").getTime();
@@ -75,6 +92,7 @@ function dDay(){
         
     },1000);
 }
+*/
 function callPop(){
 	$('.popup:not(.if-check)').on('click', function(){
 

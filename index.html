@@ -5,8 +5,6 @@
     <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1.0">
     <title>SIWF 서울국제작가축제</title>
     <link type="text/css" rel="stylesheet" href="./resource/css/reset.css">
-    <link type="text/css" rel="stylesheet" href="./resource/css/common.css">
-    <link type="text/css" rel="stylesheet" href="./resource/css/main.css">
     <link type="text/css" rel="stylesheet" href="./resource/css/swiper.min.css">
     <link type="text/css" rel="stylesheet" href="./resource/css/ux-common.css">
     
@@ -301,33 +299,7 @@
         </footer>
         <!-- //footer -->
 
-        <!-- Modal -->
-        <div class="modal fade search" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-bg"></div>
-            <div class="modal-dialog modal-dialog-centered modal-auto ">
-                <div class="modal-content">
-                    
-                    <div class="modal-body">
-                        <h6 class="modal-tit">통합검색</h6>
-                        <a  class="modal-close" href="javascript:void(0);" class="modalClose"><img src="./resource/image/common/icon/icon_modalClose.png" tit="창 닫기" /></a>
-                        <div class="ui-form">
-                            <div class="search-box__inner">
-                                <div class="integrateSearchArea">
-                                    <div class="integrateSearchArea__inner">
-                                        <label for="search" class="hidden">검색어 입력</label>
-                                        <input type="search" class="input-search" name="totalSearch" placeholder="검색어를 입력하세요">
-                                        <button type="button" name="btnSearch" class="btn-search"><span class="hidden">통합검색</span></button>
-                                    </div>		
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-        <!-- //Modal -->
+        
 
 
         <!-- layer -->
@@ -336,10 +308,10 @@
             <div class="pop-cont abstract_wrap">
                 <div class="abstract_cont contact" id="contact-pop">
                     <div class="abstract_cont__inner">
-                        <p class="pop-tit">1:1문의하기</p>
+                        <p class="mainTit">1:1문의하기</p>
 
-                        <div class="board-table board-table--write popup">
-                            <div class="board-table__inner">
+                        <div class="table table__write">
+                            <div class="table__inner">
                                 <table>
                                     <caption>Q&A 등록</caption>
                                     <colgroup>
@@ -349,16 +321,16 @@
                                         <tr>
                                             <th>이메일</th>
                                             <td>
-                                                <div class="ui-form">
-                                                    <input type="text" class="ui-input ui-obj__width-m">
+                                                <div class="form">
+                                                    <input type="text" class="input obj__width-m">
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <th>제목</th>
                                             <td>
-                                                <div class="ui-form">
-                                                    <input type="text" class="ui-input ui-obj__width-m">
+                                                <div class="form">
+                                                    <input type="text" class="input obj__width-m">
                                                 </div>
                                             </td>
                                         </tr>
@@ -367,8 +339,8 @@
                                         <tr>
                                             <th>내용</th>
                                             <td>
-                                                <div class="ui-form">
-                                                    <textarea class="ui-form__textarea ui-obj__width-m"></textarea>
+                                                <div class="form">
+                                                    <textarea class="form__textarea obj__width-m"></textarea>
                                                 </div>
                                             </td>
                                         </tr>
@@ -377,19 +349,68 @@
                             </div>
                         </div>
 
-                        <div class="popup-agree mt-50">
+
+                        <div class="table table__explan">
+                            <p class="tit"><span>제1조</span>개인정보의 처리목적, 수집항목, 보유 및 이용기간</p>
+                            <ul class="lists num cir">
+                                <li>dd</li>
+                                <li>dd</li>
+                                <li>dd</li>
+                                <li>dd</li>
+                                <li>dd</li>
+                            </ul>
+
+                            <div class="table__inner">
+                                <table>
+                                    <caption>Q&A 등록</caption>
+                                    <colgroup>
+                                        <col class="ver-th">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>구분(처리시스템명)</th>
+                                            <th>개인정보처리명</th>
+                                            <th>처리목적</th>
+                                            <th>개인정보</th>
+                                            <th>보유 기간</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <th>대표 웹사이터</th>
+                                            <td><span>텍스트 구역텍스트 구역텍스트 구역텍스트 구역텍스트 구역텍스트 구역텍스트 구역텍스트 구역텍스트 구역텍스트 구역텍스트 구역텍스트 구역텍스트 구역</span></td>
+                                            <td><span>텍스트 구역</span></td>
+                                            <td><span>텍스트 구역</span></td>
+                                            <td><span>텍스트 구역</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th>본문대표웹사이터</th>
+                                            <td><span>텍스트 구역</span></td>
+                                            <td><span>텍스트 구역</span></td>
+                                            <td><span>텍스트 구역</span></td>
+                                            <td><span>텍스트 구역</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            
+                        </div>
+
+                        <div class="form form__agree mt-50">
                             <p>위 내용에 동의합니다.</p>
-                            <div class="ui-radio">
-                                <div class="ui-radio__inner">
-                                    <div class="ui-radio__item">
-                                        <input type="radio" class="ui-radio-input" id="yes" name="yes" checked="">
-                                        <label for="yes" class="ui-label">
-                                            <span class="ui-radio-object"></span>
-                                            <span class="ui-label__text">예</span>
-                                        </label>
+                            <div class="form-radio">
+                                    <div class="form-radio__inner">
+                                        <div class="form-radio__item">
+                                            <input type="radio" class="form-radio-input" id="yes" name="yes" checked="">
+                                            <label for="yes" class="label">
+                                                <span class="form-radio-object"></span>
+                                                <span class="label__text">예</span>
+                                            </label>
+                                        </div>
+                                        
                                     </div>
-                                    
-                                </div>
                             </div>
                         </div>
                         

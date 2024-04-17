@@ -27,7 +27,7 @@ time, mark, audio, video, button, input, textarea, select {
 	font-weight:300;
     font-style:normal;
     vertical-align: baseline;
-
+    color:inherit;
     -webkit-text-size-adjust : none;  /* 크롬, 사파리, 오페라 신버전 */
     -ms-text-size-adjust : none;  /* IE */
     -moz-text-size-adjust : none;  /* 파이어폭스 */
@@ -38,7 +38,16 @@ time, mark, audio, video, button, input, textarea, select {
 
 
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
+/* Firefox  */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
 button, html [type="button"] {
     -webkit-appearance: none;   
   }

@@ -9,50 +9,16 @@ section h2 {
 .sub-tit {
   font-size: 3rem;
   font-weight: 600;
+  color: #000;
   text-align: center;
 }
-.count-sec__inner {
-  padding: 3rem 0;
-  width: 80rem;
-  max-width: 100%;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: flex;
-  -ms-display: flexbox;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.count-sec .ment {
-  font-size: 3rem;
-  font-weight: 500;
-}
-.count-sec .__area ul {
-  display: -webkit-box;
-  display: flex;
-  -ms-display: flexbox;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-}
-.count-sec .__area ul li + li {
-  margin-left: 3rem;
-}
-.count-sec .__area ul li span {
-  font-size: 2rem;
-  font-weight: 300;
-}
-
 .mainVisual {
   z-index: 1;
   position: relative;
   display: grid;
 }
 .mainVisual .firstSwiper {
+  width: 100%;
   height: 100%;
   min-width: 0;
   z-index: 1;
@@ -770,11 +736,13 @@ section h2 {
           flex: 1;
   font-size: 3rem;
   font-weight: 400;
+  color: #000;
 }
 .program-tab ul li .day {
   margin-top: 2rem;
   font-size: 3rem;
   font-weight: 400;
+  color: #000;
   width: 10rem;
   height: 10rem;
   line-height: 10rem;
@@ -792,6 +760,7 @@ section h2 {
 .program-content--tit {
   font-size: 3rem;
   font-weight: 500;
+  color: #000;
   text-align: center;
 }
 .program-content .day {
@@ -812,10 +781,12 @@ section h2 {
   margin-right: 3rem;
   font-size: 3rem;
   font-weight: 500;
+  color: #000;
 }
 .program-content .forest .prog {
   font-size: 3rem;
   font-weight: 500;
+  color: #000;
 }
 .program-content .forest .prog + .prog {
   margin-left: 3rem;
@@ -1012,6 +983,7 @@ section h2 {
   margin: 0 auto;
   font-size: 3rem;
   font-weight: 500;
+  color: #000;
 }
 .info-sec--way {
   margin-bottom: 3rem;
@@ -1022,10 +994,12 @@ section h2 {
 .info-sec--way .way-tit {
   font-size: 3rem;
   font-weight: 500;
+  color: #000;
 }
 .info-sec--way .way-txt {
   font-size: 3rem;
   font-weight: 500;
+  color: #000;
   margin: 3rem 0;
 }
 .info-sec--contact a {
@@ -1037,10 +1011,12 @@ section h2 {
 .info-sec--contact .contact-tit {
   font-size: 3rem;
   font-weight: 500;
+  color: #000;
 }
 .info-sec--contact .contact-txt {
   font-size: 3rem;
   font-weight: 500;
+  color: #000;
 }
 
 .se3 {
