@@ -6,7 +6,7 @@ $(document).ready(function () {
     mnav();
     searchModal();
     toggleSite();
-
+    simpleBar();
     
 
 
@@ -190,6 +190,30 @@ function toggleSite() {
 		}
     });*/
 
+}
+
+function simpleBar(){
+    var a = $(".y-scroll").length;
+    
+    for (let i=0;i<a;i++){
+        new SimpleBar(document.querySelectorAll('.y-scroll')[i], {
+            autoHide: false,
+            scrollbarMinSize: 1,
+            scrollbarMaxSize: 0,
+            direction: 'ltr',
+            timeout: 1000
+        })
+    }
+    $(document).ready(function() {
+       
+
+        
+      });
+
+
+      
+   
+    
 }
 
 
