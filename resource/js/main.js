@@ -1,6 +1,46 @@
 $(document).ready(function() {
-  mainSwiper();
+  const popUp = document.getElementById('popUp');
+  const chekbox = popUp.querySelector('#isChecked');
 
+  const handlePopup = {
+      setStorageForDate: () => {
+          const date = new Date();
+          localStorage.setItem('popupDate', JSON.stringify({
+              date: date.getDate(), 
+              month: date.getMonth(), 
+              year: date.getFullYear()
+          }));
+      },
+      isPopupHidden: () => {
+          const today = new Date();
+          const popupDate = JSON.parse(localStorage.getItem('popupDate'));
+
+          if (popupDate !== null) {
+              return (popupDate.date !== today.getDate() || 
+                  popupDate.month !== today.getMonth() ||
+                  popupDate.year !== today.getFullYear()
+              ) ? false : true;
+          }
+      },
+      handleClose: (e) => {
+          if (e.target === popUp.querySelector('button.close')) {
+              popUp.classList.add('hidden');
+              if (chekbox.checked) {
+                  handlePopup.setStorageForDate();
+              }
+          }
+      }
+  }
+
+  window.addEventListener('load', () => {
+      handlePopup.isPopupHidden() ? popUp.classList.add('hidden') : popUp.classList.remove('hidden');
+  });
+  popUp.addEventListener('click', handlePopup.handleClose);
+  popUp.querySelector('button.close').addEventListener('click', handlePopup.handleClose);
+});
+
+$(document).ready(function() {
+  mainSwiper();
 
   $(window).resize(function(){
 
@@ -53,9 +93,9 @@ function mainSwiper() {
       loop: true,
       slidePerView:1,
       effect:'fade',
-      autoplay: {
-        delay: 3000,
-      },
+      // autoplay: {
+      //   delay: 3000,
+      // },
       pagination: {
         el: '.swiper-pagination',
         /*
@@ -84,3 +124,5 @@ function mainSwiper() {
 
 
 }
+
+

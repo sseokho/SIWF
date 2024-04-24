@@ -114,7 +114,6 @@
 }
 
 
-
 @font-face {
     font-family: 'NotoSerifKR';
     src: url('../font/NotoSerifKR-light.eot');
@@ -164,26 +163,13 @@
 }
 @font-face {
     font-family: 'NotoSerifKR';
-    src: url('../font/NotoSerifKR-Bold.eot');
-    src: url('../font/NotoSerifKR-Bold.eot?#iefix') format('embedded-opentype'),
-    url('../font/NotoSerifKR-Bold.woff2') format('woff2'),
-    url('../font/NotoSerifKR-Bold.woff') format('woff'),
-    url('../font/NotoSerifKR-Bold.ttf') format('truetype'),
-    url('../font/NotoSerifKR-Bold.svg#NotoSerifKR-Bold') format('svg');
+    src: url('../font/NotoSerifKR-bold.eot');
+    src: url('../font/NotoSerifKR-bold.eot?#iefix') format('embedded-opentype'),
+    url('../font/NotoSerifKR-bold.woff2') format('woff2'),
+    url('../font/NotoSerifKR-bold.woff') format('woff'),
+    url('../font/NotoSerifKR-bold.ttf') format('truetype'),
+    url('../font/NotoSerifKR-bold.svg#NotoSerifKR-bold') format('svg');
     font-weight: 600;
-    font-style: normal;
-    
-}
-
-@font-face {
-    font-family: 'NotoSerifKR';
-    src: url('../font/NotoSerifKR-Black.otf');
-    src: url('../font/NotoSerifKR-Black.otf?#iefix') format('embedded-opentype'),
-    url('../font/NotoSerifKR-Black.otf.woff2') format('woff2'),
-    url('../font/NotoSerifKR-Black.otf.woff') format('woff'),
-    url('../font/NotoSerifKR-Black.otf.ttf') format('truetype'),
-    url('../font/NotoSerifKR-Black.otf.svg#NotoSerifKR-Black.otf') format('svg');
-    font-weight: 700;
     font-style: normal;
     
 }

@@ -12,7 +12,7 @@
     letter-spacing: -0.05rem;
 	font-family: 'notokr', sans-serif;
 	/* font-family: 'Noto Sans CJKR', sans-serif !important; */
-	
+	font-style: normal;
     vertical-align: baseline;
 
     -webkit-text-size-adjust : none;  /* 크롬, 사파리, 오페라 신버전 */
