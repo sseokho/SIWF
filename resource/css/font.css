@@ -114,7 +114,7 @@
 }
 
 
-@font-face {
+/* @font-face {
     font-family: 'NotoSerifKR';
     src: url('../font/NotoSerifKR-light.eot');
     src: url('../font/NotoSerifKR-light.eot?#iefix') format('embedded-opentype'),
@@ -160,16 +160,12 @@
     font-weight: 500;
     font-style: normal;
 
-}
+} */
+
 @font-face {
     font-family: 'NotoSerifKR';
-    src: url('../font/NotoSerifKR-bold.eot');
-    src: url('../font/NotoSerifKR-bold.eot?#iefix') format('embedded-opentype'),
-    url('../font/NotoSerifKR-bold.woff2') format('woff2'),
-    url('../font/NotoSerifKR-bold.woff') format('woff'),
-    url('../font/NotoSerifKR-bold.ttf') format('truetype'),
-    url('../font/NotoSerifKR-bold.svg#NotoSerifKR-bold') format('svg');
-    font-weight: 600;
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
-    
 }
+

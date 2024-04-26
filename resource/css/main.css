@@ -25,9 +25,11 @@ section h2 {
   margin: 0 auto;
 }
 #popUp.main-pop .popup-white-space {
-  top: 21.2rem;
+  top: 19.2rem;
   position: absolute;
   right: 0;
+  -webkit-box-shadow: 4px 5px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 5px 16px rgba(0, 0, 0, 0.25);
 }
 #popUp.hidden {
   display: none;
@@ -107,9 +109,9 @@ section h2 {
   margin-left: 1rem;
 }
 #popUp .popup-white-space .button-wrapper button.close {
-  font-size: 15px;
-  line-height: 15px;
-  font-weight: bold;
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #3c3c3c;
   border: none;
   background-color: unset;
   word-break: keep-all;
@@ -1079,9 +1081,12 @@ section h2 {
   content: "";
 }
 
+.info-sec {
+  padding: 4rem 0 8rem;
+}
 .info-sec__item {
   border: 1px solid #e7e7e7;
-  padding: 4rem 4.9rem;
+  padding: 4.8rem 4.9rem 4.3rem;
   width: 69rem;
 }
 .info-sec__item .link-move {
@@ -1092,7 +1097,7 @@ section h2 {
   width: max-content;
   color: #000;
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 300;
   color: #000;
   position: relative;
 }
@@ -1103,16 +1108,16 @@ section h2 {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background: url(../image/common/icon/icon_linkMove.svg) no-repeat center center;
+  background: url(../image/common/icon/icon_linkMove.svg) center/contain no-repeat;
   width: 1.6rem;
   height: 1rem;
 }
 .info-sec__item--way {
-  background: url(../image/main/info-sec--way.svg) no-repeat 85% center;
+  background: url(../image/main/info-sec--way.svg) no-repeat 89% center;
 }
 .info-sec__item--contact {
   margin-left: 2rem;
-  background: url(../image/main/info-sec--contact.svg) no-repeat 85% center;
+  background: url(../image/main/info-sec--contact.svg) no-repeat 90% center;
 }
 .info-sec__inner {
   display: -webkit-box;
@@ -1124,7 +1129,7 @@ section h2 {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
-  padding: 5rem 0;
+  padding: 0 4rem;
 }
 .info-sec .tit,
 .info-sec .txt {
@@ -1139,7 +1144,7 @@ section h2 {
   font-size: 1.8rem;
   font-weight: 300;
   color: #000;
-  margin: 3rem 0;
+  margin: 1.8rem 0 3rem;
 }
 .info-sec--way {
   margin-bottom: 3rem;
@@ -1569,6 +1574,9 @@ section h2 {
 
 /* section1:hover */
 @media (min-width: 1200px) {
+  .info-sec__item:hover {
+    border: 1px solid #000;
+  }
   .mainVisual .tabBox .tab_wrap .tab_cont ul li a:hover {
     background-color: #f5f8fe;
     border: 2px solid #8daae0;
@@ -2056,35 +2064,16 @@ section h2 {
     height: auto;
   }
   .container .mainVisual {
-    grid-template-columns: 100%;
-    grid-template-rows: 22.6rem 40rem 6.9rem;
-    /*grid-template-rows: 1fr 1fr 0.23fr;*/
+    height: 80rem;
   }
   .container .mainVisual .firstSwiper {
-    grid-row: 1/4;
-    grid-column: 1/2;
-    grid-template-rows: 24% auto;
-    grid-template-columns: 100%;
-  }
-  .container .mainVisual .firstSwiper .swiper-wrapper {
-    grid-column: 1/2;
+    height: 80rem;
   }
   .container .mainVisual .firstSwiper .swiper-slide {
-    grid-template-rows: 28% auto;
-    grid-template-columns: 100%;
     height: auto;
   }
-  .container .mainVisual .firstSwiper .swiper-slide.one {
-    background: url(../image/main/mo_main_01.jpg) no-repeat center;
-    background-size: cover;
-  }
-  .container .mainVisual .firstSwiper .swiper-slide.two {
-    background: url(../image/main/mo_main_02.jpg) no-repeat center;
-    background-size: cover;
-  }
-  .container .mainVisual .firstSwiper .swiper-slide.three {
-    background: url(../image/main/mo_main_03.jpg) no-repeat center;
-    background-size: cover;
+  .container .mainVisual .firstSwiper .swiper-slide .cover {
+    height: 80rem;
   }
   .container .mainVisual .firstSwiper .swiper-slide .txtBox {
     display: block;
@@ -2099,39 +2088,35 @@ section h2 {
     line-height: 3.6rem;
   }
   .container .mainVisual .firstSwiper .swiper-state {
-    grid-row: 2/3;
-    padding-right: 2rem;
-    margin-top: 0;
+    bottom: 5.1rem;
   }
   .container .mainVisual .firstSwiper .swiper-state .swiper-pagination {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 5.7rem;
-    height: 3.6rem;
-    padding: 0;
-    line-height: 3.7rem;
-    font-size: 1.4rem;
   }
-  .container .mainVisual .firstSwiper .swiper-state .swiper-pagination * {
-    font-size: 1.4rem;
-    display: block;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    height: 100%;
+  .container .mainVisual .firstSwiper .swiper-state .swiper-pagination-bullet:after {
+    width: 0.8rem;
+    height: 0.8rem;
+    background: #fff;
   }
-  .container .mainVisual .firstSwiper .swiper-state .swiper-pagination span {
-    font-size: 1.4rem;
-    line-height: 3.8rem;
-    height: 100%;
+  .container .mainVisual .firstSwiper .swiper-state .swiper-pagination-bullet + .swiper-pagination-bullet {
+    margin-left: 2.8rem;
   }
-  .container .mainVisual .firstSwiper .swiper-state .control-btn {
-    width: 1rem;
-    height: 1.6rem;
+  .container .mainVisual .firstSwiper .swiper-state .swiper-pagination-bullet-active:before {
+    width: 1.2rem;
+    height: 1.2rem;
+    background: #003E88;
+  }
+  .container .mainVisual .firstSwiper .swiper-state .swiper-pagination-bullet-active:after {
+    width: 2.6rem;
+    height: 2.6rem;
+    background: transparent;
+    border: 1px solid #003E88;
   }
   .container .mainVisual .conBox {
     grid-row: 2/3;
@@ -2311,5 +2296,49 @@ section h2 {
   }
   .container .mainVisual .banner_zone__inner .item ul li + li {
     margin-left: 1rem;
+  }
+  .info-sec__inner {
+    padding: 0 4rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .info-sec__item {
+    width: 100%;
+    padding: 4.7rem 4rem 4.3rem;
+  }
+  .info-sec__item--way {
+    background: url(../image/main/info-sec--way.svg) no-repeat 93% center;
+    background-size: 6.7rem;
+  }
+  .info-sec__item--contact {
+    background: url(../image/main/info-sec--contact.svg) no-repeat 93% center;
+    background-size: 6.7rem 6.185rem;
+    margin: 1rem 0 0 0;
+  }
+  .info-sec .tit {
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: #000;
+  }
+  .info-sec .txt {
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: #000;
+    width: 85%;
+    line-height: 3.5rem;
+    margin: 1.3rem 0 2.3rem;
+  }
+  .info-sec .link-move {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #000;
+  }
+  .info-sec .link-move:after {
+    right: -2rem;
   }
 }/*# sourceMappingURL=main.css.map */

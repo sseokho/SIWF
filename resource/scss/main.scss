@@ -29,9 +29,10 @@ section{
         max-width: 100%;
         margin:0 auto;
         .popup-white-space {
-            top:21.2rem;
+            top:19.2rem;
             position: absolute;
             right:0;
+            box-shadow: 4px 5px 16px rgba(0, 0, 0, 0.25);
         }
     }
     &.hidden {
@@ -98,9 +99,7 @@ section{
                 }
             }
             button.close {
-                font-size: 15px;
-                line-height: 15px;
-                font-weight: bold;
+                @include font(1.6,300,#3c3c3c);
                 border: none;
                 background-color: unset;
                 word-break: keep-all;
@@ -1051,17 +1050,17 @@ section{
 
 .info{
     &-sec{
-        
+        padding:4rem 0 8rem;
         &__item{
             border:1px solid #e7e7e7;
-            padding:4rem 4.9rem;
+            padding:4.8rem 4.9rem 4.3rem;
             width:69rem;
             .link-move{
                 display:block;
                 text-decoration: none;
                 width:max-content;
                 color: #000;
-                @include font(1.6,500,#000);
+                @include font(1.6,300,#000);
                 position: relative;
                 &:after{
                     content:'';
@@ -1069,24 +1068,24 @@ section{
                     right:-3rem;
                     top:50%;
                     transform: translateY(-50%);
-                    background:url(../image/common/icon/icon_linkMove.svg) no-repeat center center;
+                    background:url(../image/common/icon/icon_linkMove.svg)center/contain no-repeat;
                     width:1.6rem;
                     height: 1rem;
                 }
             }
             &--way{
-                background:url(../image/main/info-sec--way.svg) no-repeat 85% center;
+                background:url(../image/main/info-sec--way.svg) no-repeat 89% center;
             }
             &--contact{
                 margin-left:2rem;
-                background:url(../image/main/info-sec--contact.svg) no-repeat 85% center;
+                background:url(../image/main/info-sec--contact.svg) no-repeat 90% center;
             }
         }
         &__inner{
             @include d-flex;
             justify-content: center;
             margin:0 auto;
-            padding:5rem 0;
+            padding:0 4rem;
         }
         
         .tit,
@@ -1100,7 +1099,7 @@ section{
         }
         .txt{
             @include font(1.8,300,#000);
-            margin:3rem 0;
+            margin:1.8rem 0 3rem;
         }
         &--way{
             margin-bottom: 3rem;
@@ -1531,6 +1530,13 @@ section{
 
 /* section1:hover */
 @media (min-width: 1200px) {
+    .info-sec{
+        &__item{
+            &:hover{
+                border:1px solid #000;
+            }
+        }
+    }
     .mainVisual {
         .tabBox {
             .tab_wrap {
@@ -1539,6 +1545,7 @@ section{
                         li {
                             a {
                                 &:hover {
+                                    
                                     background-color: #f5f8fe;
                                     border:2px solid #8daae0;
                                 }
@@ -2210,37 +2217,17 @@ section{
 }
 
 @media (min-width:320px) and (max-width:1024px){
+    
     .container{
         height: auto;
         .mainVisual{
-            grid-template-columns:100%;
-            grid-template-rows: 22.6rem 40rem 6.9rem;
-            /*grid-template-rows: 1fr 1fr 0.23fr;*/
+            height:80rem;
             .firstSwiper{
-                grid-row:1/4;
-                grid-column: 1/2;
-                grid-template-rows: 24% auto;
-                grid-template-columns: 100%;
-
-                .swiper-wrapper{
-                    grid-column: 1/2;
-                }
+                height:80rem;
                 .swiper-slide{
-                    grid-template-rows:28% auto;
-                    grid-template-columns:100%;
                     height:auto;
-                    
-                    &.one{
-                        background: url(../image/main/mo_main_01.jpg) no-repeat center;
-                        background-size: cover;
-                    }
-                    &.two{
-                        background: url(../image/main/mo_main_02.jpg) no-repeat center;
-                        background-size: cover;
-                    }
-                    &.three{
-                        background: url(../image/main/mo_main_03.jpg) no-repeat center;
-                        background-size: cover;
+                    .cover{
+                        height:80rem;
                     }
                     .txtBox{
                         display:block;
@@ -2255,37 +2242,42 @@ section{
 
                 }
                 .swiper-state{
-                    grid-row:2/3;
-                    padding-right:2rem;
-                    margin-top:0;
-                    
+                    bottom:5.1rem;
                     .swiper-pagination{
                         display: flex;
-                        
+                        margin:0;
                         justify-content: center;
-                        width:5.7rem;
-                        height:3.6rem;
-                        padding:0;
-                        line-height: 3.7rem;
-                        font-size:1.4rem;
-                        
+                        &-bullet{
+                            &:after{
+                                width:0.8rem;
+                                height:0.8rem;
+                                background:#fff;
+                            }
+                            & + .swiper-pagination-bullet{
+                                margin-left:2.8rem;
+                            }
+                            &-active{
+                                &:before{
+                                    width:1.2rem;
+                                    height:1.2rem;
+                                    background:#003E88;
+                                }
+                                &:after{
+                                    width:2.6rem;
+                                    height:2.6rem;
+                                    background: transparent;
+                                    border:1px solid #003E88;
+                                    
+                                }
+                            }
+                        }
                         *{
 
-                            font-size:1.4rem;
-                            display: block;
-                            width: max-content;
                             
-                            height: 100%;
                         }
                         span{
-                            font-size:1.4rem;
-                            line-height: 3.8rem;
-                            height: 100%;
+                            
                         }
-                    }
-                    .control-btn{
-                        width:1rem;
-                        height:1.6rem;
                     }
                 }
             }
@@ -2484,6 +2476,42 @@ section{
         }
     }
 
-
+    .info{
+        &-sec{
+            &__inner{
+                padding:0 4rem;
+                align-items: center;
+                flex-direction: column;
+            }
+            &__item{
+                width:100%;
+                padding:4.7rem 4rem 4.3rem;
+                &--way{
+                    background: url(../image/main/info-sec--way.svg) no-repeat 93% center;
+                    background-size: 6.7rem;
+                }
+                &--contact{
+                    background: url(../image/main/info-sec--contact.svg) no-repeat 93% center;
+                    background-size: 6.7rem 6.185rem;
+                    margin:1rem 0 0 0;
+                }
+            }
+            .tit{
+                @include font(2.8,500,#000);
+            }
+            .txt{
+                @include font(2.2,300,#000);
+                width:85%;
+                line-height: 3.5rem;
+                margin:1.3rem 0 2.3rem
+            }
+            .link-move{
+                @include font(2,300,#000);
+                &:after{
+                    right:-2rem;
+                }
+            }
+        }
+    }
 
 }

@@ -1,9 +1,12 @@
 /* input-width */
+.input-width--full {
+  width: 100%;
+}
 .input-width-tiny {
   width: 50px;
 }
 .input-width-small-mini {
-  width: 60px;
+  width: 60;
 }
 .input-width-small {
   width: 70px;
@@ -32,8 +35,11 @@
 .input-height-tiny {
   height: 50px;
 }
-.input-height-small-mini {
-  height: 60px;
+.input-height--43 {
+  height: 4.3rem;
+}
+.input-height--190 {
+  height: 19rem;
 }
 .input-height-small {
   height: 70px;
@@ -49,6 +55,11 @@
 }
 .input-height-big {
   height: 200px;
+}
+
+.table-height--43 table th,
+.table-height--43 table td {
+  height: 4.3rem;
 }
 
 .ta-l {
@@ -140,6 +151,10 @@
   width: 1px;
   height: 1px;
   font-size: 0;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .txt-depth--01 {
