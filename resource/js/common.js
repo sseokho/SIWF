@@ -69,7 +69,7 @@ function sideMenu(){
         });
         $('.side-menu__depth02').hide();
 
-        $('.side-menu__depth01').click(function(){
+        $('.side-menu__depth01:not(.no-dep)').click(function(){
           $(this).toggleClass('is-open');
           
           if($(this).hasClass('is-open')){
