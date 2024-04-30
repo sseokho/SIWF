@@ -24,25 +24,34 @@
         </div>
         <!-- //skipNavigation -->
 
-        <div id="popUp" class="main-pop hidden">
-            <div class="popup-white-space">
-                <div class="content-wrapper">
-                    <a href="https://www.naver.com/" target="_blank">
-                        <img src="./resource/image/main/main_pop.png">
-                    </a>
-                </div>
-                <div class="button-wrapper">
-                    <div class="checkbox-wrapper">
-                        <input type="checkbox" id="isChecked" name="isChecked">
-                        <label id="isCheckedLabel" for="isChecked">오늘 하루 더이상 보지 않기</label>    
+     
+
+        <div class="main_popup">
+            <div class="layer_cont">
+              <div class="img_wrap">
+                <a href="https://www.naver.com/" target="_blank">
+                    <img src="./resource/image/main/main_pop.png">
+                </a>
+              </div>
+              <div class="btn-wrap bg-white d-flex align-center justify-between">
+                <!-- 오늘 하루 보지 않기 --->
+                <div class="ui-form">
+                    <div class="ui-checkbox-block-wrap justify-center">
+                      <div class="ui-checkbox-block">
+                        <input type="checkbox" class="ui-checkbox btn_today_close" id="isChecked" name="isChecked">
+                        <label id="isCheckedLabel" for="isChecked" class="ui-label">
+                          <span class="ui-label__text">오늘 하루 더이상 보지 않기</span>
+                        </label>
+                      </div>
                     </div>
-                    <button class="close" type="button">닫기</button>
+                    
                 </div>
+                
+                <!-- 그냥 닫기 --->
+                <button class="btn_close">닫기</button>
+              </div>
             </div>
-        </div>
-
-
-
+          </div>
         
         
        
@@ -295,21 +304,26 @@
             <div class="pop-cont abstract_wrap">
                 <div class="abstract_cont contact" id="contact-pop">
                     <div class="abstract_cont__inner">
+                        <div class="btn-wrap close d-flex justify-end">
+                            <button title="팝업 닫기  " type="button"><span class="hidden">팝업 닫기</span></button>
+                        </div>
                         <p class="popTit">1:1문의하기</p>
-
+                        
                         <div class="board-detail-table board-detail-table--write table-glass table-height--43">
                             <table>
                               <colgroup>
-                                <col style="width:20%">
+                                <col style="width:17%">
                                 <col style="width:auto">
                               </colgroup>
                               <tbody>
                                 
                                 <tr>
-                                  <th>이메일</th>
+                                  <th>이메일
+                                    <span class="ui-require"><span class="for-a11y">(필수)</span></span>
+                                  </th>
                                   <td>
                                     <div class="ui-input-block">
-                                        <input type="text" class="ui-input input-height--43 input-width--full" title="근거" placeholder="E-mail을 입력해주세요.">
+                                        <input type="text" class="ui-input input-height-43 input-width-full" title="이메일" placeholder="E-mail을 입력해주세요.">
                                       </div>
                                   </td>
                                 </tr>
@@ -319,7 +333,7 @@
                                   </th>
                                   <td>
                                     <div class="ui-input-block">
-                                        <input type="text" class="ui-input input-height--43 input-width--full" title="근거" placeholder="제목을 입력해주세요.">
+                                        <input type="text" class="ui-input input-height-43 input-width-full" title="제목" placeholder="제목을 입력해주세요.">
                                       </div>
                                   </td>
                                 </tr>
@@ -328,7 +342,7 @@
                                   <th>내용<span class="ui-require"><span class="for-a11y">(필수)</span></span></th>
                                   <td>
                                     <div class="ui-input-block">
-                                      <textarea class="ui-input input-height--190 input-width--full" title="요청사유" placeholder="내용을 입력해주세요."></textarea>
+                                      <textarea class="ui-input input-height-190 input-width-full" title="내용" placeholder="내용을 입력해주세요."></textarea>
                                     </div>
                                   </td>
                                 </tr>
@@ -338,7 +352,7 @@
                           </div>
 
 
-                          <div class="board-detail-table board-detail-table--explan">
+                          <div class="board-detail-table board-detail-table--explan table-glass">
                             <table>
                               <caption>Q&amp;A 등록</caption>
                               <colgroup>
@@ -346,34 +360,62 @@
                               </colgroup>
                 
                               <tbody>
+                                    <tr>
+                                        <th>이용약관</th>
+                                    </tr>
                                   <tr>
                                       
-                                      <td><div class="ui-input-block">
-                                        <textarea class="ui-input" title="요청내용"></textarea>
-                                      </div></td>
+                                      <td>
+                                        <div class="y-scroll ui-scroller">
+                                            <p class="txt">
+                                                <span>
+                                                개인정보보호법에 따라 회원가입 신청하시는 분께 수집하는 개인정보의 항목, 개인정보의 수집 및 이용목적, 개인정보의
+                                                보유 및 이용기간, 동의 거부권 및 동의 거부 시 불이익에 관한 사항을 안내 드리오니 자세히 읽은 후 동의하여 주시기 바랍
+                                                니다.</span>
+                                                
+                                                <span>
+                                                1. 수집하는 개인정보
+                                                이용자는 회원가입을 하지 않아도 정보 검색, 뉴스 보기 등 대부분의 서울국제작가축제 동의 거부권 및 동의 거부 시 불이익
+                                                에 관한 사항을 안내 드리오니 자세히 읽은 후 동의하여 주시기 바랍니다.</span>
+                                                
+                                                <span>
+                                                개인정보보호법에 따라 회원가입 신청하시는 분께 수집하는 개인정보의 항목, 개인정보의 수집 및 이용목적, 개인정보의
+                                                </span>
+                                                <span>
+                                                개인정보보호법에 따라 회원가입 신청하시는 분께 수집하는 개인정보의 항목, 개인정보의 수집 및 이용목적, 개인정보의
+                                                보유 및 이용기간, 동의 거부권 및 동의 거부 시 불이익에 관한 사항을 안내 드리오니 자세히 읽은 후 동의하여 주시기 바랍
+                                                니다.</span>
+                                                
+                                                <span>
+                                                1. 수집하는 개인정보
+                                                이용자는 회원가입을 하지 않아도 정보 검색, 뉴스 보기 등 대부분의 서울국제작가축제 동의 거부권 및 동의 거부 시 불이익
+                                                에 관한 사항을 안내 드리오니 자세히 읽은 후 동의하여 주시기 바랍니다.</span>
+
+                                                <span>
+                                                개인정보보호법에 따라 회원가입 신청하시는 분께 수집하는 개인정보의 항목, 개인정보의 수집 및 이용목적, 개인정보의
+                                                </span>
+                                            </p>
+                                          </div>
+                                        </td>
                                   </tr>
                               </tbody>
                           </table>
                           </div>
 
-                        <div class="form form__agree mt-50">
-                            <p>위 내용에 동의합니다.</p>
-                            <div class="form-radio">
-                                    <div class="form-radio__inner">
-                                        <div class="form-radio__item">
-                                            <input type="radio" class="form-radio-input" id="yes" name="yes" checked="">
-                                            <label for="yes" class="label">
-                                                <span class="form-radio-object"></span>
-                                                <span class="label__text">예</span>
-                                            </label>
-                                        </div>
-                                        
-                                    </div>
+                          <div class="ui-form agree-wrap">
+                            <div class="ui-checkbox-block-wrap">
+                              <div class="ui-checkbox-block justify-center">
+                                <input type="checkbox" class="ui-checkbox" id="checkbox1">
+                                <label for="checkbox1" class="ui-label">
+                                  <span class="ui-label__text">위 내용에 동의합니다.</span>
+                                </label>
+                              </div>
                             </div>
-                        </div>
+                            
+                          </div>
                         
-                        <div class="btn-wrap btn-wrap--center mt-70">
-                            <button type="button" class="btn btn--regis popup if-check">보내기</button>
+                        <div class="btn-wrap btn-wrap--center">
+                            <button type="button" class="btn btn-send popup if-check bg-white border-black">보내기</button>
                         </div>
 
 
@@ -389,8 +431,8 @@
 
 <script type="text/javascript" src="././resource/js/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="././resource/js/include.js"></script>
-<script type="text/javascript" src="././resource/js/main.js"></script>
 <script type="text/javascript" src="././resource/js/common.js"></script>
+<script type="text/javascript" src="././resource/js/main.js"></script>
 <script type="text/javascript" src="././resource/js/simpleBar.js"></script>
 <script type="text/javascript" src="././resource/js/swiper.min.js"></script>
 

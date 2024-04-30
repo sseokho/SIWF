@@ -1,28 +1,79 @@
+$(document).ready(function(){
+    bradcrumb();
+})
 
-window.onload = function(){
-    // 도메인 직접 입력 or domain option 선택
-    const domainListEl = document.querySelector('.email-list')
-    const domainInputEl = document.querySelector('.email-txt')
-    // select 옵션 변경 시
+function bradcrumb(){
+
+    var one = $(".bradcrumb__tit.is-active").text();
+    var two = $(".bradcrumb__tit:not(.is-active)").text();
+
+
+    if(one == two){
+        console.log("v");
+        $(this).addClass("ho");
+    } else{
+        console.log("y");
+    }
+
+
+    $('.sub_header').load('sub_header.html', function() {
+        $(".depth_2").prev().addClass("depth1_a");
+
+        
+
+        
+        var aa = $(".depth1_a");
+        aa.each((i,v) => {
+
+            
+            
+            var one = $(".bradcrumb__tit.is-active").text();
+            var two = $(".depth1_a");
+            var twoText = two.eq(i).text();
+        
+
+            if(one == twoText){
+                two.eq(i).addClass("include");
+            }
+            
+        });
+
+        
+   
+
+        var next = $(".include").next().children("li").find('a');
+        var nextCopy = next.clone();
+        console.log(next);
+        $(".bradcrumb__links").append(nextCopy);
+
+        /*
+        next.each((i,v)=> {
+            
+            
+            console.log("ff",v);
+            
+        })
+        */
+        
+        
+        
+
+
+    });
+
     
-    domainListEl.addEventListener('change', (event) => {
-        // option에 있는 도메인 선택 시
-        if(event.target.value !== "type") {
-            // 선택한 도메인을 input에 입력하고 disabled
-            domainInputEl.value = event.target.value
-            domainInputEl.disabled = true
-        } else { // 직접 입력 시
-            // input 내용 초기화 & 입력 가능하도록 변경
-            domainInputEl.value = ""
-            domainInputEl.disabled = false
-        }
+
+
+
+
+    $('.bradcrumb__tit').click(function(){
+        $(this).next().slideToggle();
+        $(this).parent().siblings().children('.bradcrumb__links').slideUp();
     })
 
-
-
-
+    
+    
 }
-
 
 
 

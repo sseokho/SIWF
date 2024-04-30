@@ -6,7 +6,7 @@
 
 .input{
     &-width{
-        &--full{
+        &-full{
             width:100%;
         }
         &-tiny{
@@ -46,10 +46,10 @@
         &-tiny{
             height: 50px;
         }
-        &--43{
+        &-43{
             height: 4.3rem;
         }
-        &--190{
+        &-190{
             height: 19rem;
         }
         &-small{
@@ -74,7 +74,7 @@
 
 .table{
     &-height{
-        &--43{
+        &-43{
             table{
                 th,
                 td{
@@ -191,7 +191,7 @@
 .txt{
     &-depth{
         &--01{
-            font-size:24rem
+            font-size:3rem
         }
         &--02{
             font-size:22rem
@@ -221,10 +221,50 @@
     }
 }
 
+.align{
+    &-center{
+        align-items: center;
+    }
+}
+.justify{
+    &-start{
+        justify-content: start;
+    }
+    &-center{
+        justify-content: center;
+    }
+    &-end{
+        justify-content: end;
+    }
+    &-between{
+        justify-content: space-between;
+    }
+}
+
 //background-color
 .bg{
+    &-white{
+        background-color:#fff;
+    }
     &-gray{
         background-color:#f8f8f8;
+    }
+    &-black{
+        background-color:#000;
+    }
+}
+.color{
+    &-white{
+        color:#fff;
+    }
+    &-black{
+        color:#000;
+    }
+}
+
+.border{
+    &-black{
+        border:1px solid #000;
     }
 }
 
