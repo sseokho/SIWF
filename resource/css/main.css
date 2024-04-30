@@ -232,6 +232,9 @@ section h2 {
 .main_popup .btn_close {
   border: 0;
   background: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
   font-size: 1.6rem;
   font-weight: 300;
   color: #3c3c3c;
@@ -241,6 +244,9 @@ section h2 {
 }
 .main_popup .btn_today_close span {
   display: block;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
   font-size: 1.6rem;
   font-weight: 300;
   color: #3c3c3c;

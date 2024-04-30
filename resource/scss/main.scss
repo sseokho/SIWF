@@ -188,6 +188,9 @@ section{
     .btn_close {
         border: 0;
         background: none;
+        border:1px solid #ccc;
+        border-radius: 4px;
+        padding:0.5rem 1rem;
         @include font(1.6,300,#3c3c3c);
     }
 
@@ -195,6 +198,9 @@ section{
         display: block;
         span {
             display: block;
+            padding:0.5rem 1rem;
+            border:1px solid #ccc;
+            border-radius: 4px;
             @include font(1.6,300,#3c3c3c);
             
         }
