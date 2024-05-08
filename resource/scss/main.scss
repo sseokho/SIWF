@@ -10,13 +10,7 @@ section{
         text-align: center;
     }
 }
-.sub-tit{
-    @include font(3,600,#000);
-    text-align: center;
-    &.program{
 
-    }
-}
 .abstract_cont.contact{
     .abstract_cont__inner{
         padding:3rem 5rem 5rem 5rem;

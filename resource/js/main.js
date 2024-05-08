@@ -116,6 +116,8 @@ function mainSwiper() {
       }
     });
 
+    
+
 
     $('.control .swiper-button-pause').click(function () {
       if ($(this).hasClass('off')) {
@@ -130,6 +132,4 @@ function mainSwiper() {
 
 
 }
-
-
 

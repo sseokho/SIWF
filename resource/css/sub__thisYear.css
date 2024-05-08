@@ -1,0 +1,301 @@
+@charset "UTF-8";
+/** 소통마당 > 공지사항 */
+.sub-container.thisYear {
+  background: #f8f8f8;
+}
+.sub-container.thisYear.noOpen .noOpen-area {
+  padding: 16.7rem 0 17.4rem;
+}
+.sub-container.thisYear.noOpen .noOpen-img {
+  width: 34.806rem;
+  display: block;
+  margin: 0 auto;
+}
+.sub-container.thisYear.noOpen .noOpen-img img {
+  width: 100%;
+}
+.sub-container.thisYear.noOpen .noOpen-txt {
+  margin-top: 4.946rem;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #7d7d7d;
+}
+.sub-container.thisYear .subContent-wrap {
+  width: 140rem;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.sub-container.thisYear .sub-mainTit + .poster-wrap {
+  margin-top: 5rem;
+}
+.sub-container.thisYear .poster-img .img {
+  width: 57.2rem;
+  display: block;
+}
+.sub-container.thisYear .poster-img .img img {
+  width: 100%;
+}
+.sub-container.thisYear .poster-wrap {
+  display: -webkit-box;
+  display: flex;
+  -ms-display: flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+}
+.sub-container.thisYear .poster-info li {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #000;
+}
+.sub-container.thisYear .poster-info li span {
+  margin-right: 1.4rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #000;
+}
+.sub-container.thisYear .poster-info li + li {
+  margin-top: 2rem;
+}
+.sub-container.thisYear .txt-wrap {
+  background: #fff;
+  padding: 6.4rem;
+  margin-left: 2rem;
+}
+.sub-container.thisYear .txt-wrap .sub-tit {
+  font-size: 1.6rem;
+  font-weight: 200;
+  color: #000;
+}
+.sub-container.thisYear .txt-wrap .sub-tit + .tit {
+  margin-top: 2.8rem;
+}
+.sub-container.thisYear .txt-wrap .tit {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #000;
+}
+.sub-container.thisYear .txt-wrap .tit + .txt-zip {
+  margin-top: 3.4rem;
+}
+.sub-container.thisYear .txt-wrap .txt-zip .txt {
+  text-align: left;
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #000;
+  line-height: 3.2rem;
+}
+.sub-container.thisYear .txt-wrap .txt-zip .txt + .txt {
+  margin-top: 4.3rem;
+}
+.sub-container.thisYear .txt-wrap .txt-zip + .poster-info {
+  margin-top: 4rem;
+}
+.sub-container.thisYear .txt-wrap .logo {
+  width: 26.5rem;
+  display: block;
+  margin: 0 auto;
+}
+.sub-container.thisYear .txt-wrap .logo + .txt {
+  margin-top: 4rem;
+}
+.sub-container.thisYear .txt-wrap .logo img {
+  width: 100%;
+}
+.sub-container.thisYear .txt-wrap .txt {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #000;
+  line-height: 3.6rem;
+}
+.sub-container.thisYear .txt-wrap + .stat-box {
+  margin-top: 12rem;
+}
+
+.stat-box {
+  position: relative;
+  height: 42.2rem;
+}
+.stat-box__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0rem 0rem;
+  gap: 0rem 0rem;
+  height: 100%;
+  width: calc(100% - 45.3rem);
+  margin-left: auto;
+  padding: 3rem 0;
+  margin-right: 17.4rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+.stat-box__list .stat-tit {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #000;
+}
+.stat-box__list .stat-tit + .stat-content {
+  margin-top: 3rem;
+}
+.stat-box__list .stat-content .number {
+  font-size: 6rem;
+  font-weight: 600;
+  color: #233e80;
+}
+.stat-box__list .stat-content .unit {
+  margin-left: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #7d7d7d;
+}
+.stat-box .left,
+.stat-box .right {
+  position: absolute;
+}
+.stat-box .left {
+  width: 45.3rem;
+  height: 30rem;
+  left: 0;
+  background: #233e80;
+  display: -webkit-box;
+  display: flex;
+  -ms-display: flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-left: 6rem;
+  z-index: 1;
+}
+.stat-box .left .tit {
+  font-size: 3.6rem;
+  font-weight: 600;
+  color: #fff;
+  line-height: 5.2rem;
+}
+.stat-box .left .tit + .txt {
+  margin-top: 1rem;
+}
+.stat-box .left .txt {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.36);
+}
+.stat-box .right {
+  width: 116.3rem;
+  height: 39.2rem;
+  top: 3rem;
+  right: 0;
+  background: #f8f8f8;
+  z-index: 0;
+}
+
+/* 소통마당 > Q&A */
+.ui-text .list-dot li {
+  position: relative;
+  padding-left: 8px;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 3rem;
+}
+.ui-text .list-dot li::before {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  margin-right: 5px;
+  font-size: 1.6rem;
+  font-weight: 300;
+  content: " · ";
+}
+
+.ui-form + .ui-text {
+  margin-top: 1.5rem;
+}
+
+.sub-item__tit {
+  font-size: 3.6rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.certi-wrap__inner {
+  padding: 6rem;
+  background: #f8f8f8;
+}
+.certi-img img {
+  display: block;
+  width: 9.7rem;
+  height: 9.7rem;
+  margin: 5rem auto;
+}
+.certi-text {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3.2rem;
+  text-align: center;
+}
+
+@media (max-width: 1280px) {
+  .board-table__bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .board-table__bottom .btn-wrap--absolute {
+    position: relative;
+    top: 0;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .board-table__bottom .pagination-wrap {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .subVisual--talk {
+    background-image: url("../image/sub/img-subVisual--04_m.png");
+    background-position: center 0;
+  }
+  .certi-wrap__inner {
+    padding: 3rem;
+    padding-top: 3.5rem;
+  }
+  .certi-text {
+    font-size: 14px;
+    word-break: keep-all;
+  }
+  .certi-text br {
+    display: none;
+  }
+  .certi-img img {
+    margin: 20px auto;
+  }
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  .subVisual--dataBook {
+    background-image: url("../image/sub/mo-img-subVisual--dataBook.jpg");
+    background-position: center;
+  }
+}/*# sourceMappingURL=sub__thisYear.css.map */

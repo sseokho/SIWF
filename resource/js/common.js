@@ -8,7 +8,6 @@ $(document).ready(function () {
     searchModal();
     toggleSite();
     simpleBar();
-    
 
 
     /*$(window).resize(function(){
@@ -19,7 +18,7 @@ $(document).ready(function () {
 
             $('body').removeClass('fixed');
             $('.navWrap').removeClass('mopen');
-        }   
+        }
 
         else {
 
@@ -44,7 +43,7 @@ function headerScript(){
             }
         });
         sideMenu();
-      
+
     });
 
 };
@@ -56,7 +55,7 @@ function sideMenu(){
             if($(this).hasClass('is-click')){
                 $('.side-menu').addClass('is-open');
                 $('body').addClass("overflow-hidden");
-                
+
             }else{
                 $('.side-menu').removeClass('is-open');
                 $('body').removeClass("overflow-hidden");
@@ -71,7 +70,7 @@ function sideMenu(){
 
         $('.side-menu__depth01:not(.no-dep)').click(function(){
           $(this).toggleClass('is-open');
-          
+
           if($(this).hasClass('is-open')){
             $('.side-menu__depth01').not(this).removeClass("is-open")
             $('.side-menu__depth01').not(this).next().slideUp();
@@ -79,7 +78,7 @@ function sideMenu(){
             $(this).next().slideDown();
           } else{
             $(this).next().slideUp();
-            
+
           }
 
         });
@@ -91,7 +90,7 @@ function sideMenu(){
 function tab(){
     var a = $(".board-tab__list .board-tab__item");
     var b = a.length;
-    
+
     for (let i=0;i<b;i++){
         $('.board-tab__link').eq(0).addClass('active');
         $('.board-tab-panel').eq(0).addClass('open');
@@ -138,18 +137,18 @@ function dDay(){
         document.querySelector(".seconds").innerHTML = s;
     }
         //id가 d-day인 HTML코드에 내용 삽입
-        
+
     },1000);
 }
 */
 function callPop(){
 	$('.popup:not(.if-check)').on('click', function(){
 
-        
+
         var cp = $(this);
         var tabDisable;
         var nowScrollPos = $(window).scrollTop();
-        
+
         $('body').css('overflow', 'hidden');
         $("#" + $(this).data('id')).parents('.pop-wrap').show();
         $("#" + $(this).data('id')).show();
@@ -203,7 +202,7 @@ function mnav() {
 
 
 
-    
+
 }
 
 function searchModal() {
@@ -211,12 +210,12 @@ function searchModal() {
         $(".modal.search").fadeIn();
         $('body').addClass('fixed');
       });
-      
+
       $(".modal.search .modal-content .modal-body .modal-close").click(function(){
         $(".modal.search").fadeOut();
         $('body').removeClass('fixed');
       });
-      
+
 }
 
 function toggleSite() {
@@ -230,7 +229,7 @@ function toggleSite() {
         });
     }else{
     }
-	
+
 	/*$('header .gotoSite .d-flex .site').click(function(){
 		if(cont_w > 1200){
 		}else{
@@ -257,10 +256,10 @@ function simpleBar(){
 
 function main_pop(){
     $(document).ready(function () {
-        // 팝업창에 주어진 이름을 변수로 던져 저장된 쿠키가 있는지 확인 
+        // 팝업창에 주어진 이름을 변수로 던져 저장된 쿠키가 있는지 확인
         var popup1 = getCookie('popup1');
 
-        // 변수가 없을경우 팝업 출력 
+        // 변수가 없을경우 팝업 출력
         if (!popup1) {
             popUpAction('popup1');
         }
@@ -268,10 +267,10 @@ function main_pop(){
         $(".btn_close").click(function(){
             $(".popup-main").addClass('hidden');
         })
-        
+
     });
 
-    // 쿠키 가져오기 
+    // 쿠키 가져오기
     function getCookie(name) {
         var nameOfCookie = name + "=";
         var x = 0;
@@ -290,9 +289,9 @@ function main_pop(){
         }
 
         return "";
-    } // 24시간 기준 쿠키 설정하기 
+    } // 24시간 기준 쿠키 설정하기
 
-    // expiredays 후의 클릭한 시간까지 쿠키 설정 
+    // expiredays 후의 클릭한 시간까지 쿠키 설정
     function setCookie24(name, value, expiredays) {
         var todayDate = new Date();
 
@@ -301,7 +300,7 @@ function main_pop(){
         document.cookie = name + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";";
     }
 
-    // 00:00 시 기준 쿠키 설정하기 // expiredays 의 새벽 00:00:00 까지 쿠키 설정 
+    // 00:00 시 기준 쿠키 설정하기 // expiredays 의 새벽 00:00:00 까지 쿠키 설정
     function setCookie00(name, value, expiredays) {
         var todayDate = new Date(); todayDate = new Date(parseInt(todayDate.getTime() / 86400000) * 86400000 + 54000000);
 
@@ -316,23 +315,25 @@ function main_pop(){
 
     // 팝업출력
     function popUpAction(name) {
-        // name으로 해당 팝업창 열기 
+        // name으로 해당 팝업창 열기
         $("div[name=" + name + "]").fadeIn();
     }
 
-    // 닫기버튼 클릭 이벤트 
+    // 닫기버튼 클릭 이벤트
     $('.btn_close').click(function () {
         $(this).parent('.main_notice_pop').fadeOut();
 
-        // 오늘하루 보지않기 체크 확인 
+        // 오늘하루 보지않기 체크 확인
         if ($("input:checkbox[name=today_close1]").is(":checked") == true) {
             setCookie00('popup1', "done", 1);
         }
 
-        // name으로 해당 팝업창 닫기 
+        // name으로 해당 팝업창 닫기
         $(this).parent("div[name=" + name + "]").fadeOut();
-    }) 
+    })
 }
+
+
 
 
 
