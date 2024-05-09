@@ -1,3 +1,96 @@
+.board-layout {
+  width: 140rem;
+  margin: 0 auto;
+  max-width: 100%;
+}
+.board-layout__list-gallery .gallery-link {
+  display: block;
+}
+.board-layout__list-gallery .gallery-link__img {
+  width: 35.6rem;
+  display: block;
+}
+.board-layout__list-gallery .gallery-link__img + .gallery-link__data {
+  margin-top: 1.7rem;
+}
+.board-layout__list-gallery .gallery-link__img img {
+  width: 100%;
+}
+.board-layout__list-gallery .gallery-link__data {
+  text-align: center;
+}
+.board-layout__list-gallery .gallery-link__data span {
+  position: relative;
+}
+.board-layout__list-gallery .gallery-link__data .name {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #000;
+  padding-right: 1rem;
+}
+.board-layout__list-gallery .gallery-link__data .job:before,
+.board-layout__list-gallery .gallery-link__data .country:before {
+  position: absolute;
+  content: "/";
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.board-layout__list-gallery .gallery-link__data .job {
+  padding: 0 1rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #000;
+}
+.board-layout__list-gallery .gallery-link__data .country {
+  padding: 0 1rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #000;
+}
+.board-layout__view {
+  width: 100%;
+}
+.board-layout__lnb {
+  margin-right: 8rem;
+}
+.board-layout__lnb li {
+  position: relative;
+  border-top: 1px solid #ebebeb;
+  border-left: 1px solid #ebebeb;
+  border-right: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
+.board-layout__lnb li + li {
+  margin-top: -1px;
+}
+.board-layout__lnb li.active {
+  border-color: #000;
+}
+.board-layout__lnb li.active + li {
+  margin-top: 0;
+}
+.board-layout__lnb li.active::after {
+  background: #000;
+  z-index: 2;
+  bottom: 0;
+}
+.board-layout__lnb li.active a {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #000;
+}
+.board-layout__lnb li a {
+  padding: 1.4rem 0;
+  display: block;
+  width: 19rem;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #666;
+}
+
 .subContent__inner {
   width: 140rem;
   max-width: 100%;
@@ -7,9 +100,15 @@
 .sub-mainTit {
   padding-top: 5rem;
   font-size: 3rem;
-  font-weight: 600;
+  font-weight: 500;
   color: #000;
   text-align: center;
+}
+
+.sub-sec__tit {
+  font-size: 2.6rem;
+  font-weight: 500;
+  color: #000;
 }
 
 .subVisual {

@@ -1,6 +1,7 @@
 $(document).ready(function(){
     bradcrumb();
     liveSwiper();
+    accordion();
 })
 
 function bradcrumb(){
@@ -124,3 +125,23 @@ function liveSwiper() {
          
      
   }
+
+function accordion() {
+    $(".accordion-wrap__item.fix").addClass('on');
+
+    $('.accordion-wrap__item').hover(function () {
+        if ($(this).hasClass('on')) {
+          $(this).removeClass('on');
+        } else {
+          $(this).addClass('on');
+        }
+
+        if ($(".accordion-wrap__item").hasClass('on')) {
+            $(".accordion-wrap__item.fix").removeClass('on');
+        } else{
+            $(".accordion-wrap__item.fix").addClass('on');
+        }
+
+
+    });
+}

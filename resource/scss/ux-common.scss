@@ -1003,11 +1003,11 @@ footer {
         }
     }
     &--list{
-        width:11rem;
-        height:54px;
-        background-color:#555;
+        width:20rem;
+        height:5.4rem;
+        background-color:#000000;
         color:#fff;
-        font-size:2.2rem;
+        font-size:1.8rem;
         font-weight:400;
         transition: all 0.8s;
         &:hover{
@@ -1028,12 +1028,6 @@ footer {
             background-color:#e5413e;
             color:#fff;
         }
-    }
-    &--list{
-        width:11rem;
-        height:5.2rem;
-        font-weight: 600;
-        font-size:1.6rem;
     }
     &--download{
         width:117px;
@@ -1399,12 +1393,12 @@ footer {
         &__link{
             display: flex;
             align-items: center;
-            height: 41px;
-            padding: 0 19px;
             box-sizing: border-box;
+            background: #fff;
+            @include font(1.8,300,#666);
             &.active{
-                font-weight: 500;
-                color: #4264d0;
+                background: #000;
+                @include font(1.8,400,#fff);
             }
         }
         &-panel{
@@ -1735,50 +1729,55 @@ footer {
         width:100%;
         text-align:center;
     }
-    & a + a{
-        margin-left:0.5rem;
+    .link-move{
+        & + .link-move{
+            margin-left:0.4rem;
+        }
+    }
+    & a:not(.link-move) + a:not(.link-move){
+        margin-left:0.2rem;
     }
     > a{
         display:flex;
         align-items:center;
         justify-content:center;
-        width:4rem;
-        height:4rem;
+        width:3.6rem;
+        height:3.6rem;
         font-size:1.6rem;
         font-weight:300;
-        color:#777;
+        color:#000;
         border:none;
         &:not(.link-move){
-            border:1px solid #ccc;
+            
         }
         &.link-move{
             background-repeat:no-repeat;
             background-position:center center;
         }
         &.link-first{
-            margin-right:-1.9rem;
-            background-image:url('../image/common/icon/icon-moveFirst.png');
+            background-image:url('../image/common/icon/icon-moveFirst.svg');
             &.on{
-                background-image:url('../image/common/icon/icon-moveFirst--on.png');
+                background-image:url('../image/common/icon/icon-moveFirst.svg');
             }
         }
         &.link-prev{
-            background-image:url('../image/common/icon/icon-movePrev.png');
+            margin-right: 1rem;
+            background-image:url('../image/common/icon/icon-movePrev.svg');
             &.on{
-                background-image:url('../image/common/icon/icon-movePrev--on.png');
+                background-image:url('../image/common/icon/icon-movePrev.svg');
             }
         }
         &.link-next{
-            background-image:url('../image/common/icon/icon-moveNext.png');
+            margin-left: 1rem;
+            background-image:url('../image/common/icon/icon-moveNext.svg');
             &.on{
-                background-image:url('../image/common/icon/icon-moveNext--on.png');
+                background-image:url('../image/common/icon/icon-moveNext.svg');
             }
         }
         &.link-last{
-            margin-left:-1.9rem;
-            background-image:url('../image/common/icon/icon-moveLast.png');
+            background-image:url('../image/common/icon/icon-moveLast.svg');
             &.on{
-                background-image:url('../image/common/icon/icon-moveLast--on.png');
+                background-image:url('../image/common/icon/icon-moveLast.svg');
             }
         }
         &.on:not(.link-move){

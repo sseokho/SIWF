@@ -1,6 +1,104 @@
 @charset 'utf-8';
 @import 'mixin';
 
+.board-layout{
+    width: 140rem;
+    margin:0 auto;
+    max-width: 100%;
+    &__list{
+        &-gallery{
+            .gallery{
+                &-item{
+    
+                }
+                &-link{
+                    display: block;
+                    &__img{
+                        & + .gallery-link__data{
+                            margin-top:1.7rem;
+                        }
+                        width:35.6rem;
+                        display: block;
+                        img{
+                            width:100%;
+                        }
+                    }
+                    &__data{
+                        text-align: center;
+                        span{
+                            position: relative;
+                        }
+                        .name{
+                            @include font(2.2,500,#000);
+                            padding-right:1rem;
+                        }
+                        .job,
+                        .country{
+                            &:before{
+                                position:absolute;
+                                content:'/';
+                                left:0;
+                                top:50%;
+                                transform: translateY(-50%);
+                            }
+                        }
+                        .job{
+                            padding:0 1rem;
+                            @include font(1.8,300,#000);
+                            
+                        }
+                        .country{
+                            padding:0 1rem;
+                            @include font(1.8,300,#000);
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    &__view{
+        width: 100%;
+    }
+    &__lnb{
+        margin-right:8rem;
+        li{
+            position: relative;
+            border-top:1px solid #ebebeb;
+            border-left:1px solid #ebebeb;
+            border-right:1px solid #ebebeb;
+            border-bottom: 1px solid #ebebeb;
+            
+            & + li{
+                margin-top: -1px;
+            }
+            &.active{
+                
+                border-color: #000;
+                & + li{
+                    margin-top:0;
+                }
+                &::after{
+                    background: #000;
+                    z-index: 2;
+                    bottom: 0;
+                }
+                a{
+                    
+                    @include font(1.8,500,#000);
+                }
+            }
+            a{
+                padding:1.4rem 0;
+                display: block;
+                width:19rem;
+                    text-align: center;
+                @include font(1.8,300,#666);
+            }
+        }
+    }
+    
+}
 
 .subContent{
     &__inner{
@@ -11,10 +109,12 @@
 }
 .sub-mainTit{
     padding-top:5rem;
-    @include font(3,600,#000);
+    @include font(3,500,#000);
     text-align: center;
 }
-
+.sub-sec__tit{
+    @include font(2.6,500,#000);
+}
 .subVisual{
     &-logo{
         display:block;
