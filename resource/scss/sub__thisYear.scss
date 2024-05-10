@@ -84,11 +84,11 @@
                         padding:4rem 6rem;
                         .link-wrap{
                             a{
-                                border:1px solid #000;
+                                border:1px solid #233e80;
                                 width:max-content;
                                 display: block;
                                 padding:1.2rem 1.8rem;
-                                @include font(1.6,300,#000);
+                                @include font(1.6,300,#233e80);
                             }
                         }
                         
@@ -205,8 +205,8 @@
                         margin-top:2.2rem;
                         .linkMove{
                             display: block;
-                            border:1px solid #000;
-                            @include font(1.6,300,#000);
+                            border:1px solid #233e80;
+                            @include font(1.6,300,#233e80);
                             & + .linkMove{
                                 margin-left:0.4rem;
                             }
@@ -228,9 +228,35 @@
 .sub-container{
     &.thisYear{
         &__program{
+            .sub-mainTit{
+                & + .board-layout{
+                    margin-top:5rem;
+                    margin-bottom:8rem;
+                }
+            }
+            .attProgram-wrap__box--right{
+                display: flex;
+                align-items: center;
+            }
+            .explan-wrap__box-inner{
+                background:#F8F8F8;
+                padding:4rem 6rem;
+                .explan-box--tit{
+                    line-height: 4.4rem;
+                    @include font(3,500,#000);
+                    & + .explan-box--txt{
+                        margin-top:2.4rem;
+                    }
+                }
+                .explan-box--txt{
+                    line-height: 2.8rem;
+                    @include font(1.6,300,#000);
+                }
+            }
             .board-layout{
                 &.timeLine{
                     margin-top:5rem;
+                    margin-bottom: 8rem;
                     .board-tab__list{
                         display:flex;
                         li{
@@ -246,6 +272,163 @@
                         padding:1.4rem 0;
                         justify-content: center;
                     }
+                    .timeLine-all{
+                        &__item{
+                            & + .timeLine-all__item{
+                                margin-top:5rem;
+                            }
+                            &--square{
+                                @include font(2.2,500,#000);
+                                padding-bottom: 1.5rem;
+                                border-bottom: 1px solid #000;
+                            }
+                            &--content{
+                                display: flex;
+                                flex-direction: column;
+                            }
+                        }
+                    }
+                    .other-all{
+                        &__item{
+                            display:flex;
+                            padding:2rem;
+                            border:1px solid #ebebeb;
+                            & + .other-all__item{
+                                margin-top:1rem;
+                            }
+                            &--left{
+                                width:56rem;
+                                margin-right:6rem;
+                            }
+                            &--right{
+                                width: calc(100% - 62rem);
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                .link-wrap{
+                                    a{
+                                        display: block;
+                                        padding:0.8rem 1.2rem;
+                                        color:#233e80;
+                                        border:1px solid #233e80;
+                                        width:max-content;
+                                        line-height: 2.4rem;
+                                        @include font(1.6,300,#233e80);
+                                    }
+                                }
+                                .other-box{
+                                    &--tit{
+                                        @include font(2.6,400,#000);
+                                        line-height: 2.4rem;
+                                        & + .other-box--txt{
+                                            margin-top:2rem;
+                                        }
+                                    }
+                                    &--txt{
+                                        @include font(2,200,#000);
+                                        line-height: 3rem;
+                                        & + .other-box--data{
+                                            margin-top:2rem;
+                                        }
+                                    }
+                                    &--data{
+                                        line-height: 3.8rem;
+                                        @include font(1.6,300,#666);
+                                        & + .link-wrap{
+                                            margin-top:3.4rem;
+                                        }
+                                    }
+                                    
+                                }
+                            }
+                        }
+                    }
+                    .hourProgram-box{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding:3.4rem 0;
+                        border-bottom: 1px solid #ebebeb;
+                        &--left{
+
+                        }
+                        &--right{
+                            .hourProgram-picture-list{
+                                display: flex;
+                                width:61.5rem;
+                                flex-wrap: wrap;
+                                justify-content: flex-end;
+                                li{
+                                    width: 19.8rem;
+                                    height: 13.2rem;
+                                    & + li{
+                                        margin-left:0.6rem;
+                                    }
+                                    &:nth-child(n+4){
+                                        margin-top:0.6rem;
+                                        
+                                    }
+                                    &:nth-child(3n+1){
+                                        margin-left:0;
+                                    }
+                                }
+                                .cover{
+                                    width:100%;
+                                    height: 100%;
+                                    position: relative;
+                                    cursor: default;
+                                    display: block;
+                                    &::after{
+                                        position: absolute;
+                                        content:'';
+                                        display: block;
+                                        bottom:0;
+                                        height: 7.5rem;
+                                        width: 100%;
+                                        opacity: .6;
+                                        cursor: pointer;
+                                        background: rgb(0,0,0);
+                                        background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+                                    }
+                                    img{
+                                        width:100%;
+                                        height: 100%;
+                                    }
+                                    .name{
+                                        position: absolute;
+                                        bottom:1rem;
+                                        z-index: 2;
+                                        width: 100%;
+                                        text-align: center;
+                                        display: block;
+                                        @include font(1.6,500,#fff);
+                                    }
+                                }
+                            }
+                        }
+                        &-tit{
+                            @include font(2.4,400,#000);
+                            & + .link-wrap{
+                                margin-top:2rem;
+                            }
+                        }
+                        .link-wrap{
+                            display: flex;
+                            .linkMove{
+                                @include font(1.6,400,#233e80);
+                                border:1px solid #233e80;
+                                &--01{
+                                    padding:1rem 2rem;
+                                }
+                                &--02{
+                                    padding:1rem 1.2rem;
+                                }
+                                & + .linkMove{
+                                    margin-left:0.4rem;
+                                }
+                            }
+                        }
+                    }
                 }
             }
             .board-tab-content{
@@ -260,11 +443,51 @@
                     padding-bottom: 8rem;
                 }
             }
+            .txt-wrap{
+                width:100%;
+                .y-scroll{
+                    width: 100%;
+                    & + .poster-info{
+                        margin-top:4rem;
+                    }
+                    .simplebar-content{
+                        display: block;
+                        padding-right:4rem !important;
+                    }
+                    .simplebar-wrapper{
+                        height: 81rem;
+                    }
+                    .simplebar-content{
+                        width:100%;
+                    }
+                }
+            }
         }
         &__author{
             .board-layout{
                 margin-top:5rem;
                 margin-bottom: 8rem;
+            }
+            .board-tab-selector{
+                max-width: 113rem;
+            }
+            
+            .board-tab-selector{
+                & + .board-tab-content{
+                    margin-top:5rem;
+                }
+                & + .sch-wrap{
+                    margin-top:5rem;
+                }
+            }
+            .sch-wrap{
+                & + .board-tab-content{
+                    margin-top:2.4rem;
+                }
+            }
+            .board-tab__link{
+                padding:1.8rem 0;
+                justify-content: center;
             }
         }
         &.noOpen{

@@ -6,6 +6,7 @@
     margin:0 auto;
     max-width: 100%;
     &__list{
+        width:100%;
         &-gallery{
             .gallery{
                 &-item{
@@ -57,6 +58,44 @@
             }
         }
     }
+    .board-tab__list{
+        flex-wrap: wrap;
+        display:flex;
+        border-top:1px solid #ebebeb;
+            border-left:1px solid #ebebeb;
+        &.col{
+            &-7{
+                li{
+                    
+                    width: calc(100% / 7);
+                    
+                }
+            }
+        }
+        li{
+            position: relative;
+            margin:0;
+            border-right:1px solid #ebebeb;
+            border-bottom:1px solid #ebebeb;
+            
+            &.active{
+                
+                border-color: #233e80;
+                & + li{
+                    margin-top:0;
+                }
+                &::after{
+                    background: #233e80;
+                    z-index: 2;
+                    bottom: 0;
+                }
+                a{
+                    
+                    @include font(1.8,500,#233e80);
+                }
+            }
+        }
+    }
     &__view{
         width: 100%;
     }
@@ -64,28 +103,25 @@
         margin-right:8rem;
         li{
             position: relative;
-            border-top:1px solid #ebebeb;
-            border-left:1px solid #ebebeb;
-            border-right:1px solid #ebebeb;
-            border-bottom: 1px solid #ebebeb;
+            border:1px solid #ebebeb;
             
             & + li{
                 margin-top: -1px;
             }
             &.active{
                 
-                border-color: #000;
+                border-color: #233e80;
                 & + li{
                     margin-top:0;
                 }
                 &::after{
-                    background: #000;
+                    background: #233e80;
                     z-index: 2;
                     bottom: 0;
                 }
                 a{
                     
-                    @include font(1.8,500,#000);
+                    @include font(1.8,500,#233e80);
                 }
             }
             a{
@@ -268,7 +304,7 @@
   }
   .bradcrumb-link--home {
     padding:1.6rem 1.605rem;
-    background: #000;
+    background: #233e80;
   }
   .bradcrumb-link--home img {
     width: 100%;

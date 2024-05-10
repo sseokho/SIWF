@@ -21,6 +21,10 @@ function bradcrumb(){
     $('.sub_header').load('sub_header.html', function() {
         $(".depth_1 > li> a").addClass("depth1_a");
 
+        $(".depth_1 > li > a").click(function(){
+            $(".depth_1 > li > a").removeClass('active');
+            $(this).addClass('active');
+        })
         
 
         
