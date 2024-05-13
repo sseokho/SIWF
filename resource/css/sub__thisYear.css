@@ -228,9 +228,113 @@
   padding: 1.2rem 1.2rem;
 }
 
-.sub-container.thisYear__program .sub-mainTit + .board-layout {
+.sub-container.thisYear__video .board-layout__list-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem 3rem;
+  gap: 3rem 3rem;
+}
+.sub-container.thisYear__video .board-layout__list-gallery .gallery-link__img + .gallery-link__data {
+  margin: 0;
+}
+.sub-container.thisYear__video .sub-mainTit + .board-layout {
   margin-top: 5rem;
   margin-bottom: 8rem;
+}
+.sub-container.thisYear__video .gallery-link {
+  position: relative;
+}
+.sub-container.thisYear__video .gallery-link:hover .gallery-link__data {
+  opacity: 1;
+}
+.sub-container.thisYear__video .gallery-link__img {
+  display: block;
+}
+.sub-container.thisYear__video .gallery-link__img img {
+  width: 100%;
+}
+.sub-container.thisYear__video .gallery-link__data {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.sub-container.thisYear__video .gallery-link__data .tit {
+  display: block;
+  margin: 0 auto;
+  max-width: 22rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+  line-height: 3rem;
+}
+.sub-container.thisYear__video .gallery-link__data .tit + .creDate {
+  margin-top: 1rem;
+}
+.sub-container.thisYear__video .gallery-link__data .creDate {
+  display: block;
+  line-height: 2.4rem;
+  font-size: 1.6rem;
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.8);
+}
+.sub-container.thisYear__program .subContent-wrap {
+  padding-bottom: 8rem;
+}
+.sub-container.thisYear__program--exhi .board-detail + .explan-wrap {
+  margin-top: 4rem;
+}
+.sub-container.thisYear__program--exhi .board-layout__view .board-detail {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+}
+.sub-container.thisYear__program--exhi .board-layout__view .board-detail__cover {
+  display: block;
+  text-align: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: relative;
+  margin: 0 auto;
+}
+.sub-container.thisYear__program--exhi .board-layout__view .board-detail__cover img {
+  width: 100%;
+}
+.sub-container.thisYear__program--exhi .board-layout__view .board-detail__cover + .board-detail__cover-refer {
+  margin-top: 0.6rem;
+}
+.sub-container.thisYear__program--exhi .board-layout__view .board-detail__cover-refer {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #7d7d7d;
+  line-height: 2.1rem;
+  text-align: left;
+}
+.sub-container.thisYear__program .sub-mainTit + .board-layout {
+  margin-top: 5rem;
+}
+.sub-container.thisYear__program .board-layout + .btn-wrap {
+  margin-top: 5rem;
 }
 .sub-container.thisYear__program .attProgram-wrap__box--right {
   display: -webkit-box;
@@ -239,6 +343,21 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.sub-container.thisYear__program .explan-info li {
+  line-height: 3.4rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #000;
+}
+.sub-container.thisYear__program .explan-info li span {
+  margin-right: 3rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #000;
+}
+.sub-container.thisYear__program .explan-info + .explan-box--txt {
+  margin-top: 3rem;
 }
 .sub-container.thisYear__program .explan-wrap__box-inner {
   background: #F8F8F8;
@@ -250,18 +369,20 @@
   font-weight: 500;
   color: #000;
 }
+.sub-container.thisYear__program .explan-wrap__box-inner .explan-box--tit + .explan-info {
+  margin-top: 2.2rem;
+}
 .sub-container.thisYear__program .explan-wrap__box-inner .explan-box--tit + .explan-box--txt {
   margin-top: 2.4rem;
 }
 .sub-container.thisYear__program .explan-wrap__box-inner .explan-box--txt {
-  line-height: 2.8rem;
-  font-size: 1.6rem;
+  line-height: 3.1rem;
+  font-size: 1.8rem;
   font-weight: 300;
   color: #000;
 }
 .sub-container.thisYear__program .board-layout.timeLine {
   margin-top: 5rem;
-  margin-bottom: 8rem;
 }
 .sub-container.thisYear__program .board-layout.timeLine .board-tab__list {
   display: -webkit-box;
@@ -494,9 +615,14 @@
 .sub-container.thisYear__topic .txt-wrap .y-scroll .simplebar-content {
   width: 100%;
 }
+.sub-container.thisYear__author .subContent-wrap {
+  padding-bottom: 8rem;
+}
 .sub-container.thisYear__author .board-layout {
   margin-top: 5rem;
-  margin-bottom: 8rem;
+}
+.sub-container.thisYear__author .board-layout + .btn-wrap {
+  margin-top: 5rem;
 }
 .sub-container.thisYear__author .board-tab-selector {
   max-width: 113rem;

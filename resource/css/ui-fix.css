@@ -90,8 +90,17 @@
 .mt-10 {
   margin-top: 1rem;
 }
+.mt-14 {
+  margin-top: 1.4rem;
+}
+.mt-18 {
+  margin-top: 1.8rem;
+}
 .mt-20 {
   margin-top: 2rem;
+}
+.mt-22 {
+  margin-top: 2.2rem;
 }
 .mt-30 {
   margin-top: 3rem;
@@ -101,6 +110,9 @@
 }
 .mt-45 {
   margin-top: 4.5rem;
+}
+.mt-46 {
+  margin-top: 4.6rem;
 }
 .mt-50 {
   margin-top: 5rem;
@@ -237,6 +249,9 @@
 @media (max-width: 1400px) {
   .mt-20 {
     margin-top: 2rem;
+  }
+  .mt-22 {
+    margin-top: 2.2rem;
   }
   .mt-30 {
     margin-top: 3rem;

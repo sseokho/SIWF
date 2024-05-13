@@ -5,6 +5,334 @@
     width: 140rem;
     margin:0 auto;
     max-width: 100%;
+    .board-table{
+        margin-top:2.4rem;
+        
+        th{
+            font-size:1.8rem;
+            font-weight: 400;
+            vertical-align: middle;
+            
+        }
+        &__list{
+            .board-table__inner{
+                border-top:1px solid #000;
+            }
+            table{
+                table-layout: fixed;
+                min-width: 100%;
+                max-width: none;
+                position: relative;
+                
+            }   
+            thead{
+                th{
+                    font-weight: 500;
+                    background: #FAFAFA;
+                    color: #000;
+                    vertical-align: middle;
+                    text-align: center;
+                    border-bottom:1px solid #EBEBEB;
+                    border-top:none;
+                    &:first-child,&:last-child{
+                        border-left:none;
+                        border-right:none;
+                    }
+                }
+                tr{
+                    height:6rem;
+                    
+                    border-top:none;
+                    
+                }
+                .num{
+                    width: 9%;
+                }
+                .cat{
+                    width: auto;
+                    
+                }
+                .addfile{
+                    width: 8.6%;
+                }
+                .date{
+                    width: 12.9%;
+                }
+                .view{
+                    width: 12.9%;
+                }
+    
+    
+    
+                .category{
+                    width: 8.6%;
+                }
+                .name{
+                    width:16.65%;
+                }
+                .callnum{
+                    width:16.79%;
+                }
+                
+            }
+            tbody{
+                tr{
+                    &.fix{
+                        td{
+                            &:nth-child(1){
+                                background: url(../image/common/icon/icon-table-fix.png)  center / contain no-repeat;
+                                background-size: 2.2rem 2.2rem;
+                                
+                            }
+                            &.td-title{
+                                a{
+                                    color:#003e88;
+                                }
+                            }
+                        }
+                    }
+                    &:first-child{
+                        td{
+                            border-top:none;
+                        }
+                    }
+                    &.private{
+                        .cate{
+                            &:after{
+                                content:'';
+                                width:1.8rem;
+                                height:1.8rem;
+                                margin-left: 0.5rem;
+                                background: url(../image/common/icon/icon_private.png) no-repeat center;
+                                background-size: contain;
+                            }
+                        }
+                    }
+                }
+                td{
+                    
+                    height: 6rem;
+                    font-size: 1.8rem;
+                    text-align: center;
+                    vertical-align: middle;
+                    border-top:none;
+                    border-bottom:1px solid #EBEBEB;
+                    color:#333;
+                    font-weight: 300;
+                    box-sizing: border-box;
+                    &:nth-child(4){
+                        font-weight: 300;
+                    }
+                    &:nth-child(2){
+                        text-align: left;
+                        padding-left:3rem;
+                    }
+                    &:first-child,&:last-child{
+                        border-left:none;
+                        border-right:none;
+                    }
+                    a{
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+            .td{
+                &-title{
+                    padding:0 3rem;
+                    text-align: left;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    &__inner{
+                        @include d-flex;
+                        @include align-center;
+                    }
+                    .icon-secret{
+                        display: inline-block;
+                        width: 1.3rem;
+                        height:2rem;
+                        margin-left: 1rem;
+                        vertical-align: top;
+                        background: url(../image/common/icon/icon-secret.png) no-repeat center;
+                        background-size: 1.3rem 2rem;
+                        flex:none;
+                    }
+                }
+                &-titlelink{
+                    @include ellipsis(1);
+                    &.cate{
+                        position: relative;
+                        padding-left:5.6rem;;
+                        height:100%;
+                        display:flex;
+                        align-items: center;
+                        &.cate--noticex.cate--notice{
+                            padding-left:5.6rem;;
+                        }
+                        &.cate--noticex:not(.cate--notice){
+                            padding-left:0;
+                            
+                        }
+                        &:before{
+                            display:block;
+                            position: absolute;
+                            left:0;
+                            height:3.7rem;
+                            font-size:1.4rem;
+                            font-weight: 500;
+                            line-height: 3.7rem;
+                            padding:0 1.1rem;
+                            color:#fff;
+                            border-radius: 0.4rem;
+                        }
+                        &--notice{
+                            &:before{
+                                content:'공지';
+                                background: #E54125;
+                            }
+                        }
+                        &--festival{
+                            &:before{
+                                content:'행사';
+                                background: #2D3C8A;
+                            }
+                        }
+                        &--research{
+                            &:before{
+                                content:'연구';
+                                background: #E56A25;
+                            }
+                        }
+                        &--etc{
+                            &:before{
+                                content:'기타';
+                                background: #6D6E67;
+                            }
+                        }
+                    }
+    
+                }
+                &-filelink{
+                    display: inline-block;
+                    width:2.2rem;
+                    height:2.2rem;
+                    background: url(../image/common/icon/icon-download__table.png) no-repeat center;
+                    background-size: cover;
+                }
+                &-process{
+                    .badge-process{
+                        @include d-flex;
+                        align-items: center;
+                        justify-content: center;
+                        width:9.2rem;
+                        height:4rem;
+                        margin: 0 auto;
+                        border:1px solid #4568a9;
+                        font-size:1.6rem;
+                        color:#4568a9;
+                        box-sizing: border-box;
+                        &__end{
+                            background: #4568a9;
+                            color:#ffffff;
+                        }
+                    }
+                }
+                &-work{
+                    text-align: left;
+                    //@include ellipsis(1)
+                    line-height: normal;
+                }
+            }
+            &--press{
+                thead{
+                    .num{
+                        width: 8.572%;
+                    }
+                    .press{
+                        width: 8.6%;
+                    }
+                }
+                
+                .td-titlelink{
+                    padding-left:3rem;
+                    background: url(../image/common/icon/icon-pressLink.png) no-repeat left center;
+                    background-size: 1.7rem;
+                }
+    
+            }
+            &--qna{
+                thead{
+                    .num, .process, .author{
+                        width: 8.572%;
+                    }
+                }
+            }
+            &--org{
+                thead{
+                    tr{
+                        height: 6rem;
+                        border-top-width: 1px;
+                    }
+                }
+                tbody{
+                    td{
+                        height: 6rem;
+                        padding:1.5rem 0;
+                    }
+                }
+            }
+            
+        }
+        &__view{
+            table{
+                th{
+                    padding-left:3.3rem;
+                    text-align: left;
+                    &:first-child,&:last-child{
+                        border-left:none;
+                    }
+                }
+                tbody{
+                    tr{
+                        &:nth-child(1){
+                            border-top:1px solid #DEDEDE;
+                        }
+                    }
+                }
+                
+            }
+            .ver-th{
+                width: 28rem;
+            }
+            tr{
+                border-bottom:1px solid #DEDEDE;
+            }
+            th, td{
+                vertical-align: middle;
+            }
+            th{
+                height: 7rem;
+                border-right:1px solid #DEDEDE;
+                background: #ECF4FA;
+            }
+            td{
+                height: 7rem;
+                padding: 0 3rem;
+                padding-right:0;
+                text-align: left;
+            }
+        }
+        &__bottom{
+            position: relative;
+            padding-top:4.5rem;
+            .btn-wrap--absolute{
+                top: 3rem;
+                right:0;
+            }
+            .pagination-wrap{
+                margin-top: 0;
+            }
+        }
+    }
     &__list{
         width:100%;
         &-gallery{
@@ -18,7 +346,6 @@
                         & + .gallery-link__data{
                             margin-top:1.7rem;
                         }
-                        width:35.6rem;
                         display: block;
                         img{
                             width:100%;
