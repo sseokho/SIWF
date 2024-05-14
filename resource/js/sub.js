@@ -2,6 +2,7 @@ $(document).ready(function(){
     bradcrumb();
     liveSwiper();
     accordion();
+    td_file();
 })
 
 function bradcrumb(){
@@ -148,4 +149,23 @@ function accordion() {
 
 
     });
+}
+
+function td_file(){
+    var td_file = $(".td-file")
+    
+    td_file.each((i,v) => {
+        
+        
+        if(td_file.eq(i).find("a").length){
+            td_file.eq(i).parent('tr').removeClass("noFIle");
+        } else{
+            td_file.eq(i).parent('tr').addClass("noFile");
+            
+        }
+
+
+    })
+    
+    
 }

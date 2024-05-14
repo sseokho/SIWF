@@ -347,6 +347,61 @@
   }
 }
 @media (min-width: 320px) and (max-width: 1024px) {
+  .sub-container.intro .subVisual__inner {
+    padding: 13rem 4rem 4rem;
+  }
+  .sub-container.intro .subVisual-txt {
+    font-size: 2.8rem;
+    line-height: 5rem;
+  }
+  .sub-container.intro .subContent-wrap {
+    margin-bottom: 0;
+  }
+  .sub-container.intro .subContent-wrap .subContent__narrow {
+    padding: 9rem 4rem 12rem;
+  }
+  .sub-container.intro .subContent-wrap .subContent__wide {
+    padding: 5rem 4rem 8rem;
+  }
+  .sub-container.intro .stat-box {
+    height: 100%;
+  }
+  .sub-container.intro .stat-box .left {
+    width: 100%;
+    position: unset;
+  }
+  .sub-container.intro .stat-box .left .tit {
+    font-size: 3.8rem;
+    line-height: 5.5rem;
+  }
+  .sub-container.intro .stat-box .left .txt {
+    font-size: 2.4rem;
+  }
+  .sub-container.intro .stat-box .right {
+    position: unset;
+    height: 60rem;
+    width: 100%;
+  }
+  .sub-container.intro .stat-box .right .stat-box__list {
+    margin: 0;
+    width: 100%;
+  }
+  .sub-container.intro .stat-box .right .stat-box__list .stat-content .number {
+    font-size: 7rem;
+  }
+  .sub-container.intro .stat-box .right .stat-box__list .stat-content .unit {
+    margin-top: 2rem;
+    font-size: 2.4rem;
+    display: block;
+    text-align: center;
+  }
+  .sub-container.intro .stat-box .right .stat-box__list .stat-tit {
+    font-size: 2.6rem;
+  }
+  .sub-container.intro .txt-wrap .txt {
+    line-height: 5rem;
+    font-size: 2.8rem;
+  }
   .subVisual--dataBook {
     background-image: url("../image/sub/mo-img-subVisual--dataBook.jpg");
     background-position: center;

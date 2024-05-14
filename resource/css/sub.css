@@ -149,6 +149,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .board-layout .board-table__list .td-titlelink.cate.cate--noticex.cate--notice {
   padding-left: 5.6rem;
@@ -464,6 +467,7 @@
   width: 140rem;
   margin: 0 auto;
   height: 100%;
+  max-width: 100%;
 }
 .subVisual__crumb {
   display: -webkit-box;
@@ -616,7 +620,7 @@
 }
 
 .bradcrumb__tit.is-active {
-  color: #aa7957;
+  color: #000;
   background: url("../image/sub/icon-select--down__on.svg") no-repeat calc(100% - 3rem) center/2.2rem 1.1rem;
 }
 
@@ -651,6 +655,51 @@
 }
 
 @media (min-width: 320px) and (max-width: 1024px) {
+  .board-layout .board-tab__list.col-7 li {
+    width: 25%;
+  }
+  .sub-mainTit {
+    font-size: 4.2rem;
+    font-weight: 500;
+    color: #000;
+    padding-top: 6rem;
+  }
+  .bradcrumb__inner {
+    height: 9rem;
+  }
+  .bradcrumb__inner .bradcrumb__links {
+    top: 9rem;
+  }
+  .bradcrumb__inner .bradcrumb__links a {
+    height: 9rem;
+  }
+  .bradcrumb__inner .bradcrumb-item button {
+    font-size: 2.6rem;
+  }
+  .bradcrumb__inner .bradcrumb__tit {
+    background: url("../image/sub/icon-select--down.svg") no-repeat calc(100% - 3rem) center/2.2rem 1.1rem;
+  }
+  .bradcrumb__inner .bradcrumb__links a {
+    font-size: 2.6rem;
+  }
+  .bradcrumb__inner .bradcrumb-link--home {
+    width: 9rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .bradcrumb__inner .bradcrumb-link--home img {
+    width: 2.724rem;
+    height: 2.724rem;
+    -o-object-position: center;
+       object-position: center;
+  }
   .subContent-wrap {
     margin-top: 3rem;
     margin-bottom: 4rem;

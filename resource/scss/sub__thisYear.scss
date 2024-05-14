@@ -912,6 +912,72 @@
 }
 
 @media (min-width:320px) and (max-width:1024px){
+    .sub-container{
+        &.thisYear{
+            &__author{
+                .board-layout{
+                    display: flex;
+                    flex-wrap: wrap;
+                    .board-layout__lnb{
+                        display: flex;
+                        margin:0;
+                    }
+                }
+                
+            }
+            .poster-info{
+                li{
+                    font-size: 2.6rem;
+                    span{
+                        font-size: 2.6rem;
+                    }
+                }
+            }
+            .txt-wrap{
+                margin:0;
+                padding:3.4rem;
+                .y-scroll{
+                    & + .poster-info{
+                        margin-top:5rem;
+                    }
+                }
+                .sub-tit{
+                    font-size: 2.6rem;
+                }
+                .tit{
+                    font-size: 5rem;
+                    & + .txt-zip{
+                        margin-top:5rem;
+                    }
+                }
+                .txt-zip{
+                    .txt{
+                        font-size: 2.8rem;
+                        line-height: 4rem;
+                    }
+                }
+            }
+            &__topic{
+                .sub-mainTit{
+                    & + .poster-wrap{
+                        padding-bottom: 12rem;
+                    }
+                }
+                .poster-wrap{
+                    padding:0 4rem;
+                    flex-direction: column;
+                }
+                .poster-img{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    .img{
+                        width:100%;
+                    }
+                }
+            }
+        }
+    }
     .subVisual{
         &--dataBook{
             background-image:url('../image/sub/mo-img-subVisual--dataBook.jpg');

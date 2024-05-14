@@ -355,6 +355,75 @@
 }
 
 @media (min-width:320px) and (max-width:1024px){
+    .sub-container{
+        &.intro{
+            .subVisual__inner{
+                padding:13rem 4rem 4rem;
+            }
+            .subVisual-txt{
+                font-size: 2.8rem;
+                line-height: 5rem;
+                
+            }
+            .subContent-wrap{
+                margin-bottom: 0;
+                .subContent__narrow {
+                    padding:9rem 4rem 12rem;
+                }
+                .subContent__wide{
+                    padding:5rem 4rem 8rem;
+                }
+            }
+            .stat-box{
+                height: 100%;
+                .left{
+                    .tit{
+                        font-size:3.8rem;
+                        line-height: 5.5rem;
+                    }
+                    .txt{
+                        font-size: 2.4rem;
+                    }
+                    width:100%;
+                    position: unset;
+                }
+                .right{
+                    position: unset;
+                    height: 60rem;
+                    width:100%;
+                    .stat-box__list{
+                        margin:0;
+                        width:100%;
+                        .stat-content{
+                            .number{
+                                font-size: 7rem;
+                            }
+                            .unit{
+                                margin-top:2rem;
+                                font-size: 2.4rem;
+                                display: block;
+                                text-align: center;
+                            }
+                        }
+                        .stat-tit{
+                            font-size: 2.6rem;
+                        }
+                    }
+                }
+            }
+            .txt-wrap{
+                .txt{
+                    line-height: 5rem;
+                    font-size: 2.8rem;
+                }
+                .logo{
+                    & + .txt{
+                        
+                    }
+                }
+            }
+        }
+    }
     .subVisual{
         &--dataBook{
             background-image:url('../image/sub/mo-img-subVisual--dataBook.jpg');

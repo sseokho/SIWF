@@ -142,6 +142,7 @@
                     text-align: left;
                     overflow: hidden;
                     text-overflow: ellipsis;
+                    
                     &__inner{
                         @include d-flex;
                         @include align-center;
@@ -165,6 +166,7 @@
                         height:100%;
                         display:flex;
                         align-items: center;
+                        @include ellipsis(1);
                         &.cate--noticex.cate--notice{
                             padding-left:5.6rem;;
                         }
@@ -515,6 +517,7 @@
         width: 140rem;
         margin:0 auto;
         height: 100%;
+        max-width: 100%;
     }
     &__crumb{
         display:flex;
@@ -675,7 +678,7 @@
     text-align: left;
   }
   .bradcrumb__tit.is-active {
-    color: #aa7957;
+    color: #000;
     background: url("../image/sub/icon-select--down__on.svg") no-repeat calc(100% - 3rem) center/2.2rem 1.1rem;
   }
   .bradcrumb__links {
@@ -706,9 +709,62 @@
     border-bottom: none;
   }
 
-
+@media (min-width:720px) and (max-width:1024px){
+    
+}
 
 @media (min-width:320px) and (max-width:1024px){
+    .board-layout{
+        .board-tab__list{
+            &.col{
+                &-7{
+                    li{
+                        
+                        width: calc(100% / 4);
+                        
+                    }
+                }
+            }
+        }
+    }
+    .sub-mainTit{
+        @include font(4.2,500,#000);
+        padding-top:6rem;
+    }
+    .bradcrumb__inner{
+        height:9rem;
+        .bradcrumb__links{
+            top:9rem;
+            a{
+                height:9rem;
+            }
+        }
+        .bradcrumb-item{
+            button{
+                font-size: 2.6rem;
+            }
+        }
+        .bradcrumb__tit{
+            background:url("../image/sub/icon-select--down.svg") no-repeat calc(100% - 3rem) center/2.2rem 1.1rem;
+        }
+        .bradcrumb__links{
+            a{
+                font-size: 2.6rem;
+            }
+        }
+        .bradcrumb-link--home{
+            width: 9rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 2.724rem;
+                height: 2.724rem;
+                object-position: center;
+            }
+        }
+    }
+
     .sub{
         &Content{
             &-wrap{
