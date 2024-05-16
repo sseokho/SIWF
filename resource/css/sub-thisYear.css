@@ -64,14 +64,25 @@
   display: -ms-flexbox;
   display: flex;
 }
-.board-layout__view .explan-wrap__box + .explan-wrap__refer {
+.board-layout__view .explan-wrap__box--left {
+  margin-right: 2rem;
+  position: relative;
+}
+.board-layout__view .explan-wrap__box--left .cover {
+  width: 45rem;
+  height: 33.1rem;
+  display: block;
+}
+.board-layout__view .explan-wrap__box--left .cover img {
+  width: 100%;
+  height: 100%;
+}
+.board-layout__view .explan-wrap__box--left .cover + .explan-wrap__refer {
   margin-top: 1rem;
+  position: absolute;
   font-size: 1.4rem;
   font-weight: 300;
   color: #7d7d7d;
-}
-.board-layout__view .explan-wrap__box--left {
-  margin-right: 2rem;
 }
 .board-layout__view .explan-wrap__box--right {
   background: #f8f8f8;
@@ -89,7 +100,7 @@
   color: #233e80;
 }
 .board-layout__view .explan-wrap + .attProgram-wrap {
-  margin-top: 5rem;
+  margin-top: 7.7rem;
 }
 .board-layout__view .attProgram-wrap .sub-sec__tit {
   margin-bottom: 2rem;

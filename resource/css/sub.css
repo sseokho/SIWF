@@ -631,8 +631,11 @@
   left: 0;
   width: 100%;
   background-color: #fff;
-  border: 1px solid #d2d2d2;
+  border: 1px solid #ebebeb;
   z-index: 2;
+}
+.bradcrumb__links li + li {
+  border-top: 1px solid #ebebeb;
 }
 
 .bradcrumb__links a {
@@ -670,8 +673,11 @@
   .bradcrumb__inner .bradcrumb__links {
     top: 9rem;
   }
-  .bradcrumb__inner .bradcrumb__links a {
+  .bradcrumb__inner .bradcrumb__links li a {
     height: 9rem;
+  }
+  .bradcrumb__inner .bradcrumb-item.next > button {
+    color: #233e80;
   }
   .bradcrumb__inner .bradcrumb-item button {
     font-size: 2.6rem;

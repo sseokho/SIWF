@@ -653,7 +653,9 @@
         -ms-flex-align: center;
             align-items: center;
     width: 33rem;
+    
   }
+ 
   .bradcrumb-item::after {
     position: absolute;
     top: 50%;
@@ -688,8 +690,13 @@
     left: 0;
     width: 100%;
     background-color: #fff;
-    border: 1px solid #d2d2d2;
+    border: 1px solid #ebebeb;
     z-index: 2;
+    li{
+        & + li{
+            border-top: 1px solid #ebebeb;
+        }
+    }
   }
   .bradcrumb__links a {
     display: -webkit-box;
@@ -735,11 +742,19 @@
         height:9rem;
         .bradcrumb__links{
             top:9rem;
-            a{
-                height:9rem;
+            li{
+                a{
+                    height:9rem;
+                }
             }
+            
         }
         .bradcrumb-item{
+            &.next{
+                > button{
+                    color:#233e80;
+                }
+            }
             button{
                 font-size: 2.6rem;
             }
