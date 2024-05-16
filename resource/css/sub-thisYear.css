@@ -941,6 +941,42 @@
   }
 }
 @media (min-width: 320px) and (max-width: 1024px) {
+  .sub-container.thisYear .board-layout.d-flex {
+    padding: 0 4rem;
+  }
+  .sub-container.thisYear__video .board-layout__list-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4.6rem 1rem;
+    grid-gap: 4.6rem 1rem;
+  }
+  .sub-container.thisYear__video .board-layout {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .sub-container.thisYear__video .board-layout .board-layout__lnb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    width: 100%;
+  }
+  .sub-container.thisYear__video .board-layout .board-layout__lnb + .board-layout__list {
+    margin-top: 6rem;
+  }
+  .sub-container.thisYear__video .board-layout .board-layout__lnb li {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .sub-container.thisYear__video .board-layout .board-layout__lnb li a {
+    width: 100%;
+    font-size: 2.8rem;
+    line-height: 4.1rem;
+    padding: 2rem 0;
+  }
   .sub-container.thisYear__author .board-layout {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -953,6 +989,21 @@
     display: -ms-flexbox;
     display: flex;
     margin: 0;
+    width: 100%;
+  }
+  .sub-container.thisYear__author .board-layout .board-layout__lnb + .board-layout__list {
+    margin-top: 6rem;
+  }
+  .sub-container.thisYear__author .board-layout .board-layout__lnb li {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .sub-container.thisYear__author .board-layout .board-layout__lnb li a {
+    width: 100%;
+    font-size: 2.8rem;
+    line-height: 4.1rem;
+    padding: 2rem 0;
   }
   .sub-container.thisYear .poster-info li {
     font-size: 2.6rem;
@@ -1001,6 +1052,22 @@
   }
   .sub-container.thisYear__topic .poster-img .img {
     width: 100%;
+  }
+  .board-layout__list-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4.6rem 1rem;
+    grid-gap: 4.6rem 1rem;
+  }
+  .board-layout__list-gallery .gallery-link__data .name {
+    font-size: 2.8rem;
+    padding-right: 0.6rem;
+  }
+  .board-layout__list-gallery .gallery-link__data .job {
+    font-size: 2rem;
+    padding: 0 1rem 0 1.6rem;
+  }
+  .board-layout__list-gallery .gallery-link__data .country {
+    padding: 0 1rem 0 1.6rem;
   }
   .subVisual--dataBook {
     background-image: url("../image/sub/mo-img-subVisual--dataBook.jpg");

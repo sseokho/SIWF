@@ -929,6 +929,37 @@
 @media (min-width:320px) and (max-width:1024px){
     .sub-container{
         &.thisYear{
+            .board-layout.d-flex{
+                padding:0 4rem;
+            }
+            &__video{
+                .board-layout__list-gallery{
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 4.6rem 1rem;
+                    grid-gap: 4.6rem 1rem;
+                }
+                .board-layout{
+                    display: flex;
+                    flex-wrap: wrap;
+                    .board-layout__lnb{
+                        display: flex;
+                        margin:0;
+                        width: 100%;
+                        & + .board-layout__list{
+                            margin-top:6rem;
+                        }
+                        li{
+                            flex:1;
+                            a{
+                                width: 100%;
+                                font-size: 2.8rem;
+                                line-height: 4.1rem;
+                                padding:2rem 0;
+                            }
+                        }
+                    }
+                }
+            }
             &__author{
                 .board-layout{
                     display: flex;
@@ -936,6 +967,19 @@
                     .board-layout__lnb{
                         display: flex;
                         margin:0;
+                        width: 100%;
+                        & + .board-layout__list{
+                            margin-top:6rem;
+                        }
+                        li{
+                            flex:1;
+                            a{
+                                width: 100%;
+                                font-size: 2.8rem;
+                                line-height: 4.1rem;
+                                padding:2rem 0;
+                            }
+                        }
                     }
                 }
                 
@@ -990,6 +1034,24 @@
                         width:100%;
                     }
                 }
+            }
+        }
+    }
+    .board-layout__list-gallery{
+        grid-template-columns: repeat(2, 1fr);
+        gap:4.6rem 1rem;
+        grid-gap:4.6rem 1rem;
+        .gallery-link__data{
+            .name{
+                font-size: 2.8rem;
+                padding-right:0.6rem;
+            }
+            .job{
+                font-size: 2rem;
+                padding:0 1rem 0 1.6rem;
+            }
+            .country{
+                padding:0 1rem 0 1.6rem;
             }
         }
     }

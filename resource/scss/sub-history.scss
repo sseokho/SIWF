@@ -242,6 +242,65 @@
 }
 .sub-container{
     &.history{
+        &__video{
+            .board-layout__list-gallery{
+                @include d-grid-column--repeat(3,3,3);
+                .gallery-link__img{
+                    & + .gallery-link__data{
+                        margin:0;
+                    }
+                }
+            }
+            .sub-mainTit{
+                & + .board-layout{
+                    margin-top:5rem;
+                    margin-bottom: 8rem;
+                }
+            }
+            .gallery-link{
+                position: relative;
+                &:hover{
+                    .gallery-link__data{
+                        opacity: 1;
+                    }
+                }
+            }
+            .gallery-link__img{
+                display: block;
+                img{
+                    width:100%;
+                }
+            }
+            .gallery-link__data{
+                position: absolute;
+                left:0;
+                top:0;
+                background: rgba(0,0,0,75%);
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                transition: all 0.1s;
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                .tit{
+                    display: block;
+                    margin:0 auto;
+                    max-width: 22rem;
+                    @include font(2,500,#fff);
+                    line-height: 3rem;
+                    & + .creDate{
+                        margin-top:1rem;
+                    }
+                }
+                .creDate{
+                    display: block;
+                    line-height: 2.4rem;
+                    @include font(1.6,200,rgba(255,255,255,80%));
+                }
+            }
+        }
         &__program{
             &--exhi{
                 display: block;
@@ -1223,6 +1282,34 @@
 @media (min-width:320px) and (max-width:1024px){
     .sub-container{
         &.history{
+            &__video{
+                .board-layout__list-gallery{
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 4.6rem 1rem;
+                    grid-gap: 4.6rem 1rem;
+                }
+                .board-layout{
+                    display: flex;
+                    flex-wrap: wrap;
+                    .board-layout__lnb{
+                        display: flex;
+                        margin:0;
+                        width: 100%;
+                        & + .board-layout__list{
+                            margin-top:6rem;
+                        }
+                        li{
+                            flex:1;
+                            a{
+                                width: 100%;
+                                font-size: 2.8rem;
+                                line-height: 4.1rem;
+                                padding:2rem 0;
+                            }
+                        }
+                    }
+                }
+            }
             &__author{
                 .explan-wrap{
                     display: flex;
