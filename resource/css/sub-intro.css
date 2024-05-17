@@ -16,9 +16,6 @@
   margin-top: 3.4rem;
   word-break: keep-all;
 }
-.sub-container.intro .subVisual-logo + .subVisual-txt br {
-  display: none;
-}
 .sub-container.intro .subVisual-txt {
   font-size: 2rem;
   font-weight: 300;

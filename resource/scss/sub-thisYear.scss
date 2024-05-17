@@ -952,8 +952,12 @@
     
     .sub-container{
         &.thisYear{
+            .subContent-wrap{
+                padding:0 4rem 12rem;
+            }
             .board-layout.d-flex{
-                padding:0 4rem;
+                padding:0;
+                margin-bottom: 0;
             }
             &__author{
                 
@@ -1184,8 +1188,8 @@
             &__video{
                 .board-layout__list-gallery{
                     grid-template-columns: repeat(2, 1fr);
-                    gap: 4.6rem 1rem;
-                    grid-gap: 4.6rem 1rem;
+                    gap: 1.5rem;
+                    grid-gap: 1.5rem;
                 }
                 .board-layout{
                     display: flex;
@@ -1372,8 +1376,8 @@
     }
     .board-layout__list-gallery{
         grid-template-columns: repeat(2, 1fr);
-        gap:4.6rem 1rem;
-        grid-gap:4.6rem 1rem;
+        gap:1.5rem;
+        grid-gap:1.5rem;
         .gallery-link__data{
             .name{
                 font-size: 2.8rem;

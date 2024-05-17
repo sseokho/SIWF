@@ -351,6 +351,7 @@ section h2 {
   height: 0.6rem;
   left: 50%;
   top: 50%;
+  background: #fff;
   border-radius: 999px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -379,14 +380,14 @@ section h2 {
   width: 0.6rem;
   height: 0.6rem;
   z-index: 2;
-  background: #233E80;
+  background: #fff;
 }
 .mainVisual .firstSwiper .swiper-state .swiper-pagination-bullet-active:after {
   width: 1.4rem;
   height: 1.4rem;
   z-index: 3;
   background: transparent;
-  border: 1px solid #233E80;
+  border: 1px solid #fff;
 }
 .mainVisual .firstSwiper .swiper-state .control {
   display: -webkit-box;
@@ -2212,13 +2213,13 @@ section h2 {
   .container .mainVisual .firstSwiper .swiper-state .swiper-pagination-bullet-active:before {
     width: 1.2rem;
     height: 1.2rem;
-    background: #003E88;
+    background: #fff;
   }
   .container .mainVisual .firstSwiper .swiper-state .swiper-pagination-bullet-active:after {
     width: 2.6rem;
     height: 2.6rem;
     background: transparent;
-    border: 1px solid #003E88;
+    border: 1px solid #fff;
   }
   .container .mainVisual .conBox {
     grid-row: 2/3;

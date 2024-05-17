@@ -293,6 +293,7 @@ section{
                         height:0.6rem;
                         left:50%;
                         top:50%;
+                        background: #fff;
                         border-radius: 999px;
                         transform: translate(-50%,-50%);
                         
@@ -319,14 +320,14 @@ section{
                             width:0.6rem;
                             height:0.6rem;
                             z-index: 2;
-                            background:#233E80;
+                            background:#fff;
                         }
                         &:after{
                             width:1.4rem;
                             height:1.4rem;
                             z-index: 3;
                             background: transparent;
-                            border:1px solid #233E80;
+                            border:1px solid #fff;
 
                         }
                     }
@@ -2335,13 +2336,13 @@ section{
                                 &:before{
                                     width:1.2rem;
                                     height:1.2rem;
-                                    background:#003E88;
+                                    background:#fff;
                                 }
                                 &:after{
                                     width:2.6rem;
                                     height:2.6rem;
                                     background: transparent;
-                                    border:1px solid #003E88;
+                                    border:1px solid #fff;
                                     
                                 }
                             }
