@@ -13,7 +13,7 @@
 	/* font-family: 'Noto Sans CJKR', sans-serif !important; */
 	font-style: normal;
     vertical-align: baseline;
-
+    
     -webkit-text-size-adjust : none;  /* 크롬, 사파리, 오페라 신버전 */
     -ms-text-size-adjust : none;  /* IE */
     -moz-text-size-adjust : none;  /* 파이어폭스 */

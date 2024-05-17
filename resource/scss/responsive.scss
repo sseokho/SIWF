@@ -69,3 +69,15 @@ html{
     }
 }
 
+@media (min-width: 1025px) and (max-width: 1200px) {
+    body, html {
+        font-size: calc(62.5% / 1.4);
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    body, html {
+        font-size: calc(62.5% / 1.2)
+    }
+}
+

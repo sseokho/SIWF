@@ -23,18 +23,22 @@
                     <a href="/" class="bradcrumb-link--home">
                         <img src="../../resource/image/sub/img-bradcrumb--home.svg" alt="">
                     </a>
-                    <div class="bradcrumb-list">
-                        <div class="bradcrumb-item">
-                            <button type="button" class="bradcrumb__tit">소식</button>
-                            <div class="bradcrumb__links">
-                            </div>
-                        </div>
-                        <div class="bradcrumb-item">
-                            <button type="button" class="bradcrumb__tit is-active">공지사항</button>
-                            <div class="bradcrumb__links">
-                            </div>
-                        </div>
-                    </div>
+                    <ul class="bradcrumb-list">
+                        <li class="bradcrumb-item">
+                            <button type="button" class="bradcrumb__tit">01</button>
+                            <ul class="bradcrumb__links">
+                                <li><a>aaa</a></li>
+                                <li><a>aaa</a></li>
+                            </ul>
+                        </li>
+                        <li class="bradcrumb-item next">
+                            <button type="button" class="bradcrumb__tit">02</button>
+                            <ul class="bradcrumb__links">
+                                <li><a>aaa</a></li>
+                                <li><a>aaa</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </article>
@@ -86,13 +90,21 @@
                                     <!-- 한 페이지 노출 게시물 개수: 10개 
                                         최상단 공지 tr에 fix 추가
                                     -->
+                                    <!-- 검색결과가 없을 때
+                                        <td class="no-data" colspan="5">
+                                            검색결과가 없습니다
+                                        </td>
+                                    -->
                                     <tr class="fix">
                                         <td></td>
                                         <td class="td-title">
                                             <a href="../../sub/news/notice__view.html" class="td-titlelink">[사전신청 안내] 2024 서울국제작가축제 사전 신청</a>
                                         </td>
                                         <td class="td-file">
-                                            <a href="" download="" class="td-filelink"></a>
+                                            <a href="" download="" class="td-filelink">
+                                                <span class="count">1</span>
+                                            </a>
+                                            
                                         </td>
                                         <td>2024-04-01</td>
                                         <td>1025</td>
@@ -103,7 +115,9 @@
                                             <a href="" class="td-titlelink">[프로그램 정보 오기재 안내] 2023 서울국제작가축제 모바일 페이지 오기재</a>
                                         </td>
                                         <td class="td-file">
-                                            <a href="" download="" class="td-filelink"></a>
+                                            <a href="" download="" class="td-filelink">
+                                                <span class="count">2</span>
+                                            </a>
                                         </td>
                                         <td>2024-03-22</td>
                                         <td>656</td>
@@ -114,7 +128,9 @@
                                             <a href="" class="td-titlelink">[현장접수 안내] 2023 서울국제작가축제 현장 접수</a>
                                         </td>
                                         <td class="td-file">
-                                            <a href="" download="" class="td-filelink"></a>
+                                            <a href="" download="" class="td-filelink">
+                                                <span class="count">1</span>
+                                            </a>
                                         </td>
                                         <td>2024-02-16</td>
                                         <td>1493</td>
@@ -147,7 +163,9 @@
                                             <a href="" class="td-titlelink">개막식/개막강연 - 언어의 다리를 건너 장소변경 안내</a>
                                         </td>
                                         <td class="td-file">
-                                            <a href="" download="" class="td-filelink"></a>
+                                            <a href="" download="" class="td-filelink">
+                                                <span class="count">2</span>
+                                            </a>
                                         </td>
                                         <td>2023-05-21</td>        
                                         <td>2268</td>
@@ -169,7 +187,9 @@
                                             <a href="" class="td-titlelink">[사전신청 안내] 예술융복합 공연Ⅰ</a>
                                         </td>
                                         <td class="td-file">
-                                            <a href="" download="" class="td-filelink"></a>
+                                            <a href="" download="" class="td-filelink">
+                                                <span class="count">1</span>
+                                            </a>
                                         </td>
                                         <td>2023-04-02</td>        
                                         <td>1056</td>

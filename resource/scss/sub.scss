@@ -219,6 +219,27 @@
                     height:2.2rem;
                     background: url(../image/common/icon/icon-download__table.png) no-repeat center;
                     background-size: cover;
+                    position: relative;
+                    
+                    .count{
+                        width: 1.6rem;
+                        height: 1.6rem;
+                        line-height: 1.3rem;
+                        line-height: 1;
+                        display: flex;
+                        position: absolute;
+                        bottom: -0.5rem;
+                        right:-0.5rem;
+                        background: #fff;
+                        font-size: 1rem;
+                        font-weight: 600;
+                        color: #000;
+                        /* padding: 0.5rem; */
+                        border-radius: 999px;
+                        border: 1px solid #000;
+                        align-items: center;
+                        justify-content: center;
+                    }
                 }
                 &-process{
                     .badge-process{
@@ -633,8 +654,11 @@
     margin: 0 auto;
   }
   .bradcrumb-link--home {
-    padding:1.6rem 1.605rem;
+    padding: 0 1.605rem;
+    display: flex;
     background: #233e80;
+    align-items: center;
+    justify-content: center;
   }
   .bradcrumb-link--home img {
     width: 100%;

@@ -24,6 +24,7 @@
         }
     }
     &__view{
+        
         & + .btn-wrap{
             margin-top:5rem;
         }
@@ -72,7 +73,7 @@
             &-wrap{
                 &__box{
                     display: flex;
-                    
+                    height: auto;
                     &--left{
                         margin-right:2rem;
                         
@@ -116,6 +117,16 @@
                 }
             }
             
+        }
+        .explan-wrap__box{
+            .cover{
+                display: flex;
+                justify-content: center;
+                img{
+                    width:100%;
+                    display: block;
+                }
+            }
         }
         .attProgram-wrap{
             .sub-sec__tit{
@@ -301,6 +312,7 @@
                 }
             }
         }
+        
         &__program{
             .subContent-wrap{
                 padding-bottom: 8rem;
@@ -330,7 +342,7 @@
                             }
                             &-refer{
                                 @include font(1.4,300,#7d7d7d);
-                                line-height: 2.1rem;
+                                line-height: 2.7rem;
                                 text-align: left;
                             }
                             
@@ -424,12 +436,21 @@
                             display:flex;
                             padding:2rem;
                             border:1px solid #ebebeb;
+                            align-items: center;
                             & + .other-all__item{
                                 margin-top:1rem;
                             }
                             &--left{
                                 width:56rem;
                                 margin-right:6rem;
+                                .cover{
+                                    display: block;
+                                    width:100%;
+                                    height: 100%;
+                                    img{
+                                        width:100%;
+                                    }
+                                }
                             }
                             &--right{
                                 width: calc(100% - 62rem);
@@ -507,7 +528,7 @@
                                     width:100%;
                                     height: 100%;
                                     position: relative;
-                                    cursor: default;
+                                    cursor: unset;
                                     display: block;
                                     &::after{
                                         position: absolute;
@@ -517,7 +538,7 @@
                                         height: 7.5rem;
                                         width: 100%;
                                         opacity: .6;
-                                        cursor: pointer;
+                                        cursor: unset;
                                         background: rgb(0,0,0);
                                         background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
                                     }
@@ -595,6 +616,7 @@
             }
         }
         &__author{
+            
             .subContent-wrap{
                 padding-bottom: 8rem;
             }
@@ -927,10 +949,237 @@
 }
 
 @media (min-width:320px) and (max-width:1024px){
+    
     .sub-container{
         &.thisYear{
             .board-layout.d-flex{
                 padding:0 4rem;
+            }
+            &__author{
+                
+                .explan-wrap{
+                    display: flex;
+                    flex-direction: column;
+                    .explan-wrap__box{
+    
+                    }
+                    .explan-wrap__refer{
+                        order:2;
+                    }
+                }
+                .explan-wrap__box--left{
+                    padding-bottom: 2rem;
+                    & + .explan-wrap__box--right{
+                        margin-top:2rem;
+                    }
+                    .cover{
+                        & + .explan-wrap__refer{
+                            bottom:-1rem;
+                            font-size: 2.2rem;
+                        }
+                    }
+                }
+                .explan-box--data{
+                    .name{
+                        font-size: 2.8rem;
+                        padding-right:0.6rem;
+                    }
+                    .job{
+                        font-size: 2rem;
+                        padding:0 1rem 0 1.6rem;
+                    }
+                    .country{
+                        font-size: 2rem;
+                        padding:0 1rem 0 1.6rem;
+                    }
+                }
+                .explan-box--txt{
+                    font-size: 2.8rem;
+                    line-height: 5rem;
+                }
+                .board-layout__view{
+                    .attProgram-wrap__box--right{
+                        .attProgram-wrap--tit{
+                            font-size: 2.8rem;
+                            line-height: 5rem;
+                        }
+                        .link-wrap{
+                            .linkMove{
+                                padding:1rem 1.8rem;
+                                line-height: 3rem;
+                                font-size: 2.2rem;
+                                text-align: center;
+                            }
+                        }
+                    }
+                    .explan-wrap__box--right{
+                        .link-wrap{
+                            a{
+                                font-size: 2.2rem;
+                                padding: 2.2rem 2.8rem;
+                            }
+                        }
+                    }
+                }
+            }
+            &__program{
+                .explan-info{
+                    li{
+                        font-size: 2.6rem;
+                        & + li{
+                            margin-top:1rem;
+                        }
+                        span{
+                            font-size: 2.6rem;
+                            min-width: 8.9rem;
+                        }
+                    }
+                }
+                &--exhi{
+                    
+                    .board-layout__view{
+                        .board-detail{
+                            width:100%;
+                            &__cover{
+                                width:fit-content;
+                                .board-detail__cover-refer{
+                                    font-size: 2.2rem;
+                                    height: 3rem;
+                                    margin-top:0.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+                .board-layout{
+                    &.timeLine{
+                        .board-tab__link{
+                            line-height: 3.8rem;
+                            font-size: 2.6rem;
+                            padding:2.2rem 0;
+                        }
+                        .board-tab__list{
+                            flex-wrap:wrap;
+                            li{
+                                flex:none;
+                                width:calc(100% / 4);
+                            }
+                        }
+                        .other-all{
+                            &__item{
+                                &--left{
+                                    width:35rem;
+                                    margin-right:2rem;
+                                }
+                                &--right{
+                                    width:calc(100% - 37rem);
+                                    .other-box--tit{
+                                        line-height: 3.5rem;
+                                        font-size: 2.8rem;
+                                        & + .other-box--txt{
+                                            margin-top:0.5rem;
+                                        }
+                                    }
+                                    .other-box--txt{
+                                        font-size: 2.6rem;
+                                        & + .other-box--data{
+                                            margin-top:0.5rem;
+                                            
+                                        }
+                                    }
+                                    .other-box--data{
+                                        font-size: 2.2rem;
+                                        & + .link-wrap{
+                                            margin-top:1.5rem;
+                                        }
+                                    }
+                                    .link-wrap{
+                                        a{
+                                            font-size: 2.2rem;
+                                            padding: 1.5rem 2.2rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .timeLine-all{
+                            
+                            .timeLine-all__item--square{
+                                font-size: 2.2rem;
+                                text-align: center;
+                                padding-bottom: 2.5rem;
+                            }
+                            .hourProgram-box{
+                                flex-direction: column;
+                                .link-wrap{
+                                    
+                                    .linkMove{
+                                        font-size: 2.2rem;
+                                        &--01{
+                                            padding:2rem 3rem;
+                                        }
+                                        &--02{
+                                            padding:2rem 3rem;
+                                        }
+                                    }
+                                }
+                                &-tit{
+                                    text-align: center;
+                                    font-size: 2.8rem;
+                                    & + .link-wrap{
+                                        margin-top:3rem;
+                                    }
+                                }
+                                &--left{
+                                    margin:0 auto;
+                                }
+                                &--right{
+                                    margin:3rem auto 0;
+                                    .hourProgram-picture-list{
+                                        width: 100%;
+                                        justify-content: center;
+                                        li{
+                                            width:23rem;
+                                            height:auto;
+                                        }
+                                        .cover{
+                                            .name{
+                                                font-size:2.2rem;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                .sch-wrap{
+                    flex-wrap:wrap;
+                }
+                .sch-form{
+                    order:1;
+                    width:100%;
+                    height: 8.4rem;
+                    .sch-form__label{
+                        width:100%;
+                    }
+                    .sch-form__btn{
+                        width:4.7rem;
+                        margin-right:3rem;
+                        background-size: 4.7rem;
+                    }
+                }
+                .explan-wrap__box-inner{
+                    .explan-box--tit{
+                        font-size:3.4rem;
+                        line-height: 5.8rem;
+                    }
+                    .explan-box--txt{
+                        font-size: 2.8rem;
+                        line-height: 5rem;
+                    }
+                }
             }
             &__video{
                 .board-layout__list-gallery{
@@ -961,6 +1210,29 @@
                 }
             }
             &__author{
+                .explan-wrap{
+                    display: flex;
+                    flex-direction: column;
+                    .explan-wrap__box{
+
+                    }
+                    .explan-wrap__refer{
+                        order:2;
+                    }
+                }
+                .explan-wrap__box--left{
+                    padding-bottom: 2rem;
+                    & + .explan-wrap__box--right{
+                        margin-top:2rem;
+                    }
+                    .cover{
+                        & + .explan-wrap__refer{
+                            bottom:0;
+                            bottom:-1rem;
+                            font-size: 2.2rem;
+                        }
+                    }
+                }
                 .board-layout{
                     display: flex;
                     flex-wrap: wrap;
@@ -1031,10 +1303,71 @@
                     display: flex;
                     justify-content: center;
                     .img{
-                        width:100%;
+                        width:auto;
                     }
                 }
             }
+        }
+    }
+    .board-layout__view{
+        .attProgram-wrap__box{
+            flex-direction: column;
+        }
+        .attProgram-wrap__refer{
+            font-size: 2.2rem;
+        }
+        .attProgram-wrap__box--left{
+            width:100%;
+            margin-right:2rem;
+            .accordion-wrap__item{
+                width:calc((100% - 55rem) / 2);
+                
+                .name{
+                    font-size: 2.2rem;
+                }
+                .attProgram-wrap__refer{
+                    height: 3rem;
+                }
+                &.on{
+                    width:55rem;
+                }
+            }
+        }
+        
+        .attProgram-wrap__box--right{
+            width:100%;
+            margin-top:3rem;
+            .attProgram-info{
+                li{
+                    display: flex;
+                    font-size: 2.6rem;
+                    line-height: 3.5rem;
+                    & + li{
+                        margin-top:1%;
+                    }
+                    span{
+                        font-size: 2.6rem;
+                        min-width: 8.9rem;
+                    }
+                }
+            }
+        }
+        .explan-wrap__box{
+            flex-direction: column;
+            .cover{
+                display: flex;
+                width: auto;
+                justify-content: center;
+                img{
+                    width:100%;
+                    display: block;
+                }
+            }
+        }
+        .explan-wrap__box--left{
+            margin:0;
+            display: flex;
+            justify-content: center;
         }
     }
     .board-layout__list-gallery{
@@ -1051,6 +1384,7 @@
                 padding:0 1rem 0 1.6rem;
             }
             .country{
+                font-size: 2rem;
                 padding:0 1rem 0 1.6rem;
             }
         }

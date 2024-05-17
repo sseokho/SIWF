@@ -2754,6 +2754,11 @@ footer {
     .btn{
         font-size:2.8rem;
         height: 8.2rem;
+        &--list{
+            width:auto;
+            padding:0 2rem;
+            min-width: 23.4rem;
+        }
         &-wrap{
             &--center{
                 

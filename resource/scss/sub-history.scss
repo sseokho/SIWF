@@ -571,6 +571,7 @@
         }
         &__topic{
             &.viewer{
+                
                 .subContent-wrap {
                     position: relative;
                     padding-bottom: 8rem;;
@@ -582,7 +583,8 @@
                         z-index:-1;
                         width:50.3rem;
                         height: 58.2rem;
-                        background:url('../image/sub/history__topic-bg.png');background-repeat:no-repeat;
+                        background:url('../image/sub/history__topic-bg.png') no-repeat;
+                        background-size:contain;
                     }
     
                 }
@@ -687,11 +689,7 @@
             }
             .gallery-link{
                 position: relative;
-                &:hover{
-                    .gallery-link__data{
-                        opacity: 1;
-                    }
-                }
+                
             }
             .gallery-link__img{
                 display: block;
@@ -1279,9 +1277,76 @@
     }
 }
 
+@media (min-width:1025px) {
+    .gallery-link{
+        &:hover{
+            .gallery-link__data{
+                opacity: 1;
+            }
+        }
+    }
+}
 @media (min-width:320px) and (max-width:1024px){
     .sub-container{
         &.history{
+            &__topic{
+                &.viewer{
+                    .subContent-wrap{
+                        &::before{
+                            left:-16rem;
+                        }
+                    }
+                    .poster-img{
+                        padding:0;
+                        .img{
+                            width:auto;
+                        }
+                    }
+                    .txt-wrap{
+                        background: transparent;
+                        &__top{
+                            padding:4rem;
+                            background:#F8F8F8;
+                            &:before{
+                                display: none;
+                            }
+                            .sub-tit{
+                                padding-top:0;
+                                font-size: 2.2rem;
+                                & + .tit{
+                                    margin-top:1rem;
+                                }
+                            }
+                        }
+                        .txt-zip{
+                            padding-top:4rem;
+                            .txt{
+                                font-size: 2.8rem;
+                                line-height: 5rem;
+                            }
+                        }
+                        
+                    }
+                }
+                .board-tab__link{
+                    line-height: 3.8rem;
+                    font-size: 2.6rem;
+                    padding:2.2rem 0;
+                }
+                .board-layout__list-gallery{
+                    grid-template-columns: repeat(3, 1fr);
+                    gap:2rem;
+                    grid-gap:2rem;
+                    .gallery-item{
+                        width: 100%;
+                        &__img{
+                            img{
+                                width:100%;
+                            }
+                        }
+                    }
+                }
+            }
             &__video{
                 .board-layout__list-gallery{
                     grid-template-columns: repeat(2, 1fr);
@@ -1322,19 +1387,66 @@
                     }
                 }
                 .explan-wrap__box--left{
-                    order:1;
+                    padding-bottom: 2rem;
+                    & + .explan-wrap__box--right{
+                        margin-top:2rem;
+                    }
+                    .cover{
+                        & + .explan-wrap__refer{
+                            bottom:-1rem;
+                            font-size: 2.2rem;
+                        }
+                    }
                 }
-                .explan-wrap__box--right{
-                    order:3;
+                .explan-box--data{
+                    .name{
+                        font-size: 2.8rem;
+                        padding-right:0.6rem;
+                    }
+                    .job{
+                        font-size: 2rem;
+                        padding:0 1rem 0 1.6rem;
+                    }
+                    .country{
+                        font-size: 2rem;
+                        padding:0 1rem 0 1.6rem;
+                    }
                 }
-                .explan-wrap__refer{
-                    order:2;
+                .explan-box--txt{
+                    font-size: 2.8rem;
+                    line-height: 5rem;
                 }
                 .board-layout__view{
-
+                    .attProgram-wrap__box--right{
+                        .attProgram-wrap--tit{
+                            font-size: 2.8rem;
+                            line-height: 5rem;
+                        }
+                        .link-wrap{
+                            .linkMove{
+                                padding:1rem 1.8rem;
+                                line-height: 3rem;
+                                font-size: 2.2rem;
+                                text-align: center;
+                            }
+                        }
+                    }
+                    .explan-wrap__box--right{
+                        .link-wrap{
+                            a{
+                                font-size: 2.2rem;
+                                padding: 2.2rem 2.8rem;
+                            }
+                        }
+                    }
                 }
             }
             &__program{
+                .explan-wrap__box-inner{
+                    .explan-box--tit{
+
+                    }
+                }
                 .hisProgram-box--left{
                    
                 }
@@ -1364,25 +1476,52 @@
         }
     }
     .board-layout__view{
+        .attProgram-wrap__box{
+            flex-direction: column;
+        }
+        .attProgram-wrap__refer{
+            font-size: 2.2rem;
+        }
         .attProgram-wrap__box--left{
-            width:40rem;
+            width:100%;
             margin-right:2rem;
             .accordion-wrap__item{
-                width:8rem;
+                width:calc((100% - 55rem) / 2);
+                .name{
+                    font-size: 2.2rem;
+                }
+                .attProgram-wrap__refer{
+                    height: 3rem;
+                }
                 &.on{
-                    width:22rem;
+                    width:55rem;
                 }
             }
         }
         
         .attProgram-wrap__box--right{
-            width:calc(100% - 46rem);
+            width:100%;
+            margin-top:3rem;
+            .attProgram-info{
+                li{
+                    display: flex;
+                    font-size: 2.6rem;
+                    line-height: 3.5rem;
+                    & + li{
+                        margin-top:1rem;
+                    }
+                    span{
+                        font-size: 2.6rem;
+                        min-width: 8.9rem;
+                    }
+                }
+            }
         }
         .explan-wrap__box{
             flex-direction: column;
             .cover{
                 display: flex;
-                width: 70%;
+                width: auto;
                 justify-content: center;
                 img{
                     width:100%;
@@ -1401,6 +1540,7 @@
         grid-template-columns: repeat(2, 1fr);
         gap:4.6rem 1rem;
         grid-gap:4.6rem 1rem;
+        
         .gallery-link__data{
             .name{
                 font-size: 2.8rem;
@@ -1411,6 +1551,7 @@
                 padding:0 1rem 0 1.6rem;
             }
             .country{
+                font-size: 2rem;
                 padding:0 1rem 0 1.6rem;
             }
         }
@@ -1423,6 +1564,34 @@
                 }
             }
             &__program{
+                .explan-info{
+                    li{
+                        font-size: 2.6rem;
+                        & + li{
+                            margin-top:1rem;
+                        }
+                        span{
+                            font-size: 2.6rem;
+                            min-width: 8.9rem;
+                        }
+                    }
+                }
+                &--exhi{
+                    
+                    .board-layout__view{
+                        .board-detail{
+                            width:100%;
+                            &__cover{
+                                width:fit-content;
+                                .board-detail__cover-refer{
+                                    font-size: 2.2rem;
+                                    height: 3rem;
+                                    margin-top:0.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
                 .board-tab__link{
                     line-height: 3.8rem;
                     font-size: 2.6rem;
@@ -1442,6 +1611,16 @@
                         width:4.7rem;
                         margin-right:3rem;
                         background-size: 4.7rem;
+                    }
+                }
+                .explan-wrap__box-inner{
+                    .explan-box--tit{
+                        font-size:3.4rem;
+                        line-height: 5.8rem;
+                    }
+                    .explan-box--txt{
+                        font-size: 2.8rem;
+                        line-height: 5rem;
                     }
                 }
             }
@@ -1528,7 +1707,7 @@
             &__topic{
                 .sub-mainTit{
                     & + .poster-wrap{
-                        padding-bottom: 12rem;
+                        padding-bottom: 8rem;
                     }
                 }
                 .poster-wrap{

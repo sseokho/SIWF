@@ -49,4 +49,14 @@ html{
   body, html {
     font-size: 62.5%;
   }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+  body, html {
+    font-size: 44.6428571429%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  body, html {
+    font-size: 52.0833333333%;
+  }
 }/*# sourceMappingURL=responsive.css.map */
