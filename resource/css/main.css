@@ -338,7 +338,7 @@ section h2 {
   width: 0.4rem;
   height: 0.4rem;
   background: #ffffff;
-  border: 1px solid #233E80;
+  border: 1px solid #0066cc;
   border-radius: 999px;
   opacity: 1;
 }
@@ -361,7 +361,7 @@ section h2 {
 }
 .mainVisual .firstSwiper .swiper-state .swiper-pagination-bullet-active {
   display: block;
-  border: 1px solid #233E80;
+  border: 1px solid #0066cc;
   background: transparent;
 }
 .mainVisual .firstSwiper .swiper-state .swiper-pagination-bullet-active:before, .mainVisual .firstSwiper .swiper-state .swiper-pagination-bullet-active:after {
@@ -1189,8 +1189,11 @@ section h2 {
 }
 .info-sec__item {
   border: 1px solid #e7e7e7;
-  padding: 4.8rem 4.9rem 4.3rem;
   width: 69rem;
+}
+.info-sec__item a {
+  display: block;
+  padding: 4.8rem 4.9rem 4.3rem;
 }
 .info-sec__item .link-move {
   display: block;
@@ -1677,9 +1680,6 @@ section h2 {
 
 /* section1:hover */
 @media (min-width: 1200px) {
-  .info-sec__item:hover {
-    border: 1px solid #000;
-  }
   .mainVisual .tabBox .tab_wrap .tab_cont ul li a:hover {
     background-color: #f5f8fe;
     border: 2px solid #8daae0;
@@ -2111,6 +2111,9 @@ section h2 {
   }
 }
 @media (min-width: 1025px) {
+  .info-sec__item:hover {
+    border: 1px solid #0066cc;
+  }
   .tabnav {
     display: none;
   }
@@ -2495,7 +2498,7 @@ section h2 {
   }
   .info-sec__item {
     width: 100%;
-    padding: 4.7rem 4rem 4.3rem;
+    padding: 0;
   }
   .info-sec__item--way {
     background: url(../image/main/info-sec--way.svg) no-repeat 93% center;

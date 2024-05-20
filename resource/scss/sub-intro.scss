@@ -114,6 +114,51 @@
                         max-width: 100%;
                         margin:4rem auto 0;
                     }
+                    &__data{
+                        opacity: 0;
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        left: 0;
+                        top: 0;
+                        background: #061741;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        transition: all 0.3s;
+                        .icon{
+                            width: 3.9rem;
+                            display: block;
+                            img{
+                                width:100%;
+                            }
+                            & + .tit{
+
+                                margin-top:2rem;
+                            }
+                        }
+                        .tit{
+                            display: block;
+                            margin: 0 auto;
+                            max-width: 22rem;
+                            @include font(2,500,#fff);
+                            line-height: 3rem;
+                            text-align: center;
+                            @include ellipsis(3);
+                            & + .creDate{
+                                margin-top:2.4rem;
+                            }
+                        }
+                        .creDate{
+                            text-align: center;
+                            display: block;
+                            line-height: 2.4rem;
+                            font-size: 1.6rem;
+                            font-weight: 200;
+                            color: rgba(255, 255, 255, 0.8);
+                        }
+                    }
                     overflow:hidden;
                     .swiper-slide{
                         width:33.5rem !important;
@@ -123,9 +168,11 @@
                         transition-property: transform;
                         /*box-shadow: 4px 4px 14px rgba(0,0,0,16%);*/
                         a{
+                            position: relative;
                             display: block;
                             height:100%;
                             background: #131313;
+                            
                             img{
                                 width:100%;
                                 height:100%;
@@ -184,6 +231,7 @@
         justify-items: center;
         .stat{
             &-tit{
+                line-height: 2.7rem;
                 text-align: center;
                 @include font(1.8,500,#000);
                 & + .stat-content{
@@ -192,9 +240,11 @@
             }
             &-content{
                 .number{
-                    @include font(6,600,#233e80);
+                    line-height: 7rem;
+                    @include font(6,600,#0066cc);
                 }
                 .unit{
+                    line-height: 2.4rem;
                     margin-left:0.8rem;
                     @include font(1.6,300,#7d7d7d);
                 }
@@ -211,7 +261,7 @@
         width: 45.3rem;
         height: 30rem;
         left: 0;
-        background: #233e80;
+        background: #0066cc;
         @include d-flex;
         flex-direction: column;
         justify-content: center;
@@ -226,6 +276,7 @@
             }
         }
         .txt{
+            line-height: 2.4rem;
             @include font(1.6,400,rgba(255,255,255,36%));
         }
     }
@@ -355,7 +406,29 @@
         }
     }
 }
-
+@media (min-width:1025px){
+    .sub-container{
+        &.intro{
+            .subContent__wide{
+                .liveSwiper{
+                    
+                    .swiper-slide{
+                        .cover{
+                            &:hover{
+                                .liveSwiper__data{
+                                    opacity: 0.9;
+                                }
+                            }
+                        }
+                        a{
+                            transition: all 0.3s;
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}
 @media (min-width:320px) and (max-width:1024px){
     .sub-container{
         &.intro{

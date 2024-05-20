@@ -53,7 +53,6 @@ body {
     }
 }
 .wrap {
-    overflow: hidden;
     box-sizing: border-box;
     position: relative;
 }
@@ -379,7 +378,7 @@ body {
                             color:#003E88;
                         }
                         &.active{
-                            color:#233e80;
+                            color:#0066cc;
                         }
                     }
 
@@ -1008,7 +1007,7 @@ footer {
     &--list{
         width:20rem;
         height:5.4rem;
-        background-color:#233e80;
+        background-color:#0066cc;
         color:#fff;
         font-size:1.8rem;
         font-weight:400;
@@ -1022,7 +1021,7 @@ footer {
     &--regis{
         width:35rem;
         height:7rem;
-        background-color:#233e80;
+        background-color:#0066cc;
         color:#fff;
         font-size:2.2rem;
         font-weight:700;
@@ -1403,7 +1402,7 @@ footer {
             background: #fff;
             @include font(1.8,300,#666);
             &.active{
-                background: #233e80;
+                background: #0066cc;
                 @include font(1.8,400,#fff);
             }
         }
@@ -1775,8 +1774,8 @@ footer {
             font-size:1.6rem;
             font-weight:300;
             color:#fff;
-            border:1px solid #233e80;
-            background-color:#233e80;
+            border:1px solid #0066cc;
+            background-color:#0066cc;
         }
     }
 }
@@ -3393,7 +3392,7 @@ footer {
                 li{
                     &.on{
                         a{
-                            @include font(2,400,#ff9cb7);
+                            @include font(2,400,#e60044);
                         }
                     }
                 }

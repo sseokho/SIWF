@@ -162,13 +162,13 @@
                     @include ellipsis(1);
                     &.cate{
                         position: relative;
-                        padding-left:5.6rem;;
+                        padding-left:5.6rem;
                         height:100%;
                         display:flex;
                         align-items: center;
                         @include ellipsis(1);
                         &.cate--noticex.cate--notice{
-                            padding-left:5.6rem;;
+                            padding-left:5.6rem;
                         }
                         &.cate--noticex:not(.cate--notice){
                             padding-left:0;
@@ -361,13 +361,14 @@
         &-gallery{
             .gallery{
                 &-item{
-    
                 }
                 &-link{
                     display: block;
                     &__img{
+                        width:35.7rem;
+                        height:24rem;
                         & + .gallery-link__data{
-                            margin-top:1.7rem;
+                            margin-top:1.4rem;
                         }
                         display: block;
                         img{
@@ -375,13 +376,17 @@
                         }
                     }
                     &__data{
+                        display: flex;
+                        justify-content: center;
+                        height:3.3rem;
+                        line-height: 3.3rem;
                         text-align: center;
                         span{
                             position: relative;
                         }
                         .name{
                             @include font(2.2,500,#000);
-                            padding-right:1rem;
+                            padding-right:0.7rem;
                         }
                         .job,
                         .country{
@@ -394,12 +399,12 @@
                             }
                         }
                         .job{
-                            padding:0 1rem;
+                            padding:0 0.3rem 0 1.3rem;
                             @include font(1.8,300,#000);
                             
                         }
                         .country{
-                            padding:0 1rem;
+                            padding:0 0 0 1.5rem;
                             @include font(1.8,300,#000);
                         }
                     }
@@ -430,18 +435,18 @@
             
             &.active{
                 
-                border-color: #233e80;
+                border-color: #0066cc;
                 & + li{
                     margin-top:0;
                 }
                 &::after{
-                    background: #233e80;
+                    background: #0066cc;
                     z-index: 2;
                     bottom: 0;
                 }
                 a{
                     
-                    @include font(1.8,500,#233e80);
+                    @include font(1.8,500,#0066cc);
                 }
             }
         }
@@ -460,18 +465,18 @@
             }
             &.active{
                 
-                border-color: #233e80;
+                border-color: #0066cc;
                 & + li{
                     margin-top:0;
                 }
                 &::after{
-                    background: #233e80;
+                    background: #0066cc;
                     z-index: 2;
                     bottom: 0;
                 }
                 a{
                     
-                    @include font(1.8,500,#233e80);
+                    @include font(1.8,500,#0066cc);
                 }
             }
             a{
@@ -495,8 +500,9 @@
 }
 .sub-mainTit{
     padding-top:5rem;
-    @include font(3,500,#000);
+    @include font(3.2,500,#000);
     text-align: center;
+    line-height: 4.7rem;
 }
 .sub-sec__tit{
     @include font(2.6,500,#000);
@@ -656,7 +662,7 @@
   .bradcrumb-link--home {
     padding: 0 1.605rem;
     display: flex;
-    background: #233e80;
+    background: #0066cc;
     align-items: center;
     justify-content: center;
   }
@@ -746,6 +752,16 @@
 
 @media (min-width:320px) and (max-width:1024px){
     .board-layout{
+        &__list-gallery{
+            .gallery-link__data{
+                line-height: 4.1rem;
+                height: 4.1rem;
+            }
+            .gallery-link__img{
+                width: 100%;
+                height: auto;
+            }
+        }
         .board-tab__list{
             &.col{
                 &-7{
@@ -776,7 +792,7 @@
         .bradcrumb-item{
             &.next{
                 > button{
-                    color:#233e80;
+                    color:#0066cc;
                 }
             }
             button{

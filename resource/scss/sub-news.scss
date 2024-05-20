@@ -285,7 +285,7 @@
             }
             &-content{
                 .number{
-                    @include font(6,600,#233e80);
+                    @include font(6,600,#0066cc);
                 }
                 .unit{
                     margin-left:0.8rem;
@@ -304,7 +304,7 @@
         width: 45.3rem;
         height: 30rem;
         left: 0;
-        background: #233e80;
+        background: #0066cc;
         @include d-flex;
         flex-direction: column;
         justify-content: center;

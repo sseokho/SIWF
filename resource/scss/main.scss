@@ -281,7 +281,7 @@ section{
                     width:0.4rem;
                     height:0.4rem;
                     background: #ffffff;
-                    border:1px solid #233E80;
+                    border:1px solid #0066cc;
                     border-radius: 999px;
                     opacity: 1;
                     &:after{
@@ -303,7 +303,7 @@ section{
                     }
                     &-active{
                         display: block;
-                        border:1px solid #233E80;
+                        border:1px solid #0066cc;
                         background: transparent;
                         &:before,
                         &:after{
@@ -1129,8 +1129,12 @@ section{
         padding:4rem 0 8rem;
         &__item{
             border:1px solid #e7e7e7;
-            padding:4.8rem 4.9rem 4.3rem;
+            
             width:69rem;
+            a{
+                display: block;
+                padding:4.8rem 4.9rem 4.3rem;
+            }
             .link-move{
                 display:block;
                 text-decoration: none;
@@ -1606,13 +1610,7 @@ section{
 
 /* section1:hover */
 @media (min-width: 1200px) {
-    .info-sec{
-        &__item{
-            &:hover{
-                border:1px solid #000;
-            }
-        }
-    }
+    
     .mainVisual {
         .tabBox {
             .tab_wrap {
@@ -2201,6 +2199,13 @@ section{
 }
 
 @media (min-width:1025px){
+    .info-sec{
+        &__item{
+            &:hover{
+                border:1px solid #0066cc;
+            }
+        }
+    }
     .tabnav{
         display:none;
     }
@@ -2602,7 +2607,7 @@ section{
             }
             &__item{
                 width:100%;
-                padding:4.7rem 4rem 4.3rem;
+                padding:0;
                 &--way{
                     background: url(../image/main/info-sec--way.svg) no-repeat 93% center;
                     background-size: 6.7rem;

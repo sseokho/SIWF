@@ -46,7 +46,6 @@ body.fixed .wrap > div:not(header) {
 }
 
 .wrap {
-  overflow: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
@@ -405,7 +404,7 @@ body.fixed .wrap > div:not(header) {
   color: #003E88;
 }
 .header .nav .navWrap ul li a.active {
-  color: #233e80;
+  color: #0066cc;
 }
 .header .nav .navWrap ul li .depth_2 {
   position: absolute;
@@ -947,7 +946,7 @@ footer .footerBottom .footer.info h1 img {
 .btn--list {
   width: 20rem;
   height: 5.4rem;
-  background-color: #233e80;
+  background-color: #0066cc;
   color: #fff;
   font-size: 1.8rem;
   font-weight: 400;
@@ -961,7 +960,7 @@ footer .footerBottom .footer.info h1 img {
 .btn--regis {
   width: 35rem;
   height: 7rem;
-  background-color: #233e80;
+  background-color: #0066cc;
   color: #fff;
   font-size: 2.2rem;
   font-weight: 700;
@@ -1382,7 +1381,7 @@ footer .footerBottom .footer.info h1 img {
   color: #666;
 }
 .board-tab__link.active {
-  background: #233e80;
+  background: #0066cc;
   font-size: 1.8rem;
   font-weight: 400;
   color: #fff;
@@ -1735,8 +1734,8 @@ footer .footerBottom .footer.info h1 img {
   font-size: 1.6rem;
   font-weight: 300;
   color: #fff;
-  border: 1px solid #233e80;
-  background-color: #233e80;
+  border: 1px solid #0066cc;
+  background-color: #0066cc;
 }
 
 /* class::ui */
@@ -3160,7 +3159,7 @@ footer .footerBottom .footer.info h1 img {
   .footer .f_menu ul li.on a {
     font-size: 2rem;
     font-weight: 400;
-    color: #ff9cb7;
+    color: #e60044;
   }
   .footer .f_addr {
     -webkit-box-pack: center;

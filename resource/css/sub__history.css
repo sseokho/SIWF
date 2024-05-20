@@ -78,7 +78,7 @@
   padding: 4rem 6rem;
 }
 .board-layout__view .explan-wrap__box--right .link-wrap a {
-  border: 1px solid #233e80;
+  border: 1px solid #0066cc;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -86,7 +86,7 @@
   padding: 1.2rem 1.8rem;
   font-size: 1.6rem;
   font-weight: 300;
-  color: #233e80;
+  color: #0066cc;
 }
 .board-layout__view .explan-wrap + .attProgram-wrap {
   margin-top: 5rem;
@@ -213,10 +213,10 @@
 }
 .board-layout__view .attProgram-wrap__box--right .link-wrap .linkMove {
   display: block;
-  border: 1px solid #233e80;
+  border: 1px solid #0066cc;
   font-size: 1.6rem;
   font-weight: 300;
-  color: #233e80;
+  color: #0066cc;
 }
 .board-layout__view .attProgram-wrap__box--right .link-wrap .linkMove + .linkMove {
   margin-left: 0.4rem;
@@ -351,7 +351,7 @@
 }
 .sub-container.history__program .hisProgram-swiper .swiper-pagination-bullet-active {
   display: block;
-  border: 1px solid #233E80;
+  border: 1px solid #0066cc;
   background: transparent;
 }
 .sub-container.history__program .hisProgram-swiper .swiper-pagination-bullet-active:before, .sub-container.history__program .hisProgram-swiper .swiper-pagination-bullet-active:after {
@@ -370,14 +370,14 @@
   width: 0.6rem;
   height: 0.6rem;
   z-index: 2;
-  background: #233E80;
+  background: #0066cc;
 }
 .sub-container.history__program .hisProgram-swiper .swiper-pagination-bullet-active:after {
   width: 1.4rem;
   height: 1.4rem;
   z-index: 3;
   background: transparent;
-  border: 1px solid #233E80;
+  border: 1px solid #0066cc;
 }
 .sub-container.history__program .subContent-wrap {
   padding-bottom: 8rem;
@@ -750,15 +750,15 @@
 .sub-container.history__program .board-layout.timeLine .other-all__item--right .link-wrap a {
   display: block;
   padding: 0.8rem 1.2rem;
-  color: #233e80;
-  border: 1px solid #233e80;
+  color: #0066cc;
+  border: 1px solid #0066cc;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   line-height: 2.4rem;
   font-size: 1.6rem;
   font-weight: 300;
-  color: #233e80;
+  color: #0066cc;
 }
 .sub-container.history__program .board-layout.timeLine .other-all__item--right .other-box--tit {
   font-size: 2.6rem;
@@ -875,8 +875,8 @@
 .sub-container.history__program .board-layout.timeLine .hourProgram-box .link-wrap .linkMove {
   font-size: 1.6rem;
   font-weight: 400;
-  color: #233e80;
-  border: 1px solid #233e80;
+  color: #0066cc;
+  border: 1px solid #0066cc;
 }
 .sub-container.history__program .board-layout.timeLine .hourProgram-box .link-wrap .linkMove--01 {
   padding: 1rem 2rem;
@@ -1036,7 +1036,7 @@
 .stat-box__list .stat-content .number {
   font-size: 6rem;
   font-weight: 600;
-  color: #233e80;
+  color: #0066cc;
 }
 .stat-box__list .stat-content .unit {
   margin-left: 0.8rem;
@@ -1052,7 +1052,7 @@
   width: 45.3rem;
   height: 30rem;
   left: 0;
-  background: #233e80;
+  background: #0066cc;
   display: -webkit-box;
   display: flex;
   -ms-display: flexbox;
