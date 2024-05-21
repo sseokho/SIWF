@@ -138,8 +138,21 @@
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
+.board-layout__view .attProgram-wrap__box--left .accordion-wrap__item:before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  background: transparent;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: calc(100% - 2.7rem);
+}
 .board-layout__view .attProgram-wrap__box--left .accordion-wrap__item.on {
   width: 45rem;
+}
+.board-layout__view .attProgram-wrap__box--left .accordion-wrap__item.on::before {
+  display: none;
 }
 .board-layout__view .attProgram-wrap__box--left .accordion-wrap__item.on .attProgram-wrap__refer {
   display: block;

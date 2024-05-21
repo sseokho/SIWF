@@ -148,11 +148,16 @@
   transition: all 0.3s;
 }
 .sub-container.intro .subContent__wide .liveSwiper__data .icon {
-  width: 3.9rem;
+  /* width: 3.9rem; */
   display: block;
+  width: auto;
+  max-width: 4.5rem;
+  text-align: center;
 }
 .sub-container.intro .subContent__wide .liveSwiper__data .icon img {
   width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .sub-container.intro .subContent__wide .liveSwiper__data .icon + .tit {
   margin-top: 2rem;

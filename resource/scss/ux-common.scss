@@ -375,7 +375,7 @@ body {
                         -ms-flex-pack: distribute;
                         justify-content: space-around;
                         &.on{
-                            color:#003E88;
+                            color:#0066cc;
                         }
                         &.active{
                             color:#0066cc;
@@ -410,7 +410,7 @@ body {
                                 position: absolute;
                                 top: -0.2rem;
                                 display: block;
-                                border-top: 2px solid #003E88;
+                                border-top: 2px solid #0066cc;
                                 height: 0.2rem;
                                 width: 100%;
                             }
@@ -1014,7 +1014,7 @@ footer {
         transition: all 0.8s;
         &:hover{
 
-            background-color:#000;
+            background-color:#0058B0;
             color:#fff;
         }
     }
@@ -1902,7 +1902,7 @@ footer {
             height:0.4rem;
             content:"";
             border-radius: 999px;
-            background:#E51B47;
+            background:#e60044;
         }
     }
     &-label{
@@ -3184,7 +3184,7 @@ footer {
                         a{
                             &:hover{
                                 font-weight: 500;
-                                color: #003E88;
+                                color: #0058B0;
                                 text-decoration: underline;
                                 text-underline-offset : 0.1rem;
                             }
@@ -3220,7 +3220,7 @@ footer {
                             li {
                                 a {
                                     &:hover {
-                                        background-color: #4568a9;
+                                        background-color: #0058B0;
                                         color:#fff;
                                     }
                                 }
@@ -3474,10 +3474,10 @@ footer {
         }
         &__depth01{
             &.is-open{
-                color:#003E88;
+                color:#0066cc;
                 border-bottom:none;
                 & + .side-menu__depth02{
-                    border-top:2px solid #003E88;
+                    border-top:2px solid #0066cc;
                 }
             }
         }
@@ -3495,12 +3495,12 @@ footer {
                     width:max-content;
                     position: relative;
                     &:active{
-                        @include font(2.8,500,#003E88);
+                        @include font(2.8,500,#0066cc);
                         
                         &:after{
                             content: "";
                             position: absolute;
-                            border: 1px solid #003E88;
+                            border: 1px solid #0066cc;
                             width: -webkit-fill-available;
                             bottom: -0.3rem;
                             left: auto;

@@ -44,7 +44,61 @@ function headerScript(){
         });
         sideMenu();
 
-    });
+
+        
+        
+        $(".depth_1 > li> a").addClass("depth1_a");
+
+
+        
+        var depth1a = $(".depth1_a");
+        
+        depth1a.each((i,v) => {
+            var subCon = $(".sub-container");
+            var depth1aEle = $(".depth1_a").eq(i);
+            var depth1aTxt = $(".depth1_a").eq(i).text();
+            if($(subCon).is(".intro") === true) {
+                if(depth1aTxt == "서울국제작가축제"){
+                    depth1aEle.addClass('active');
+                }
+            } else if($(subCon).is(".thisYear") === true){
+                if(depth1aTxt == "2024 축제"){
+                    depth1aEle.addClass('active');
+                }
+            } else if($(subCon).is(".news") === true){
+                if(depth1aTxt == "소식"){
+                    depth1aEle.addClass('active');
+                }
+            } else if($(subCon).is(".history") === true){
+                if(depth1aTxt == "역대 축제"){
+                    depth1aEle.addClass('active');
+                }
+            } else {
+                return false;
+            }
+           
+        });
+
+
+        var aa = $(".depth1_a");
+        var subMainTit = $(".sub-mainTit").text();
+        $(".bradcrumb__tit.is-active").html(subMainTit);
+
+        var toss = $(".depth1_a.active").next().html();
+        $(".bradcrumb__tit.is-active").next(".bradcrumb__links").html(toss);
+
+        aa.each((i,v) => {
+            var bradActive = $(".bradcrumb__tit.is-active").text();
+            var depth1a = $(".depth1_a");
+            var depth1aText = depth1a.eq(i).text();
+            if(bradActive == depth1aText){
+                depth1a.eq(i).addClass("include");
+            }
+        });
+
+
+       
+    });//
 
 };
 
@@ -102,45 +156,7 @@ function tab(){
         })
     }
 }
-/*
-function dDay(){
-   //디데이 종료 일자 설정
-    var countDownDate = new Date("4 30, 2024 24:00:00").getTime();
-    //1초마다 갱신되도록 함수 생성,실행
-    const x = setInterval(function() {
-    // 오늘 날짜 등록
-    const now = new Date().getTime();
 
-    // 종료일자에서 현재일자를 뺀 시간
-    const distance = countDownDate - now;
-
-    // 각 변수에 일, 시, 분, 초를 등록
-    var d = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var s = Math.floor((distance % (1000 * 60)) / 1000);
-
-    if(distance<0){
-        document.querySelector(".days").innerHTML = "00";
-        document.querySelector(".hours").innerHTML = "00";
-        document.querySelector(".minutes").innerHTML = "00";
-        document.querySelector(".seconds").innerHTML = "00";
-    } else {
-        if(d<10){d="0"+d;}
-        if(h<10){h="0"+h;}
-        if(m<10){m="0"+m;}
-        if(s<10){s="0"+s;}
-
-        document.querySelector(".days").innerHTML = d;
-        document.querySelector(".hours").innerHTML = h;
-        document.querySelector(".minutes").innerHTML = m;
-        document.querySelector(".seconds").innerHTML = s;
-    }
-        //id가 d-day인 HTML코드에 내용 삽입
-
-    },1000);
-}
-*/
 function callPop(){
 	$('.popup:not(.if-check)').on('click', function(){
 

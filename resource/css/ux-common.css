@@ -401,7 +401,7 @@ body.fixed .wrap > div:not(header) {
   justify-content: space-around;
 }
 .header .nav .navWrap ul li a.on {
-  color: #003E88;
+  color: #0066cc;
 }
 .header .nav .navWrap ul li a.active {
   color: #0066cc;
@@ -433,7 +433,7 @@ body.fixed .wrap > div:not(header) {
   position: absolute;
   top: -0.2rem;
   display: block;
-  border-top: 2px solid #003E88;
+  border-top: 2px solid #0066cc;
   height: 0.2rem;
   width: 100%;
 }
@@ -954,7 +954,7 @@ footer .footerBottom .footer.info h1 img {
   transition: all 0.8s;
 }
 .btn--list:hover {
-  background-color: #000;
+  background-color: #0058B0;
   color: #fff;
 }
 .btn--regis {
@@ -1857,7 +1857,7 @@ footer .footerBottom .footer.info h1 img {
   height: 0.4rem;
   content: "";
   border-radius: 999px;
-  background: #E51B47;
+  background: #e60044;
 }
 .ui-label {
   display: -webkit-inline-box;
@@ -3008,7 +3008,7 @@ footer .footerBottom .footer.info h1 img {
   }
   .header .nav .navWrap ul.depth_2 li a:hover {
     font-weight: 500;
-    color: #003E88;
+    color: #0058B0;
     text-decoration: underline;
     text-underline-offset: 0.1rem;
   }
@@ -3018,7 +3018,7 @@ footer .footerBottom .footer.info h1 img {
     color: #000;
   }
   .modal.search .modal-content .modal-body .keyword ul li a:hover {
-    background-color: #4568a9;
+    background-color: #0058B0;
     color: #fff;
   }
 }
@@ -3230,11 +3230,11 @@ footer .footerBottom .footer.info h1 img {
     border-top: 1px solid #DEDEDE;
   }
   .side-menu__depth01.is-open {
-    color: #003E88;
+    color: #0066cc;
     border-bottom: none;
   }
   .side-menu__depth01.is-open + .side-menu__depth02 {
-    border-top: 2px solid #003E88;
+    border-top: 2px solid #0066cc;
   }
   .side-menu__depth02 {
     background: #F8F8F8;
@@ -3257,12 +3257,12 @@ footer .footerBottom .footer.info h1 img {
   .side-menu__depth02 li a:active {
     font-size: 2.8rem;
     font-weight: 500;
-    color: #003E88;
+    color: #0066cc;
   }
   .side-menu__depth02 li a:active:after {
     content: "";
     position: absolute;
-    border: 1px solid #003E88;
+    border: 1px solid #0066cc;
     width: -webkit-fill-available;
     bottom: -0.3rem;
     left: auto;

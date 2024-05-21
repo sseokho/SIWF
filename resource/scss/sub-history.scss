@@ -142,9 +142,21 @@
                             width: 12rem;
                             height: 32.7rem;
                             transition: all 0.5s;
-                            
+                            &:before{
+                                content:'';
+                                position: absolute;
+                                z-index: 2;
+                                background: transparent;
+                                left:0;
+                                top:0;
+                                width: 100%;
+                                height: calc(100% - 2.7rem);
+                            }
                             &.on{
                                 width: 45rem;
+                                &::before{
+                                    display: none;
+                                }
                                 .attProgram-wrap__refer{
                                     display:block;
                                     opacity: 1;

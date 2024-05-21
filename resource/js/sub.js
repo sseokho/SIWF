@@ -21,7 +21,7 @@ function bradcrumb(){
     }
 
 
-    $('.sub_header').load('sub_header.html', function() {
+    $('.header').load('sub_header.html', function() {
         $(".depth_1 > li> a").addClass("depth1_a");
 
         $(".depth_1 > li > a").click(function(){
@@ -29,64 +29,22 @@ function bradcrumb(){
             $(this).addClass('active');
         })
 
-
-
         var aa = $(".depth1_a");
+        var aaActive = $(".depth1_a.active").text();
         var aaClone = aa.clone();
+        $(".bradcrumb__tit:not(.is-active)").text(aaActive);
+        $(".bradcrumb__tit:not(.is-active) ~ .bradcrumb__links").html(aaClone);
 
-        $(".bradcrumb__tit:not(.is-active) ~ .bradcrumb__links").append(aaClone);
-
-        aa.each((i,v) => {
-
-
-
-            var bradIsActive = $(".bradcrumb__tit.is-active").text();
-
-
-
-            var depth1a = $(".depth1_a");
-
-            var depth1aText = depth1a.eq(i).text();
-
-
-
-
-
-
-
-            if(bradIsActive == depth1aText){
-                depth1a.eq(i).addClass("include");
-            }
-
-        });
-
-
-
-
-        var next = $(".include").next().children("li").find('a');
-        var nextCopy = next.clone();
-        console.log(next);
-        $(".bradcrumb__tit.is-active").next().append(nextCopy);
-
-        /*
-        next.each((i,v)=> {
-
-
-            console.log("ff",v);
-
-        })
-        */
-
-
-
-
+        if($('.bradcrumb__tit.is-active').length){
+            return false;
+        }else{
+            $(".bradcrumb-item:not(.next) .bradcrumb__tit").addClass("is-active");
+        }
 
     });
+    
 
-
-
-
-
+    
 
     $('.bradcrumb__tit').click(function(){
         $(this).next().slideToggle();
