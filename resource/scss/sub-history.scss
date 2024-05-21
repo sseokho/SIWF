@@ -125,6 +125,7 @@
                 transition: all 0.5s;
                 opacity: 0;
                 height:2.7rem;
+                word-wrap: break-word;
                 line-height: 3.7rem;
                 @include font(1.6,300,#7d7d7d);
             }
@@ -139,7 +140,8 @@
                         height: auto;
                         &__item{
                             position: relative;
-                            width: 12rem;
+                            flex:1 1 auto;
+                            width:12rem;
                             height: 32.7rem;
                             transition: all 0.5s;
                             &:before{
@@ -845,7 +847,7 @@
                                 .link-wrap{
                                     a{
                                         display: block;
-                                        padding:0.8rem 1.2rem;
+                                        padding:0.8rem 3rem;
                                         color:#0066cc;
                                         border:1px solid #0066cc;
                                         width:max-content;
@@ -856,13 +858,13 @@
                                 .other-box{
                                     &--tit{
                                         @include font(2.6,400,#000);
-                                        line-height: 2.4rem;
+                                        line-height: 3.8rem;
                                         & + .other-box--txt{
                                             margin-top:2rem;
                                         }
                                     }
                                     &--txt{
-                                        @include font(2,200,#000);
+                                        @include font(2,300,#000);
                                         line-height: 3rem;
                                         & + .other-box--data{
                                             margin-top:2rem;
@@ -952,13 +954,13 @@
                         .link-wrap{
                             display: flex;
                             .linkMove{
-                                @include font(1.6,400,#0066cc);
+                                @include font(1.6,300,#0066cc);
                                 border:1px solid #0066cc;
                                 &--01{
-                                    padding:1rem 2rem;
+                                    padding:1.2rem 2rem;
                                 }
                                 &--02{
-                                    padding:1rem 1.2rem;
+                                    padding:1.2rem 1.2rem;
                                 }
                                 & + .linkMove{
                                     margin-left:0.4rem;
@@ -1072,7 +1074,7 @@
         .poster-img{
             padding-right: 7rem;
             position: sticky;
-            top: 0;
+            top: 5rem;
             width: 53rem;
             min-width: 53rem;
             height: 74.9rem;
@@ -1355,8 +1357,9 @@
                     .poster-img{
                         padding:0;
                         position: unset;
+                        height:auto;
                         .img{
-                            width:auto;
+                            width:100%;
                         }
                     }
                     .txt-wrap{
@@ -1380,6 +1383,7 @@
                             .txt{
                                 font-size: 2.8rem;
                                 line-height: 5rem;
+                                padding:0 4rem;
                             }
                         }
                         
@@ -1409,9 +1413,9 @@
                     margin-top:4.5rem;
                 }
                 .board-layout__list-gallery{
-                    grid-template-columns: repeat(2, 1fr);
-                    gap: 1.5rem;
-                    grid-gap: 1.5rem;
+                    grid-template-columns: repeat(1, 1fr);
+                    gap: 4rem;
+                    grid-gap: 4rem;
                     .gallery-link__img{
                         height:auto;
                     }
@@ -1425,8 +1429,19 @@
                         width: 100%;
                         flex-wrap: wrap;
                         margin:0;
-                        border-top:1px solid #ebebeb;
-                         border-left:1px solid #ebebeb;
+                        // border-top:1px solid #ebebeb;
+                        //  border-left:1px solid #ebebeb;
+                        li{
+                            &:nth-child(1){
+                                border-top:1px solid #ebebeb;
+                            }
+                            &:nth-child(2){
+                                border-top:1px solid #ebebeb;
+                            }
+                            &:nth-child(3){
+                                border-left:1px solid #ebebeb;
+                            }
+                        }
                         & + .board-layout__list{
                             margin-top:5rem;
                         }
@@ -1474,6 +1489,9 @@
                             font-size: 2.2rem;
                         }
                     }
+                }
+                .explan-wrap__box--right{
+                    padding:6rem;
                 }
                 .explan-box--data{
                     .name{
@@ -1536,6 +1554,26 @@
                 .hisProgram-all{
                     grid-template-columns: 100%;
                 }
+                .hisProgram-box--left{
+                    width:35.2rem;
+                }
+                .hisProgram-info{
+                    li{
+                        display: block !important;
+                        span{
+                            width:100%;
+                            font-size: 2rem;
+                            height: 100%;
+                            display: block;
+                        }
+                    }
+                }
+                .hisProgram-box--right{
+                    width: calc(100% - 35.2rem);
+                }
+                .hisProgram-all__item{
+                    padding:2rem;
+                }
                 .hisProgram-info{
                     li{
                         display: flex;
@@ -1568,7 +1606,7 @@
             width:100%;
             margin-right:2rem;
             .accordion-wrap__item{
-                width:calc((100% - 48rem) / 2);
+                flex:1 1 auto;
                 .name{
                     font-size: 2.2rem;
                 }
@@ -1576,7 +1614,7 @@
                     height: 3rem;
                 }
                 &.on{
-                    width:48rem;
+                    width:70%;
                 }
             }
         }
@@ -1699,12 +1737,13 @@
                         width:100%;
                     }
                     .sch-form__btn{
-                        width:4.7rem;
+                        width:4.052rem;
                         margin-right:3rem;
-                        background-size: 4.7rem;
+                        background-size: 4.052rem;
                     }
                 }
                 .explan-wrap__box-inner{
+                    padding:6rem;
                     .explan-box--tit{
                         font-size:3.4rem;
                         line-height: 5.8rem;
@@ -1791,7 +1830,7 @@
             }
             .txt-wrap{
                 margin:0;
-                padding:3.4rem 3.4rem 0 3.4rem;
+                padding:3.4rem 0 0 0;
                 .y-scroll{
                     & + .poster-info{
                         margin-top:5rem;

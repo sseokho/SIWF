@@ -52,7 +52,8 @@ section{
     .btn-send{
         width:20rem;
         height:5.4rem;
-        @include font(1.8,300,#000);
+        border:1px solid #0066cc;
+        @include font(1.8,300,#0066cc);
     }
     .simplebar-track.simplebar-vertical{
         width:0.4rem;
@@ -151,8 +152,8 @@ section{
         top: 19.2rem;
         position: absolute;
         right: 0;
-        -webkit-box-shadow: 4px 5px 16px rgba(0, 0, 0, 0.25);
-        box-shadow: 4px 5px 16px rgba(0, 0, 0, 0.25);
+        -webkit-box-shadow: 4px 5px 16px rgba(0, 0, 0, 0.10);
+        box-shadow: 4px 5px 16px rgba(0, 0, 0, 0.10);
     }
     input,label,span{
         cursor: pointer;
@@ -1159,6 +1160,7 @@ section{
             &--contact{
                 margin-left:2rem;
                 background:url(../image/main/info-sec--contact.svg) no-repeat 90% center;
+                
             }
         }
         &__inner{
@@ -2199,6 +2201,17 @@ section{
 }
 
 @media (min-width:1025px){
+    .info-sec__item--contact{
+        &:hover{
+            background:url(../image/main/info-sec--contact--h.svg) no-repeat 90% center;
+        }
+    }
+    .btn-send{
+        transition: all 0.3s;
+        &:hover{
+            background:#F6FBFF;
+        }
+    }
     .info-sec{
         &__item{
             &:hover{
@@ -2298,17 +2311,42 @@ section{
 }
 
 @media (min-width:320px) and (max-width:1024px){
-    
+    .mainVisual{
+        .firstSwiper{
+            .swiper-slide{
+                width: 100%;
+                height:80rem;
+                .cover{
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }   
     .container{
         height: auto;
         .mainVisual{
             height:80rem;
             .firstSwiper{
-                height:80rem;
+                width:100%;
+                height:100%;
                 .swiper-slide{
+                    width:100%;
                     height:auto;
+                    .mo{
+                    
+                    }
                     .cover{
-                        height:80rem;
+                        &.mo{
+                            width:100%;
+                            display: block;
+                            height:100%;
+                        
+                        }
+                        
                     }
                     .txtBox{
                         display:block;

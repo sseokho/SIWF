@@ -100,6 +100,7 @@
                         padding:4rem 6rem;
                         .link-wrap{
                             a{
+                                background: #fff;
                                 border:1px solid #0066cc;
                                 width:max-content;
                                 display: block;
@@ -136,6 +137,7 @@
                 transition: all 0.5s;
                 opacity: 0;
                 height:2.7rem;
+                word-wrap: break-word;
                 line-height: 3.7rem;
                 @include font(1.6,300,#7d7d7d);
             }
@@ -150,7 +152,8 @@
                         height: auto;
                         &__item{
                             position: relative;
-                            width: 12rem;
+                            width:12rem;
+                            flex:1 1 auto;
                             height: 32.7rem;
                             transition: all 0.3s;
                             &:before{
@@ -426,7 +429,7 @@
                         }
                     }
                     .board-tab__link{
-                        padding:1.4rem 0;
+                        padding:1.8rem 0;
                         justify-content: center;
                     }
                     .timeLine-all{
@@ -474,7 +477,7 @@
                                 .link-wrap{
                                     a{
                                         display: block;
-                                        padding:0.8rem 1.2rem;
+                                        padding:0.8rem 3rem;
                                         color:#0066cc;
                                         border:1px solid #0066cc;
                                         width:max-content;
@@ -485,13 +488,13 @@
                                 .other-box{
                                     &--tit{
                                         @include font(2.6,400,#000);
-                                        line-height: 2.4rem;
+                                        line-height: 3.8rem;
                                         & + .other-box--txt{
                                             margin-top:2rem;
                                         }
                                     }
                                     &--txt{
-                                        @include font(2,200,#000);
+                                        @include font(2,300,#000);
                                         line-height: 3rem;
                                         & + .other-box--data{
                                             margin-top:2rem;
@@ -581,13 +584,13 @@
                         .link-wrap{
                             display: flex;
                             .linkMove{
-                                @include font(1.6,400,#0066cc);
+                                @include font(1.6,300,#0066cc);
                                 border:1px solid #0066cc;
                                 &--01{
-                                    padding:1rem 2rem;
+                                    padding:1.2rem 2rem;
                                 }
                                 &--02{
-                                    padding:1rem 1.2rem;
+                                    padding:1.2rem 1.2rem;
                                 }
                                 & + .linkMove{
                                     margin-left:0.4rem;
@@ -615,7 +618,7 @@
             }
             .poster-img{
                 position: sticky;
-                top: 0;
+                top: 5rem;
                 width: 57.2rem;
                 height: 80.9rem;
                 .img{
@@ -728,11 +731,12 @@
             }
         }
         .txt-wrap{
-            background: #f8f8f8;
-            padding:6.4rem 4.9rem 6.4rem 8.4rem;
+            background: #fff;
+            padding:6.4rem 4.9rem 6.4rem 6.4rem;
+            margin-left: 2rem;
             .sub-tit{
                 line-height: 2.4rem;
-                @include font(1.6,200,#000);
+                @include font(1.6,600,#000);
                 & + .tit{
                     margin-top:2.8rem;
                 }
@@ -996,6 +1000,13 @@
     
     .sub-container{
         &.thisYear{
+            .txt-wrap{
+                .txt-zip{
+                    & + .poster-info{
+                        padding-bottom: 6rem;
+                    }
+                }
+            }
             .sub-mainTit{
                 & + .board-layout{
                     margin-top:8rem;
@@ -1167,7 +1178,7 @@
                         .timeLine-all{
                             
                             .timeLine-all__item--square{
-                                font-size: 2.2rem;
+                                font-size: 2.5rem;
                                 text-align: center;
                                 padding-bottom: 2.5rem;
                             }
@@ -1187,7 +1198,7 @@
                                 }
                                 &-tit{
                                     text-align: center;
-                                    font-size: 2.8rem;
+                                    font-size: 3rem;
                                     & + .link-wrap{
                                         margin-top:3rem;
                                     }
@@ -1231,9 +1242,9 @@
                         width:100%;
                     }
                     .sch-form__btn{
-                        width:4.7rem;
+                        width:4.052rem;
                         margin-right:3rem;
-                        background-size: 4.7rem;
+                        background-size: 4.052rem;
                     }
                 }
                 .explan-wrap__box-inner{
@@ -1252,9 +1263,9 @@
                     margin-top:4.5rem;
                 }
                 .board-layout__list-gallery{
-                    grid-template-columns: repeat(2, 1fr);
-                    gap: 1.5rem;
-                    grid-gap: 1.5rem;
+                    grid-template-columns: repeat(1, 1fr);
+                    gap: 4rem;
+                    grid-gap: 4rem;
                     .gallery-link__img{
                         height:auto;
                     }
@@ -1267,8 +1278,19 @@
                         width: 100%;
                         flex-wrap: wrap;
                         margin:0;
-                        border-top:1px solid #ebebeb;
-                         border-left:1px solid #ebebeb;
+                        // border-top:1px solid #ebebeb;
+                        //  border-left:1px solid #ebebeb;
+                         li{
+                            &:nth-child(1){
+                                border-top:1px solid #ebebeb;
+                            }
+                            &:nth-child(2){
+                                border-top:1px solid #ebebeb;
+                            }
+                            &:nth-child(3){
+                                border-left:1px solid #ebebeb;
+                            }
+                        }
                         & + .board-layout__list{
                             margin-top:5rem;
                         }
@@ -1328,6 +1350,9 @@
                         }
                     }
                 }
+                .explan-wrap__box--right{
+                    padding:6rem;
+                }
                 .board-layout{
                     display: flex;
                     flex-wrap: wrap;
@@ -1364,7 +1389,7 @@
             }
             .txt-wrap{
                 margin:0;
-                padding:3.4rem 3.4rem 0 3.4rem;
+                padding:6rem 3.4rem 0 3.4rem;
                 .y-scroll{
                     & + .poster-info{
                         margin-top:5rem;
@@ -1389,6 +1414,7 @@
             &__topic{
                 .txt-wrap{
                     height:auto;
+                    margin-top: 4rem;
                 }
                 .sub-mainTit{
                     & + .poster-wrap{
@@ -1429,7 +1455,7 @@
             width:100%;
             margin-right:2rem;
             .accordion-wrap__item{
-                width:calc((100% - 48rem) / 2);
+                flex:1 1 auto;
                 
                 .name{
                     font-size: 2.2rem;
@@ -1438,7 +1464,7 @@
                     height: 3rem;
                 }
                 &.on{
-                    width:48rem;
+                    width:70%;
                 }
             }
         }
@@ -1463,6 +1489,9 @@
         }
         .explan-wrap__box{
             flex-direction: column;
+            &-inner{
+                padding:6rem;
+            }
             .cover{
                 display: flex;
                 width: 100%;

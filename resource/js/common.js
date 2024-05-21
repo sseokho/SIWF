@@ -49,7 +49,7 @@ function headerScript(){
         
         $(".depth_1 > li> a").addClass("depth1_a");
 
-
+        
         
         var depth1a = $(".depth1_a");
         
@@ -96,9 +96,25 @@ function headerScript(){
             }
         });
 
+        var aa = $(".depth1_a");
+        var aaActive = $(".depth1_a.active").text();
+        var aaClone = aa.clone();
+        $(".bradcrumb__tit:not(.is-active)").text(aaActive);
+        $(".bradcrumb__tit:not(.is-active) ~ .bradcrumb__links").html(aaClone);
 
+        if($('.bradcrumb__tit.is-active').length){
+            return false;
+        }else{
+            $(".bradcrumb-item:not(.next) .bradcrumb__tit").addClass("is-active");
+        }
        
     });//
+
+    $('.bradcrumb__tit').click(function(){
+        $(this).next().slideToggle();
+        $(this).parent().siblings().children('.bradcrumb__links').slideUp();
+    })
+
 
 };
 

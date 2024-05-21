@@ -358,7 +358,11 @@ body {
                             color:#4568a9;
                         }
                     }
-                    
+                    &:nth-child(1){
+                        a{
+                            color:#0066cc;
+                        }
+                    }
                     a {
                         width: 100%;
                         height: 100%;
@@ -374,11 +378,9 @@ body {
                         @include font(1.9,500,#000);
                         -ms-flex-pack: distribute;
                         justify-content: space-around;
-                        &.on{
-                            color:#0066cc;
-                        }
+                        
                         &.active{
-                            color:#0066cc;
+                            
                         }
                     }
 
@@ -1007,16 +1009,18 @@ footer {
     &--list{
         width:20rem;
         height:5.4rem;
+        border:1px solid #0066cc;
         background-color:#0066cc;
         color:#fff;
         font-size:1.8rem;
         font-weight:400;
-        transition: all 0.8s;
-        &:hover{
-
-            background-color:#0058B0;
-            color:#fff;
+        transition: all 0.3s;
+        &.bg-normal{
+            border:1px solid #0066cc;
+            color:#0066cc;
+            background-color:#fff;
         }
+        
     }
     &--regis{
         width:35rem;
@@ -1025,7 +1029,7 @@ footer {
         color:#fff;
         font-size:2.2rem;
         font-weight:700;
-        transition:all 0.8s;
+        transition:all 0.3s;
         &:hover{
             background-color:#e5413e;
             color:#fff;
@@ -1116,11 +1120,18 @@ footer {
             }
         }
         &__label{
+            position: relative;
             display:flex;
             width: 35.6rem;
             font-size:0;
-            border:1px solid #ebebeb;
+            
             justify-content: space-between;
+            .sch-form__btn{
+                position: absolute;
+                right:0;
+                background: url("../image/common/icon/icon_sch.png") no-repeat center center;
+                background-size: 2.6rem 2.6rem;
+            }
         }
         &__input{
             width:100%;
@@ -1130,6 +1141,15 @@ footer {
             font-weight: 400;
             padding-left:2rem;
             padding-right:2rem;
+            border:1px solid #ebebeb;
+            &:focus-visible{
+                border:1px solid #0066cc;
+                outline:none;
+                & ~ .sch-form__btn{
+                    background: url("../image/common/icon/icon_sch--h.png") no-repeat center center;
+                }
+                
+            }
             &::placeholder{
                 font-size:1.6rem;
                 font-weight:400;
@@ -1347,6 +1367,7 @@ footer {
 .link{
     text-decoration: underline;
     &-post{
+        position: relative;
         > *{
             display:flex;
             padding:1.15rem 0;
@@ -1358,7 +1379,8 @@ footer {
                 border-bottom:1px solid #ebebeb;
             }
             a{
-                width: calc(100% - 8.1rem);
+                @include ellipsis(1);
+                width: calc(100% - 23.1rem);
                 @include font(1.8,300,#000);
                 line-height: 4rem;
                 margin-left: 2rem;
@@ -1374,6 +1396,13 @@ footer {
             @include font(1.8,400,#000);
             border-radius: 0.4rem;
 
+        }
+        .creDate{
+            position: absolute;
+            right:3rem;
+            width:9.1rem;
+            @include font(1.6,300,#7d7d7d);
+            line-height: 4rem;
         }
     }
 }
@@ -1746,6 +1775,7 @@ footer {
         }
         &.link-first{
             background-image:url('../image/common/icon/icon-moveFirst.svg');
+            background-size: 1.1rem 1.2rem;
             &.on{
                 background-image:url('../image/common/icon/icon-moveFirst.svg');
             }
@@ -1753,18 +1783,21 @@ footer {
         &.link-prev{
             margin-right: 1rem;
             background-image:url('../image/common/icon/icon-movePrev.svg');
+            background-size: 0.6rem 1.2rem;
             &.on{
                 background-image:url('../image/common/icon/icon-movePrev.svg');
             }
         }
         &.link-next{
             margin-left: 1rem;
+            background-size: 0.6rem 1.2rem;
             background-image:url('../image/common/icon/icon-moveNext.svg');
             &.on{
                 background-image:url('../image/common/icon/icon-moveNext.svg');
             }
         }
         &.link-last{
+            background-size: 1.1rem 1.2rem;
             background-image:url('../image/common/icon/icon-moveLast.svg');
             &.on{
                 background-image:url('../image/common/icon/icon-moveLast.svg');
@@ -2431,7 +2464,7 @@ footer {
                 &.info {
                     padding: 2.5rem 0 5rem 0;
                     display:flex;
-                    width:100%;
+                        width:100%;
                     flex-direction: column;
                     h1 {
                         width:8.8rem;
@@ -2461,6 +2494,14 @@ footer {
 
 
 @media (min-width:320px) and (max-width:1024px){
+    .header__top--Right{
+        display: none;
+    }
+    .header__bottom--lanChange{
+        ul{
+            display:none;
+        }
+    }   
     body{
         &.fixed{
             header{
@@ -3109,7 +3150,7 @@ footer {
                 a{
                     margin-left:1rem;
                     margin-right:1rem;
-                    width:calc(100% - 9rem);
+                    width:calc(100% - 31.1rem);
                     font-size: 2.8rem;
                     overflow:hidden;
                     text-overflow: ellipsis;
@@ -3125,6 +3166,10 @@ footer {
                 padding-left:0;
                 font-size: 2.8rem;
                 background-position:4rem center;
+            }
+            .creDate{
+                width: 15.1rem;
+                font-size: 2.8rem;
             }
         }
     }
@@ -3174,6 +3219,20 @@ footer {
     .mo{
         display:none;
     }
+    .btn--list{
+        &.bg-normal{
+            &:hover{
+                border:1px solid #0066CC;
+                background-color:#F6FBFF;
+                color:#0066CC;
+            }
+        }
+        &:hover{
+
+            background-color:#004C98;
+            color:#fff;
+        }
+    }
     
     .header {
         .nav{
@@ -3184,7 +3243,7 @@ footer {
                         a{
                             &:hover{
                                 font-weight: 500;
-                                color: #0058B0;
+                                color: #004C98;
                                 text-decoration: underline;
                                 text-underline-offset : 0.1rem;
                             }
@@ -3220,7 +3279,7 @@ footer {
                             li {
                                 a {
                                     &:hover {
-                                        background-color: #0058B0;
+                                        background-color: #004C98;
                                         color:#fff;
                                     }
                                 }
@@ -3392,7 +3451,7 @@ footer {
                 li{
                     &.on{
                         a{
-                            @include font(2,400,#e60044);
+                            @include font(2,400,#ff9cb7);
                         }
                     }
                 }
@@ -3516,13 +3575,92 @@ footer {
         }
         &--close{
             background: url(../image/common/icon/icon_side-menu--close.svg) center / contain no-repeat;
+            position: absolute;
             width: 3.8rem;
             height: 3.8rem;
             display: block;
+            right:0;
             margin-top:6rem;
             margin-bottom: 5rem;
             margin-right: 5rem;
             margin-left: auto;
+        }
+        &--lanChange{
+            margin-left:5rem;
+            margin-right:0.9rem;
+            padding:6.3rem 0 3rem 0;
+            ul{
+                @include d-flex;
+                li{
+                    
+                    a{
+                        line-height: 3.8rem;
+                        @include font(2.6,500,#7d7d7d);
+                    }
+                    & + li{
+                        margin-left:3.8rem;
+                    }
+                    &.on{
+                        position: relative;
+                        a{
+                            @include font(2.6,600,#000);
+                        }
+                        &:after{
+                            content:'';
+                            position: absolute;
+                            right:-1.5rem;
+                            top:-0.4rem;
+                            background:url(../image/common/icon/icon_comma.png) no-repeat;
+                            background-size: contain;
+                            width: 1.2rem;
+                            height: 1.7rem;
+                        }
+                    }
+                }
+            }
+        }
+        &__link{
+            ul{
+                padding-top:5rem;
+                padding-left: 5rem;
+                @include d-grid-column(0,4.6);
+                li{
+                    a{
+                        height:4rem;
+                        display: block;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    &:nth-child(1){
+                        a{
+                            width:5.167rem;
+                        }
+                    }
+                    &:nth-child(2){
+                        a{
+                            width:3.667rem;
+                        }
+                    }
+                    &:nth-child(3){
+                        a{
+                            width:3.667rem;
+                        }
+                    }
+                    &:nth-child(4){
+                        a{
+                            width:1.833rem;
+                        }
+                    }
+                    &:nth-child(5){
+                        a{
+                            width:2.667rem;
+                        }
+                    }
+                    
+                }   
+            }
+            
         }
     }
 

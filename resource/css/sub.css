@@ -67,6 +67,7 @@
   background-size: 2.2rem 2.2rem;
 }
 .board-layout .board-table__list tbody tr.fix td.td-title a {
+  font-weight: 400;
   color: #0066cc;
 }
 .board-layout .board-table__list tbody tr:first-child td {
@@ -196,30 +197,33 @@
   position: relative;
   cursor: default;
 }
-.board-layout .board-table__list .td-filelink .count {
+.board-layout .board-table__list .td-filelink:before {
+  content: "";
   width: 1.6rem;
   height: 1.6rem;
-  line-height: 1.3rem;
-  line-height: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  line-height: 1.58rem;
+  display: block;
   position: absolute;
   bottom: -0.5rem;
   right: -0.5rem;
-  background: #fff;
+  background: url(../image/common/icon/icon-download__count.png) no-repeat center;
+}
+.board-layout .board-table__list .td-filelink .count {
+  width: 1.6rem;
+  height: 1.6rem;
+  line-height: 1.58rem;
+  display: block;
+  text-align: center;
+  position: absolute;
+  bottom: -0.5rem;
+  right: -0.5rem;
   font-size: 1rem;
   font-weight: 600;
   color: #000;
   /* padding: 0.5rem; */
-  border-radius: 999px;
-  border: 1px solid #000;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 .board-layout .board-table__list .td-process .badge-process {
   display: -webkit-box;
@@ -435,7 +439,7 @@
   color: #0066cc;
 }
 .board-layout__lnb li a {
-  padding: 1.4rem 0;
+  padding: 1.8rem 0;
   display: block;
   width: 19rem;
   text-align: center;
@@ -645,7 +649,7 @@
   position: absolute;
   top: 50%;
   right: 0;
-  width: 0.1rem;
+  width: 1px;
   height: 100%;
   background-color: #ebebeb;
   -webkit-transform: translateY(-50%);
@@ -668,7 +672,7 @@
 
 .bradcrumb__tit.is-active {
   color: #0066cc;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .bradcrumb__tit.is-active {
@@ -693,10 +697,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   height: 6rem;
+  line-height: 6rem;
   padding: 0 2rem;
   border-bottom: 1px solid #eeeeee;
   font-size: 1.6rem;
@@ -708,7 +710,60 @@
   border-bottom: none;
 }
 
+@media (min-width: 1025px) {
+  .bradcrumb__links a:hover {
+    background: #F6FBFF;
+  }
+  .subContent-wrap .board-layout__view .link-wrap a {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .subContent-wrap .board-layout__view .link-wrap a:hover {
+    border: 1px solid #0066CC;
+    color: #0066cc;
+    background: #F6FBFF;
+  }
+  .linkMove {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .linkMove:hover {
+    border: 1px solid #0066CC;
+    color: #0066cc;
+    background: #F6FBFF;
+  }
+  .board-layout__lnb li {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .board-layout__lnb li:not(.active):hover a {
+    color: #0066cc;
+    background: #F6FBFF;
+  }
+  .board-tab__item {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .board-tab__item:hover a {
+    font-weight: 400;
+    color: #0066cc;
+    background: #F6FBFF;
+  }
+}
 @media (min-width: 320px) and (max-width: 1024px) {
+  .btn-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .btn-wrap .btn + .btn {
+    margin-left: 1rem;
+  }
+  .btn-wrap .btn--list {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
   .board-layout__list-gallery .gallery-link__data {
     line-height: 4.1rem;
     height: 4.1rem;
@@ -732,7 +787,8 @@
   .bradcrumb__inner .bradcrumb__links {
     top: 9rem;
   }
-  .bradcrumb__inner .bradcrumb__links li a {
+  .bradcrumb__inner .bradcrumb__links a {
+    line-height: 9rem;
     height: 9rem;
   }
   .bradcrumb__inner .bradcrumb-item.next > button {

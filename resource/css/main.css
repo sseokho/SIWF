@@ -106,9 +106,10 @@ section h2 {
 .abstract_cont.contact .btn-send {
   width: 20rem;
   height: 5.4rem;
+  border: 1px solid #0066cc;
   font-size: 1.8rem;
   font-weight: 300;
-  color: #000;
+  color: #0066cc;
 }
 .abstract_cont.contact .simplebar-track.simplebar-vertical {
   width: 0.4rem;
@@ -189,8 +190,8 @@ section h2 {
   top: 19.2rem;
   position: absolute;
   right: 0;
-  -webkit-box-shadow: 4px 5px 16px rgba(0, 0, 0, 0.25);
-  box-shadow: 4px 5px 16px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 4px 5px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 5px 16px rgba(0, 0, 0, 0.1);
 }
 .main_popup input, .main_popup label, .main_popup span {
   cursor: pointer;
@@ -2111,6 +2112,16 @@ section h2 {
   }
 }
 @media (min-width: 1025px) {
+  .info-sec__item--contact:hover {
+    background: url(../image/main/info-sec--contact--h.svg) no-repeat 90% center;
+  }
+  .btn-send {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .btn-send:hover {
+    background: #F6FBFF;
+  }
   .info-sec__item:hover {
     border: 1px solid #0066cc;
   }
@@ -2166,6 +2177,16 @@ section h2 {
   }
 }
 @media (min-width: 320px) and (max-width: 1024px) {
+  .mainVisual .firstSwiper .swiper-slide {
+    width: 100%;
+    height: 80rem;
+  }
+  .mainVisual .firstSwiper .swiper-slide .cover img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   .container {
     height: auto;
   }
@@ -2173,13 +2194,17 @@ section h2 {
     height: 80rem;
   }
   .container .mainVisual .firstSwiper {
-    height: 80rem;
+    width: 100%;
+    height: 100%;
   }
   .container .mainVisual .firstSwiper .swiper-slide {
+    width: 100%;
     height: auto;
   }
-  .container .mainVisual .firstSwiper .swiper-slide .cover {
-    height: 80rem;
+  .container .mainVisual .firstSwiper .swiper-slide .cover.mo {
+    width: 100%;
+    display: block;
+    height: 100%;
   }
   .container .mainVisual .firstSwiper .swiper-slide .txtBox {
     display: block;

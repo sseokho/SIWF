@@ -17,14 +17,14 @@
         .subVisual-logo{
             width: 34.9rem;
             & + .subVisual-txt{
-                margin-top:3.4rem;
+                margin-top:3.6rem;
                 word-break: keep-all;
                 
             }
         }
         .subVisual-txt{
-            @include font(2,300,#fff);
-            line-height: 3.6rem;
+            @include font(1.8,200,#fff);
+            line-height: 3rem;
         }
         .subContent{
             &__narrow{
@@ -165,8 +165,7 @@
                     }
                     overflow:hidden;
                     .swiper-slide{
-                        width:33.5rem !important;
-                        height:33.5rem !important;
+                        
                         flex-shrink: 0;
                         position: relative;
                         transition-property: transform;
@@ -411,12 +410,15 @@
     }
 }
 @media (min-width:1025px){
+    
     .sub-container{
         &.intro{
             .subContent__wide{
                 .liveSwiper{
                     
                     .swiper-slide{
+                        width:33.5rem !important;
+                        height:33.5rem !important;
                         .cover{
                             &:hover{
                                 .liveSwiper__data{
@@ -460,6 +462,9 @@
                 font-size: 2.6rem;
                 line-height: 4.2rem;
                 margin-top:4.4rem;
+                br{
+                    display: none;
+                }
                 
             }
             .subContent-wrap{
@@ -486,7 +491,6 @@
                                 }
                             }
                             .txt{
-                                width:56%;
                                 font-size: 2.8rem;
                             }
                         }
