@@ -632,6 +632,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
 }
 
 .bradcrumb-item {
@@ -723,6 +724,15 @@
     color: #0066cc;
     background: #F6FBFF;
   }
+  .link-wrap a {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .link-wrap a:hover {
+    border: 1px solid #0066CC;
+    color: #0066cc;
+    background: #F6FBFF;
+  }
   .linkMove {
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
@@ -751,6 +761,14 @@
   }
 }
 @media (min-width: 320px) and (max-width: 1024px) {
+  .bradcrumb-item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .bradcrumb-item:last-child:after {
+    display: none;
+  }
   .btn-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -786,6 +804,7 @@
   }
   .bradcrumb__inner .bradcrumb__links {
     top: 9rem;
+    margin-left: -0.1rem;
   }
   .bradcrumb__inner .bradcrumb__links a {
     line-height: 9rem;

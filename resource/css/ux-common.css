@@ -1072,8 +1072,8 @@ footer .footerBottom .footer.info h1 img {
 .sch-form__label .sch-form__btn {
   position: absolute;
   right: 0;
-  background: url("../image/common/icon/icon_sch.png") no-repeat center center;
-  background-size: 2.6rem 2.6rem;
+  background: url("../image/common/icon/icon_sch.svg") no-repeat center center;
+  background-size: 2.4rem 2.4rem;
 }
 .sch-form__input {
   width: 100%;
@@ -1945,7 +1945,7 @@ footer .footerBottom .footer.info h1 img {
   pointer-events: none;
 }
 .ui-checkbox-block .ui-checkbox:checked::before {
-  background-color: #111;
+  background-color: #0066cc;
 }
 .ui-checkbox-block .ui-checkbox:checked::after {
   content: "";
@@ -2659,7 +2659,7 @@ footer .footerBottom .footer.info h1 img {
   }
   .btn {
     font-size: 2.8rem;
-    height: 8.2rem;
+    height: 10rem;
   }
   .btn--list {
     width: auto;
@@ -3182,17 +3182,17 @@ footer .footerBottom .footer.info h1 img {
   .footer .f_menu .sel select {
     width: auto;
     padding-right: 7rem;
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 300;
     color: #fff;
   }
   .footer .f_menu .sel select option {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 300;
     color: #000;
   }
   .footer .f_menu .sel .btn--goSel {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 300;
     color: #fff;
     height: 5rem;
@@ -3203,12 +3203,12 @@ footer .footerBottom .footer.info h1 img {
     gap: 2rem 1.6rem;
   }
   .footer .f_menu ul a {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 300;
     color: #fff;
   }
   .footer .f_menu ul li.on a {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 400;
     color: #ff9cb7;
   }
@@ -3218,13 +3218,13 @@ footer .footerBottom .footer.info h1 img {
             justify-content: center;
   }
   .footer .f_addr .copyright span:nth-child(1) {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 200;
     color: #a9a6bb;
     line-height: 3rem;
   }
   .footer .f_addr .copyright span:nth-child(2) {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 200;
     color: #8a86a0;
     line-height: 3rem;

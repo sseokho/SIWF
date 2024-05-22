@@ -99,6 +99,7 @@
                         padding:4rem 6rem;
                         .link-wrap{
                             a{
+                                background: #fff;
                                 border:1px solid #0066cc;
                                 width:max-content;
                                 display: block;
@@ -153,6 +154,9 @@
                                 top:0;
                                 width: 100%;
                                 height: calc(100% - 2.7rem);
+                            }
+                            &.fix{
+                                flex:none;
                             }
                             &.on{
                                 width: 45rem;
@@ -221,7 +225,7 @@
                             span{
                                 display: inline-block;
                                 min-width:6.9rem;
-                                @include font(1.8,400,#000);
+                                @include font(1.8,500,#000);
                                 margin-right:3rem;
                             }
                         }
@@ -234,6 +238,7 @@
                             display: block;
                             border:1px solid #0066cc;
                             @include font(1.6,300,#0066cc);
+                            background: #fff;
                             & + .linkMove{
                                 margin-left:0.4rem;
                             }
@@ -400,7 +405,7 @@
                     line-height: 3rem;
                     @include font(1.6,300,#000);
                     span{
-                        @include font(1.6,400,#000);
+                        @include font(1.6,500,#000);
                         display: inline-block;
                         width:6.3rem;
                         margin-right:2rem;
@@ -1461,7 +1466,7 @@
                                 width: 100%;
                                 font-size: 2.8rem;
                                 line-height: 4.1rem;
-                                padding:2rem 0;
+                                padding:3.2rem 0;
                             }
                         }
                     }
@@ -1479,14 +1484,15 @@
                     }
                 }
                 .explan-wrap__box--left{
-                    padding-bottom: 2rem;
+                    padding-bottom: 3rem;
                     & + .explan-wrap__box--right{
-                        margin-top:2rem;
+                        margin-top:5rem;
                     }
                     .cover{
                         & + .explan-wrap__refer{
                             bottom:-1rem;
                             font-size: 2.2rem;
+                            left:0;
                         }
                     }
                 }
@@ -1514,12 +1520,17 @@
                 .board-layout__view{
                     .attProgram-wrap__box--right{
                         .attProgram-wrap--tit{
-                            font-size: 2.8rem;
+                            font-size: 4rem;
                             line-height: 5rem;
+                            padding-bottom: 4rem;
+                            & + .attProgram-info{
+                                margin-top: 4rem;
+                                padding-bottom: 4rem;
+                            }
                         }
                         .link-wrap{
                             .linkMove{
-                                padding:1.5rem 1.8rem;
+                                padding:2rem 2rem;
                                 line-height: 3rem;
                                 font-size: 2.2rem;
                                 text-align: center;
@@ -1530,7 +1541,7 @@
                         .link-wrap{
                             a{
                                 font-size: 2.2rem;
-                                padding: 2.2rem 2.8rem;
+                                padding: 3rem;
                             }
                         }
                     }
@@ -1548,41 +1559,49 @@
                 .hisProgram-box-tit{
 
                     a{
-                        font-size: 2.8rem;
+                        font-size: 3.4rem;
+                    }
+                    & + .hisProgram-info{
+                        margin-top:2rem;
                     }
                 }
                 .hisProgram-all{
                     grid-template-columns: 100%;
                 }
                 .hisProgram-box--left{
-                    width:35.2rem;
+                    width:100%;
+                    margin-right:0;
                 }
                 .hisProgram-info{
                     li{
-                        display: block !important;
+                        
                         span{
-                            width:100%;
+                            width:13rem;
                             font-size: 2rem;
                             height: 100%;
                             display: block;
                         }
+                        
                     }
                 }
                 .hisProgram-box--right{
-                    width: calc(100% - 35.2rem);
+                    width: 100%;
+                    margin-top:3rem;
                 }
                 .hisProgram-all__item{
-                    padding:2rem;
+                    padding: 2rem;
+                    display: flex;
+                    flex-direction: column;
                 }
                 .hisProgram-info{
                     li{
                         display: flex;
-                        font-size: 2rem;
+                        font-size: 2.6rem;
                         span{
-                            font-size: 2rem;
+                            font-size: 2.6rem;
                         }
                         & + li{
-                            margin-top:1rem;
+                            margin-top:2rem;
                         }
                     }
                 }
@@ -1628,7 +1647,7 @@
                     font-size: 2.6rem;
                     line-height: 3.5rem;
                     & + li{
-                        margin-top:1rem;
+                        margin-top:2rem;
                     }
                     span{
                         font-size: 2.6rem;
@@ -1724,7 +1743,7 @@
                 .board-tab__link{
                     line-height: 3.8rem;
                     font-size: 2.6rem;
-                    padding:2.2rem 0;
+                    padding:3.4rem 0;
                 }
                 .sch-wrap{
                     flex-wrap:wrap;
@@ -1810,7 +1829,10 @@
                                 width: 100%;
                                 font-size: 2.8rem;
                                 line-height: 4.1rem;
-                                padding:2rem 0;
+                                padding:3.4rem 0;
+                            }
+                            & + li{
+                                margin-top:0;
                             }
                         }
                     }

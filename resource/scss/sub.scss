@@ -686,6 +686,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width:100%;
   }
   .bradcrumb-item {
     position: relative;
@@ -782,7 +783,16 @@
         }
         
     }   
-    
+    .link-wrap{
+        a{
+            transition: all 0.3s;
+            &:hover{
+                border:1px solid #0066CC;
+                color:#0066cc;
+                background:#F6FBFF;
+            }
+        }
+    }
     .linkMove{
         transition: all 0.3s;
         &:hover{
@@ -817,6 +827,14 @@
 }
 
 @media (min-width:320px) and (max-width:1024px){
+    .bradcrumb-item {
+        flex:1;
+        &:last-child{
+            &:after{
+                display:none;
+            }
+        }
+    }
     .btn-wrap{
         display: flex;
         .btn{
@@ -859,7 +877,7 @@
         height:9rem;
         .bradcrumb__links{
             top:9rem;
-            
+            margin-left:-0.1rem;
             a{
                 line-height: 9rem;
                 height:9rem;

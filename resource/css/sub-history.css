@@ -90,6 +90,7 @@
   padding: 4rem 6rem;
 }
 .board-layout__view .explan-wrap__box--right .link-wrap a {
+  background: #fff;
   border: 1px solid #0066cc;
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -151,6 +152,11 @@
   top: 0;
   width: 100%;
   height: calc(100% - 2.7rem);
+}
+.board-layout__view .attProgram-wrap__box--left .accordion-wrap__item.fix {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
 }
 .board-layout__view .attProgram-wrap__box--left .accordion-wrap__item.on {
   width: 45rem;
@@ -228,7 +234,7 @@
   display: inline-block;
   min-width: 6.9rem;
   font-size: 1.8rem;
-  font-weight: 400;
+  font-weight: 500;
   color: #000;
   margin-right: 3rem;
 }
@@ -244,6 +250,7 @@
   font-size: 1.6rem;
   font-weight: 300;
   color: #0066cc;
+  background: #fff;
 }
 .board-layout__view .attProgram-wrap__box--right .link-wrap .linkMove + .linkMove {
   margin-left: 0.4rem;
@@ -416,7 +423,7 @@
 }
 .sub-container.history__program .hisProgram-info li span {
   font-size: 1.6rem;
-  font-weight: 400;
+  font-weight: 500;
   color: #000;
   display: inline-block;
   width: 6.3rem;
@@ -1454,7 +1461,7 @@
     width: 100%;
     font-size: 2.8rem;
     line-height: 4.1rem;
-    padding: 2rem 0;
+    padding: 3.2rem 0;
   }
   .sub-container.history__author .explan-wrap {
     display: -webkit-box;
@@ -1471,14 +1478,15 @@
             order: 2;
   }
   .sub-container.history__author .explan-wrap__box--left {
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
   }
   .sub-container.history__author .explan-wrap__box--left + .explan-wrap__box--right {
-    margin-top: 2rem;
+    margin-top: 5rem;
   }
   .sub-container.history__author .explan-wrap__box--left .cover + .explan-wrap__refer {
     bottom: -1rem;
     font-size: 2.2rem;
+    left: 0;
   }
   .sub-container.history__author .explan-wrap__box--right {
     padding: 6rem;
@@ -1500,54 +1508,68 @@
     line-height: 5rem;
   }
   .sub-container.history__author .board-layout__view .attProgram-wrap__box--right .attProgram-wrap--tit {
-    font-size: 2.8rem;
+    font-size: 4rem;
     line-height: 5rem;
+    padding-bottom: 4rem;
+  }
+  .sub-container.history__author .board-layout__view .attProgram-wrap__box--right .attProgram-wrap--tit + .attProgram-info {
+    margin-top: 4rem;
+    padding-bottom: 4rem;
   }
   .sub-container.history__author .board-layout__view .attProgram-wrap__box--right .link-wrap .linkMove {
-    padding: 1.5rem 1.8rem;
+    padding: 2rem 2rem;
     line-height: 3rem;
     font-size: 2.2rem;
     text-align: center;
   }
   .sub-container.history__author .board-layout__view .explan-wrap__box--right .link-wrap a {
     font-size: 2.2rem;
-    padding: 2.2rem 2.8rem;
+    padding: 3rem;
   }
   .sub-container.history__program .hisProgram-box-tit a {
-    font-size: 2.8rem;
+    font-size: 3.4rem;
+  }
+  .sub-container.history__program .hisProgram-box-tit + .hisProgram-info {
+    margin-top: 2rem;
   }
   .sub-container.history__program .hisProgram-all {
     grid-template-columns: 100%;
   }
   .sub-container.history__program .hisProgram-box--left {
-    width: 35.2rem;
-  }
-  .sub-container.history__program .hisProgram-info li {
-    display: block !important;
+    width: 100%;
+    margin-right: 0;
   }
   .sub-container.history__program .hisProgram-info li span {
-    width: 100%;
+    width: 13rem;
     font-size: 2rem;
     height: 100%;
     display: block;
   }
   .sub-container.history__program .hisProgram-box--right {
-    width: calc(100% - 35.2rem);
+    width: 100%;
+    margin-top: 3rem;
   }
   .sub-container.history__program .hisProgram-all__item {
     padding: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .sub-container.history__program .hisProgram-info li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-size: 2rem;
+    font-size: 2.6rem;
   }
   .sub-container.history__program .hisProgram-info li span {
-    font-size: 2rem;
+    font-size: 2.6rem;
   }
   .sub-container.history__program .hisProgram-info li + li {
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
   .board-layout__view .attProgram-wrap .sub-sec__tit {
     font-size: 3rem;
@@ -1591,7 +1613,7 @@
     line-height: 3.5rem;
   }
   .board-layout__view .attProgram-wrap__box--right .attProgram-info li + li {
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
   .board-layout__view .attProgram-wrap__box--right .attProgram-info li span {
     font-size: 2.6rem;
@@ -1678,7 +1700,7 @@
   .sub-container.history__program .board-tab__link {
     line-height: 3.8rem;
     font-size: 2.6rem;
-    padding: 2.2rem 0;
+    padding: 3.4rem 0;
   }
   .sub-container.history__program .sch-wrap {
     -ms-flex-wrap: wrap;
@@ -1772,7 +1794,10 @@
     width: 100%;
     font-size: 2.8rem;
     line-height: 4.1rem;
-    padding: 2rem 0;
+    padding: 3.4rem 0;
+  }
+  .sub-container.history__author .board-layout .board-layout__lnb li + li {
+    margin-top: 0;
   }
   .sub-container.history .poster-info li {
     font-size: 2.6rem;
