@@ -1183,7 +1183,10 @@ section{
         }
         .txt{
             @include font(1.8,300,#000);
-            margin:1.8rem 0 3rem;
+            width: 80%;
+            margin: 1.8rem 0 3rem;
+            line-height: 2.7rem;
+            word-break: keep-all;
         }
         &--way{
             margin-bottom: 3rem;

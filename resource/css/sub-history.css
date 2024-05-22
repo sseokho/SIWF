@@ -195,8 +195,8 @@
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
-  -o-object-position: center;
-     object-position: center;
+  -o-object-position: top;
+     object-position: top;
 }
 .board-layout__view .attProgram-wrap__box--left .accordion-wrap__item .name {
   position: absolute;
@@ -1599,7 +1599,7 @@
     height: 3rem;
   }
   .board-layout__view .attProgram-wrap__box--left .accordion-wrap__item.on {
-    width: 70%;
+    width: 55%;
   }
   .board-layout__view .attProgram-wrap__box--right {
     width: 100%;

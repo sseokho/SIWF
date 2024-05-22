@@ -1252,7 +1252,10 @@ section h2 {
   font-size: 1.8rem;
   font-weight: 300;
   color: #000;
+  width: 80%;
   margin: 1.8rem 0 3rem;
+  line-height: 2.7rem;
+  word-break: keep-all;
 }
 .info-sec--way {
   margin-bottom: 3rem;

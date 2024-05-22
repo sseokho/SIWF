@@ -203,7 +203,7 @@
                                     width: 100%;
                                     object-fit: cover;
                                     height: 100%;
-                                    object-position: center;
+                                    object-position: top;
                                 }
                             }
                             .name{
@@ -1484,7 +1484,7 @@
                     height: 3rem;
                 }
                 &.on{
-                    width:70%;
+                    width:55%;
                 }
             }
         }

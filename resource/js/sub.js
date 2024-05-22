@@ -20,7 +20,7 @@ function footerScript(){
 	    	if($("#family_site option:selected").val() != "") {
 	    		window.open($("#family_site option:selected").val());
 	    	} else {
-	    		alert("패밀리 사이트를 선택해주세요.");
+	    		alert("Please select a family site");
 	    	}
 	    });
         $(".copyright span").attr('contenteditable','true');
