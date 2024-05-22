@@ -1,5 +1,6 @@
 $(document).ready(function () {
     headerScript(); // 헤더 전용 스크립트
+    footerScript(); // 푸터 전용 스크립트
     tab();
     main_pop();
     /*dDay();*/
@@ -117,7 +118,20 @@ function headerScript(){
 
 
 };
+function footerScript(){
+    $('.header').load('footer.html', function() {
+        $(".btn--goSel").click(function() {
+	    	if($("#family_site option:selected").val() != "") {
+	    		window.open($("#family_site option:selected").val());
+	    	} else {
+	    		alert("패밀리 사이트를 선택해주세요.");
+	    	}
+	    });
 
+
+        $(".copyright span").attr('contenteditable','true');
+    });
+}
 function sideMenu(){
 
         $('.sitemap').click(function(){

@@ -107,9 +107,10 @@ section h2 {
   width: 20rem;
   height: 5.4rem;
   border: 1px solid #0066cc;
+  background: #0066cc;
   font-size: 1.8rem;
   font-weight: 300;
-  color: #0066cc;
+  color: #fff;
 }
 .abstract_cont.contact .simplebar-track.simplebar-vertical {
   width: 0.4rem;
@@ -1220,7 +1221,7 @@ section h2 {
   height: 1rem;
 }
 .info-sec__item--way {
-  background: url(../image/main/info-sec--way.svg) no-repeat 89% center;
+  background: url(../image/main/info-sec--way.svg) no-repeat 90% center;
 }
 .info-sec__item--contact {
   margin-left: 2rem;
@@ -1251,7 +1252,10 @@ section h2 {
   font-size: 1.8rem;
   font-weight: 300;
   color: #000;
+  width: 80%;
   margin: 1.8rem 0 3rem;
+  line-height: 2.7rem;
+  word-break: keep-all;
 }
 .info-sec--way {
   margin-bottom: 3rem;
@@ -2112,8 +2116,17 @@ section h2 {
   }
 }
 @media (min-width: 1025px) {
+  .info-sec__item--way:hover {
+    background: url(../image/main/info-sec--way--h.svg) no-repeat 90% center;
+  }
+  .info-sec__item--way:hover a p, .info-sec__item--way:hover a span {
+    color: #0066cc;
+  }
   .info-sec__item--contact:hover {
     background: url(../image/main/info-sec--contact--h.svg) no-repeat 90% center;
+  }
+  .info-sec__item--contact:hover a p, .info-sec__item--contact:hover a span {
+    color: #0066cc;
   }
   .btn-send {
     -webkit-transition: all 0.3s;
@@ -2463,7 +2476,7 @@ section h2 {
     color: #959595;
   }
   .abstract_cont.contact .ui-input.input-height-43 {
-    height: 6rem;
+    height: 8rem;
   }
   .abstract_cont.contact .ui-input-block textarea {
     font-size: 1.8rem;
@@ -2501,9 +2514,11 @@ section h2 {
     color: #000;
   }
   .abstract_cont.contact .btn-send {
+    width: 100%;
+    height: 8rem;
     font-size: 2.2rem;
     font-weight: 200;
-    color: #000;
+    line-height: 8.1rem;
   }
   .abstract_cont.contact .y-scroll .txt span {
     line-height: 3rem;
@@ -2527,7 +2542,8 @@ section h2 {
   }
   .info-sec__item--way {
     background: url(../image/main/info-sec--way.svg) no-repeat 93% center;
-    background-size: 6.7rem;
+    background-size: 6.7rem 6.185rem;
+    margin: 1rem 0 0 0;
   }
   .info-sec__item--contact {
     background: url(../image/main/info-sec--contact.svg) no-repeat 93% center;

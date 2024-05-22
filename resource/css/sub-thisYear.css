@@ -165,6 +165,11 @@
   width: 100%;
   height: calc(100% - 2.7rem);
 }
+.board-layout__view .attProgram-wrap__box--left .accordion-wrap__item.fix {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
 .board-layout__view .attProgram-wrap__box--left .accordion-wrap__item.on {
   width: 45rem;
 }
@@ -202,8 +207,8 @@
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
-  -o-object-position: center;
-     object-position: center;
+  -o-object-position: top;
+     object-position: top;
 }
 .board-layout__view .attProgram-wrap__box--left .accordion-wrap__item .name {
   position: absolute;
@@ -241,7 +246,7 @@
   display: inline-block;
   min-width: 6.9rem;
   font-size: 1.8rem;
-  font-weight: 400;
+  font-weight: 500;
   color: #000;
   margin-right: 3rem;
 }
@@ -257,6 +262,7 @@
   font-size: 1.6rem;
   font-weight: 300;
   color: #0066cc;
+  background: #fff;
 }
 .board-layout__view .attProgram-wrap__box--right .link-wrap .linkMove + .linkMove {
   margin-left: 0.4rem;
@@ -1060,21 +1066,32 @@
     line-height: 5rem;
   }
   .sub-container.thisYear__author .board-layout__view .attProgram-wrap__box--right .attProgram-wrap--tit {
-    font-size: 2.8rem;
+    font-size: 4rem;
     line-height: 5rem;
+    padding-bottom: 4rem;
+  }
+  .sub-container.thisYear__author .board-layout__view .attProgram-wrap__box--right .attProgram-wrap--tit + .attProgram-info {
+    margin-top: 4rem;
+    padding-bottom: 4rem;
   }
   .sub-container.thisYear__author .board-layout__view .attProgram-wrap__box--right .link-wrap .linkMove {
-    padding: 1.5rem 1.8rem;
+    padding: 2rem 2rem;
     line-height: 3rem;
     font-size: 2.2rem;
     text-align: center;
   }
   .sub-container.thisYear__author .board-layout__view .explan-wrap__box--right .link-wrap a {
     font-size: 2.2rem;
-    padding: 2.2rem 2.8rem;
+    padding: 3rem;
   }
   .sub-container.thisYear__program .board-layout + .btn-wrap {
     margin-top: 8rem;
+  }
+  .sub-container.thisYear__program .board-layout.timeLine .other-all__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .sub-container.thisYear__program .explan-info li {
     font-size: 2.6rem;
@@ -1102,7 +1119,7 @@
   .sub-container.thisYear__program .board-layout.timeLine .board-tab__link {
     line-height: 3.8rem;
     font-size: 2.6rem;
-    padding: 2.2rem 0;
+    padding: 3.4rem 0;
   }
   .sub-container.thisYear__program .board-layout.timeLine .board-tab__list {
     -ms-flex-wrap: wrap;
@@ -1115,37 +1132,38 @@
     width: 25%;
   }
   .sub-container.thisYear__program .board-layout.timeLine .other-all__item--left {
-    width: 35rem;
-    margin-right: 2rem;
+    width: 100%;
+    margin-right: 0;
   }
   .sub-container.thisYear__program .board-layout.timeLine .other-all__item--right {
-    width: calc(100% - 37rem);
+    width: 100%;
+    margin-top: 3rem;
   }
   .sub-container.thisYear__program .board-layout.timeLine .other-all__item--right .other-box--tit {
     line-height: 3.5rem;
-    font-size: 2.8rem;
+    font-size: 3.4rem;
   }
   .sub-container.thisYear__program .board-layout.timeLine .other-all__item--right .other-box--tit + .other-box--txt {
-    margin-top: 0.5rem;
+    margin-top: 2rem;
   }
   .sub-container.thisYear__program .board-layout.timeLine .other-all__item--right .other-box--txt {
     font-size: 2.6rem;
   }
   .sub-container.thisYear__program .board-layout.timeLine .other-all__item--right .other-box--txt + .other-box--data {
-    margin-top: 0.5rem;
+    margin-top: 2rem;
   }
   .sub-container.thisYear__program .board-layout.timeLine .other-all__item--right .other-box--data {
     font-size: 2.2rem;
   }
   .sub-container.thisYear__program .board-layout.timeLine .other-all__item--right .other-box--data + .link-wrap {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
   }
   .sub-container.thisYear__program .board-layout.timeLine .other-all__item--right .link-wrap a {
-    font-size: 2.2rem;
-    padding: 1.5rem 2.2rem;
+    font-size: 2.6rem;
+    padding: 3rem 6rem;
   }
   .sub-container.thisYear__program .board-layout.timeLine .timeLine-all .timeLine-all__item--square {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     text-align: center;
     padding-bottom: 2.5rem;
   }
@@ -1154,28 +1172,32 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 5rem 0;
   }
   .sub-container.thisYear__program .board-layout.timeLine .timeLine-all .hourProgram-box .link-wrap .linkMove {
     font-size: 2.2rem;
   }
   .sub-container.thisYear__program .board-layout.timeLine .timeLine-all .hourProgram-box .link-wrap .linkMove--01 {
-    padding: 2rem 3rem;
+    padding: 2.5rem 3rem;
   }
   .sub-container.thisYear__program .board-layout.timeLine .timeLine-all .hourProgram-box .link-wrap .linkMove--02 {
-    padding: 2rem 3rem;
+    padding: 2.5rem 3rem;
   }
   .sub-container.thisYear__program .board-layout.timeLine .timeLine-all .hourProgram-box-tit {
     text-align: center;
-    font-size: 3rem;
+    font-size: 4.2rem;
   }
   .sub-container.thisYear__program .board-layout.timeLine .timeLine-all .hourProgram-box-tit + .link-wrap {
-    margin-top: 3rem;
+    margin-top: 5rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .sub-container.thisYear__program .board-layout.timeLine .timeLine-all .hourProgram-box--left {
     margin: 0 auto;
   }
   .sub-container.thisYear__program .board-layout.timeLine .timeLine-all .hourProgram-box--right {
-    margin: 3rem auto 0;
+    margin: 5rem auto 0;
   }
   .sub-container.thisYear__program .board-layout.timeLine .timeLine-all .hourProgram-box--right .hourProgram-picture-list {
     width: 100%;
@@ -1274,7 +1296,7 @@
     width: 100%;
     font-size: 2.8rem;
     line-height: 4.1rem;
-    padding: 2rem 0;
+    padding: 3.2rem 0;
   }
   .sub-container.thisYear__author .board-layout + .btn-wrap {
     margin-top: 8rem;
@@ -1297,15 +1319,15 @@
             order: 2;
   }
   .sub-container.thisYear__author .explan-wrap__box--left {
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
   }
   .sub-container.thisYear__author .explan-wrap__box--left + .explan-wrap__box--right {
-    margin-top: 2rem;
+    margin-top: 5rem;
   }
   .sub-container.thisYear__author .explan-wrap__box--left .cover + .explan-wrap__refer {
-    bottom: 0;
     bottom: -1rem;
     font-size: 2.2rem;
+    left: 0;
   }
   .sub-container.thisYear__author .explan-wrap__box--right {
     padding: 6rem;
@@ -1336,7 +1358,10 @@
     width: 100%;
     font-size: 2.8rem;
     line-height: 4.1rem;
-    padding: 2rem 0;
+    padding: 3.4rem 0;
+  }
+  .sub-container.thisYear__author .board-layout .board-layout__lnb li + li {
+    margin-top: 0;
   }
   .sub-container.thisYear .poster-info li {
     font-size: 2.6rem;
@@ -1424,7 +1449,7 @@
     height: 3rem;
   }
   .board-layout__view .attProgram-wrap__box--left .accordion-wrap__item.on {
-    width: 70%;
+    width: 55%;
   }
   .board-layout__view .attProgram-wrap__box--right {
     width: 100%;
@@ -1438,7 +1463,7 @@
     line-height: 3.5rem;
   }
   .board-layout__view .attProgram-wrap__box--right .attProgram-info li + li {
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
   .board-layout__view .attProgram-wrap__box--right .attProgram-info li span {
     font-size: 2.6rem;

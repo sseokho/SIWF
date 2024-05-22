@@ -1129,8 +1129,8 @@ footer {
             .sch-form__btn{
                 position: absolute;
                 right:0;
-                background: url("../image/common/icon/icon_sch.png") no-repeat center center;
-                background-size: 2.6rem 2.6rem;
+                background: url("../image/common/icon/icon_sch.svg") no-repeat center center;
+                background-size: 2.4rem 2.4rem;
             }
         }
         &__input{
@@ -1979,7 +1979,7 @@ footer {
                     pointer-events: none;
             }
             &:checked::before {
-                background-color: #111;
+                background-color: #0066cc;
             }
             &:checked::after {
                 content: "";
@@ -2793,7 +2793,7 @@ footer {
     }
     .btn{
         font-size:2.8rem;
-        height: 8.2rem;
+        height: 10rem;
         &--list{
             width:auto;
             padding:0 2rem;
@@ -3428,14 +3428,14 @@ footer {
                 select{
                     width: auto;
                     padding-right: 7rem;
-                    @include font(2,300,#fff);
+                    @include font(2.2,300,#fff);
                     option{
-                        @include font(2,300,#000);
+                        @include font(2.2,300,#000);
                     }
                 }
                 .btn{
                     &--goSel{
-                        @include font(2,300,#fff);
+                        @include font(2.2,300,#fff);
                         height:5rem;
                         line-height: 4.5rem;
                     }
@@ -3446,12 +3446,12 @@ footer {
                 grid-gap:2rem 1.6rem;
                 gap:2rem 1.6rem;
                 a{
-                    @include font(2,300,#fff);
+                    @include font(2.2,300,#fff);
                 }
                 li{
                     &.on{
                         a{
-                            @include font(2,400,#ff9cb7);
+                            @include font(2.2,400,#ff9cb7);
                         }
                     }
                 }
@@ -3462,11 +3462,11 @@ footer {
             .copyright{
                 span{
                     &:nth-child(1){
-                        @include font(1.8,200,#a9a6bb);
+                        @include font(2,200,#a9a6bb);
                         line-height: 3rem;
                     }
                     &:nth-child(2){
-                        @include font(1.8,200,#8a86a0);
+                        @include font(2,200,#8a86a0);
                         line-height: 3rem;
                     }
                 }

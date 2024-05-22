@@ -244,7 +244,7 @@
   height: 100%;
   width: calc(100% - 45.3rem);
   margin-left: auto;
-  padding: 3rem 0;
+  padding: 3rem 0 5rem 0;
   margin-right: 17.4rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -262,7 +262,7 @@
   color: #000;
 }
 .stat-box__list .stat-tit + .stat-content {
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 .stat-box__list .stat-content .number {
   line-height: 7rem;
@@ -482,6 +482,8 @@
   }
   .sub-container.intro .subContent-wrap .subContent__wide-top .txt-wrap .txt {
     font-size: 2.8rem;
+    width: 68%;
+    word-break: keep-all;
   }
   .sub-container.intro .subContent-wrap .subContent__wide-top .swiper-state .control-btn {
     width: 6rem;
@@ -561,6 +563,7 @@
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    margin-top: 0.5rem;
   }
   .sub-container.intro .stat-box .right .stat-box__list .stat-content .number {
     max-width: 24rem;

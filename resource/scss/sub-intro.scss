@@ -227,7 +227,7 @@
         height: 100%;
         width: calc(100% - 45.3rem);
         margin-left:auto;
-        padding:3rem 0;
+        padding:3rem 0 5rem 0;
         margin-right: 17.4rem;
         justify-content: center;
         align-items: center;
@@ -238,7 +238,7 @@
                 text-align: center;
                 @include font(1.8,500,#000);
                 & + .stat-content{
-                    margin-top:3rem;
+                    margin-top:1rem;
                 }
             }
             &-content{
@@ -488,10 +488,13 @@
                                 line-height: 5.2rem;
                                 & + .txt{
                                     margin-top:2rem;
+                                    
                                 }
                             }
                             .txt{
                                 font-size: 2.8rem;
+                                width:68%;
+                                word-break: keep-all;
                             }
                         }
                         .swiper-state{
@@ -564,6 +567,7 @@
                         .stat-content{
                             position: relative;
                             display: inline-flex;
+                            margin-top:0.5rem;
                             .number{
                                 max-width: 24rem;
                                 font-size: 5rem;
