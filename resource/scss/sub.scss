@@ -224,14 +224,15 @@
                     cursor: default;
                     &:before{
                         content:'';
-                        width: 1.6rem;
-                        height: 1.6rem;
+                        width: 1.65rem;
+                        height: 1.65rem;
                         line-height: 1.58rem;
                         display: block;
                         position: absolute;
                         bottom: -0.5rem;
                         right:-0.5rem;
                         background: url(../image/common/icon/icon-download__count.png) no-repeat center;
+                        background-size: contain;
                         
                     }
                     .count{

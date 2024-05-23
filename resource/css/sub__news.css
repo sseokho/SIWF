@@ -293,7 +293,7 @@
 .stat-box__list .stat-content .number {
   font-size: 6rem;
   font-weight: 600;
-  color: #0066cc;
+  color: #233e80;
 }
 .stat-box__list .stat-content .unit {
   margin-left: 0.8rem;
@@ -309,7 +309,7 @@
   width: 45.3rem;
   height: 30rem;
   left: 0;
-  background: #0066cc;
+  background: #233e80;
   display: -webkit-box;
   display: flex;
   -ms-display: flexbox;
@@ -631,4 +631,4 @@
     background-image: url("../image/sub/mo-img-subVisual--dataBook.jpg");
     background-position: center;
   }
-}/*# sourceMappingURL=sub-news.css.map */
+}
