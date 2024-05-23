@@ -6,7 +6,7 @@ $(document).ready(function(){
     td_file();
     preventDefault();
     hisProgram();
-    // Num_ani();
+    Num_ani();
 })
 
 function bradcrumb(){
@@ -196,47 +196,47 @@ function hisProgram(){
 }
 
 
-// function Num_ani(){
-//     // 숫자카운트
-//     const counter = (counterElement, max) => {
-//         let now = max;
+function Num_ani(){
+    // 숫자카운트
+    const counter = (counterElement, max) => {
+        let now = max;
 
-//         const handle = setInterval(() => {
-//             counterElement.innerHTML = Math.ceil(max - now).toLocaleString();
+        const handle = setInterval(() => {
+            counterElement.innerHTML = Math.ceil(max - now).toLocaleString();
 
-//             if (now < 1) {
-//                 clearInterval(handle);
-//             }
+            if (now < 1) {
+                clearInterval(handle);
+            }
 
-//             const step = now / 10;
-//             now -= step;
-//         }, 30);
-//     };
+            const step = now / 10;
+            now -= step;
+        }, 30);
+    };
 
 
-//     // 스크롤 이벤트
-//     const startCountersOnScroll = () => {
-//         const numSec = document.querySelector('.stat-box');
-//         const numSecOffsetTop = numSec.offsetTop;
-//         let started = false;
+    // 스크롤 이벤트
+    const startCountersOnScroll = () => {
+        const numSec = document.querySelector('.stat-box');
+        const numSecOffsetTop = numSec.offsetTop;
+        let started = false;
 
-//         const handleScroll = () => {
-//             const scrollY = window.scrollY;
-//             if (scrollY >= numSecOffsetTop && !started) {
-//                 const counters = document.querySelectorAll('.number');
-//                 const maxValues = [61, 313, 200, 1000000];
-//                 counters.forEach((counterElement, index) => {
-//                     setTimeout(() => counter(counterElement, maxValues[index]), 0);
-//                 });
-//                 started = true;
-//                 window.removeEventListener('scroll', handleScroll);
-//             }
-//         };
+        const handleScroll = () => {
+            const scrollY = window.scrollY;
+            if (scrollY >= numSecOffsetTop && !started) {
+                const counters = document.querySelectorAll('.number');
+                const maxValues = [61, 313, 200, 1000000];
+                counters.forEach((counterElement, index) => {
+                    setTimeout(() => counter(counterElement, maxValues[index]), 0);
+                });
+                started = true;
+                window.removeEventListener('scroll', handleScroll);
+            }
+        };
 
-//         window.addEventListener('scroll', handleScroll);
-//     };
+        window.addEventListener('scroll', handleScroll);
+    };
 
-//     window.addEventListener('load', startCountersOnScroll);
-// }
+    window.addEventListener('load', startCountersOnScroll);
+}
 
 

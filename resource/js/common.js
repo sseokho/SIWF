@@ -58,7 +58,6 @@ function headerScript(){
             var subCon = $(".sub-container");
             var depth1aEle = $(".depth1_a").eq(i);
             var depth1aTxt = $(".depth1_a").eq(i).text();
-            console.log(depth1aEle);
             if($(subCon).is(".intro") === true) {
                 if(depth1aTxt == "서울국제작가축제"){
                     depth1aEle.addClass('active');
@@ -76,7 +75,7 @@ function headerScript(){
                     depth1aEle.addClass('active');
                 }
             } else {
-                $(".depth1_a").addClass('active');
+                return false;
             }
            
         });
