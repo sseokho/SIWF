@@ -60,19 +60,19 @@ function headerScript(){
             var depth1aTxt = $(".depth1_a").eq(i).text();
             console.log(depth1aEle);
             if($(subCon).is(".intro") === true) {
-                if(depth1aTxt == "About"){
+                if(depth1aTxt == "서울국제작가축제"){
                     depth1aEle.addClass('active');
                 }
             } else if($(subCon).is(".thisYear") === true){
-                if(depth1aTxt == "SIWF 2024"){
+                if(depth1aTxt == "2024 축제"){
                     depth1aEle.addClass('active');
                 }
             } else if($(subCon).is(".news") === true){
-                if(depth1aTxt == "Updates"){
+                if(depth1aTxt == "소식"){
                     depth1aEle.addClass('active');
                 }
             } else if($(subCon).is(".history") === true){
-                if(depth1aTxt == "Past Events"){
+                if(depth1aTxt == "역대 축제"){
                     depth1aEle.addClass('active');
                 }
             } else {
