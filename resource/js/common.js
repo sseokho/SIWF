@@ -58,6 +58,7 @@ function headerScript(){
             var subCon = $(".sub-container");
             var depth1aEle = $(".depth1_a").eq(i);
             var depth1aTxt = $(".depth1_a").eq(i).text();
+            console.log(depth1aEle);
             if($(subCon).is(".intro") === true) {
                 if(depth1aTxt == "About"){
                     depth1aEle.addClass('active');
@@ -75,7 +76,7 @@ function headerScript(){
                     depth1aEle.addClass('active');
                 }
             } else {
-                return false;
+                $(".depth1_a").addClass('active');
             }
            
         });
@@ -124,7 +125,7 @@ function footerScript(){
 	    	if($("#family_site option:selected").val() != "") {
 	    		window.open($("#family_site option:selected").val());
 	    	} else {
-	    		alert("Please select a family site");
+	    		alert("패밀리 사이트를 선택해주세요.");
 	    	}
 	    });
 
