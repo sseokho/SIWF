@@ -2974,7 +2974,7 @@ footer .footerBottom .footer.info h1 img {
   .link-post > * a {
     margin-left: 1rem;
     margin-right: 1rem;
-    width: calc(100% - 31.1rem);
+    width: calc(100% - 24rem);
     font-size: 2.8rem;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -2991,8 +2991,10 @@ footer .footerBottom .footer.info h1 img {
     background-position: 4rem center;
   }
   .link-post .creDate {
-    width: 15.1rem;
-    font-size: 2.8rem;
+    width: 13.1rem;
+    text-align: right;
+    right: 0;
+    font-size: 2.4rem;
   }
 }
 .y-scroll {

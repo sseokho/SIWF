@@ -1343,14 +1343,14 @@
 }
 @media (min-width: 320px) and (max-width: 1024px) {
   .sub-container.history .sub-mainTit + .board-layout {
-    margin-top: 8rem;
+    margin-top: 5rem;
   }
   .sub-container.history .subContent-wrap {
     padding: 0 4rem 12rem;
   }
   .sub-container.history .subContent-wrap .board-layout {
     margin-bottom: 0;
-    margin-top: 8rem;
+    margin-top: 5rem;
   }
   .sub-container.history__topic.viewer .subContent-wrap {
     padding-bottom: 12rem;
@@ -1392,9 +1392,9 @@
     padding: 0 4rem;
   }
   .sub-container.history__topic .board-tab__link {
-    line-height: 3.8rem;
-    font-size: 2.6rem;
-    padding: 2.2rem 0;
+    font-size: 2.8rem;
+    line-height: 4.1rem;
+    padding: 2.4rem 0;
   }
   .sub-container.history__topic .board-layout__list-gallery {
     grid-template-columns: repeat(2, 1fr);
@@ -1406,6 +1406,22 @@
   }
   .sub-container.history__topic .board-layout__list-gallery .gallery-item__img img {
     width: 100%;
+  }
+  .sub-container.history__program .hisProgram-swiper .swiper-pagination {
+    bottom: 3rem;
+  }
+  .sub-container.history__program .hisProgram-swiper .swiper-pagination-bullet {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+  .sub-container.history__program .hisProgram-swiper .swiper-pagination-bullet:after {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+  .sub-container.history__program .hisProgram-swiper .swiper-pagination-bullet-active:after {
+    width: 1.6rem;
+    height: 1.6rem;
+    bottom: 3rem;
   }
   .sub-container.history__video .pagination-wrap {
     margin-top: 4.5rem;
@@ -1435,6 +1451,7 @@
     margin: 0;
   }
   .sub-container.history__video .board-layout .board-layout__lnb li:nth-child(1) {
+    border-left: 1px solid #ebebeb;
     border-top: 1px solid #ebebeb;
   }
   .sub-container.history__video .board-layout .board-layout__lnb li:nth-child(2) {
@@ -1461,7 +1478,7 @@
     width: 100%;
     font-size: 2.8rem;
     line-height: 4.1rem;
-    padding: 3.2rem 0;
+    padding: 2.4rem 0;
   }
   .sub-container.history__author .explan-wrap {
     display: -webkit-box;
@@ -1508,23 +1525,28 @@
     line-height: 5rem;
   }
   .sub-container.history__author .board-layout__view .attProgram-wrap__box--right .attProgram-wrap--tit {
-    font-size: 4rem;
+    font-size: 3.4rem;
     line-height: 5rem;
-    padding-bottom: 4rem;
+    padding-bottom: 3rem;
   }
   .sub-container.history__author .board-layout__view .attProgram-wrap__box--right .attProgram-wrap--tit + .attProgram-info {
     margin-top: 4rem;
     padding-bottom: 4rem;
   }
   .sub-container.history__author .board-layout__view .attProgram-wrap__box--right .link-wrap .linkMove {
-    padding: 2rem 2rem;
-    line-height: 3rem;
-    font-size: 2.2rem;
+    padding: 3rem;
+    line-height: 2.8rem;
+    font-size: 2.8rem;
     text-align: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
   .sub-container.history__author .board-layout__view .explan-wrap__box--right .link-wrap a {
-    font-size: 2.2rem;
+    font-size: 2.8rem;
     padding: 3rem;
+    width: 100%;
+    text-align: center;
   }
   .sub-container.history__program .hisProgram-box-tit a {
     font-size: 3.4rem;
@@ -1547,10 +1569,10 @@
   }
   .sub-container.history__program .hisProgram-box--right {
     width: 100%;
-    margin-top: 3rem;
+    margin-top: 4rem;
   }
   .sub-container.history__program .hisProgram-all__item {
-    padding: 2rem;
+    padding: 3.4rem 3.4rem 5rem 3.4rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1572,7 +1594,7 @@
     margin-top: 2rem;
   }
   .board-layout__view .attProgram-wrap .sub-sec__tit {
-    font-size: 3rem;
+    font-size: 3.8rem;
   }
   .board-layout__view .attProgram-wrap__box {
     -webkit-box-orient: vertical;
@@ -1596,14 +1618,18 @@
     font-size: 2.2rem;
   }
   .board-layout__view .attProgram-wrap__box--left .accordion-wrap__item .attProgram-wrap__refer {
+    bottom: -1rem;
+    font-size: 2.2rem;
+    left: 0;
     height: 3rem;
+    position: absolute;
   }
   .board-layout__view .attProgram-wrap__box--left .accordion-wrap__item.on {
     width: 55%;
   }
   .board-layout__view .attProgram-wrap__box--right {
     width: 100%;
-    margin-top: 3rem;
+    margin-top: 6rem;
   }
   .board-layout__view .attProgram-wrap__box--right .attProgram-info li {
     display: -webkit-box;
@@ -1698,9 +1724,9 @@
     margin-top: 0.5rem;
   }
   .sub-container.history__program .board-tab__link {
-    line-height: 3.8rem;
+    line-height: 4.1rem;
     font-size: 2.6rem;
-    padding: 3.4rem 0;
+    padding: 2.4rem 0;
   }
   .sub-container.history__program .sch-wrap {
     -ms-flex-wrap: wrap;
@@ -1745,9 +1771,9 @@
     margin-top: 6rem;
   }
   .sub-container.history__author .board-tab__link {
-    line-height: 3.8rem;
-    font-size: 2.6rem;
-    padding: 2.2rem 0;
+    font-size: 2.8rem;
+    line-height: 4.1rem;
+    padding: 2.4rem 0;
   }
   .sub-container.history__author .sch-wrap {
     -ms-flex-wrap: wrap;
@@ -1794,7 +1820,7 @@
     width: 100%;
     font-size: 2.8rem;
     line-height: 4.1rem;
-    padding: 3.4rem 0;
+    padding: 2.4rem 0;
   }
   .sub-container.history__author .board-layout .board-layout__lnb li + li {
     margin-top: 0;
@@ -1830,7 +1856,7 @@
   }
   .sub-container.history__topic .sub-mainTit + .poster-wrap {
     padding: 0;
-    margin-top: 8rem;
+    margin-top: 5rem;
   }
   .sub-container.history__topic .poster-wrap {
     padding: 0;
