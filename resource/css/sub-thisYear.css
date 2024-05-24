@@ -780,6 +780,8 @@
   color: #000;
 }
 .sub-container.thisYear .poster-info li span {
+  width: 9rem;
+  display: inline-block;
   margin-right: 1.4rem;
   font-size: 1.8rem;
   font-weight: 500;
@@ -1446,6 +1448,7 @@
     margin-top: 2rem;
   }
   .sub-container.thisYear .poster-info li span {
+    width: 12rem;
     font-size: 2.6rem;
   }
   .sub-container.thisYear .txt-wrap {

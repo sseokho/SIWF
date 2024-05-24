@@ -741,6 +741,8 @@
                 line-height: 3.2rem;
                 @include font(1.8,400,#000);
                 span{
+                    width:9rem;
+                    display: inline-block;
                     margin-right: 1.4rem;
                     @include font(1.8,500,#0066cc );
                 }
@@ -1472,6 +1474,7 @@
                         margin-top:2rem;
                     }
                     span{
+                        width:12rem;
                         font-size: 2.6rem;
                     }
                 }
