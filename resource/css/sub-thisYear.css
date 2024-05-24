@@ -244,11 +244,11 @@
 }
 .board-layout__view .attProgram-wrap__box--right .attProgram-info li span {
   display: inline-block;
-  min-width: 6.9rem;
+  min-width: 9rem;
   font-size: 1.8rem;
   font-weight: 500;
   color: #000;
-  margin-right: 3rem;
+  margin-right: 2rem;
 }
 .board-layout__view .attProgram-wrap__box--right .link-wrap {
   display: -webkit-box;
@@ -1131,7 +1131,8 @@
   }
   .sub-container.thisYear__program .explan-info li span {
     font-size: 2.6rem;
-    min-width: 8.9rem;
+    min-width: 15rem;
+    margin-right: 1rem;
   }
   .sub-container.thisYear__program--exhi .board-layout__view .board-detail {
     width: 100%;
@@ -1549,7 +1550,7 @@
   }
   .board-layout__view .attProgram-wrap__box--right .attProgram-info li span {
     font-size: 2.6rem;
-    min-width: 8.9rem;
+    min-width: 15rem;
   }
   .board-layout__view .explan-wrap__box {
     -webkit-box-orient: vertical;
@@ -1590,15 +1591,14 @@
   }
   .board-layout__list-gallery .gallery-link__data .name {
     font-size: 2.8rem;
-    padding-right: 0.6rem;
   }
   .board-layout__list-gallery .gallery-link__data .job {
     font-size: 2rem;
-    padding: 0 0.2rem 0 1.2rem;
+    padding: 0 1rem;
+    margin: 0 1.5rem;
   }
   .board-layout__list-gallery .gallery-link__data .country {
     font-size: 2rem;
-    padding: 0 0 0 1.4rem;
   }
   .subVisual--dataBook {
     background-image: url("../image/sub/mo-img-subVisual--dataBook.jpg");

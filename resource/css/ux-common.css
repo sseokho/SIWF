@@ -3201,13 +3201,30 @@ footer .footerBottom .footer.info h1 img {
     line-height: 4.5rem;
   }
   .footer .f_menu ul {
-    grid-gap: 2rem 1.6rem;
-    gap: 2rem 1.6rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 0;
+    margin: -1.6rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .footer .f_menu ul a {
     font-size: 2.2rem;
     font-weight: 300;
     color: #fff;
+  }
+  .footer .f_menu ul li {
+    margin: 1.6rem;
+    min-width: 45%;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    text-align: center;
   }
   .footer .f_menu ul li.on a {
     font-size: 2.2rem;

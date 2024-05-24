@@ -263,6 +263,7 @@
 }
 .stat-box__list .stat-tit + .stat-content {
   margin-top: 1rem;
+  text-align: center;
 }
 .stat-box__list .stat-content .number {
   line-height: 7rem;

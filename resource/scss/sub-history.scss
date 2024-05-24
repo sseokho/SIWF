@@ -224,9 +224,9 @@
                             @include font(1.8,300,#000);
                             span{
                                 display: inline-block;
-                                min-width:6.9rem;
+                                min-width:9rem;
                                 @include font(1.8,500,#000);
-                                margin-right:3rem;
+                                margin-right:2rem;
                             }
                         }
                     }
@@ -1729,7 +1729,8 @@
                     }
                     span{
                         font-size: 2.6rem;
-                        min-width: 8.9rem;
+                        min-width: 15rem;
+                        margin-right:1rem;
                     }
                 }
             }
@@ -1762,15 +1763,14 @@
         .gallery-link__data{
             .name{
                 font-size: 2.8rem;
-                padding-right:0.6rem;
             }
             .job{
                 font-size: 2rem;
-                padding: 0 0.2rem 0 1.2rem;
+                padding: 0 1rem;
+                margin:0 1.5rem;
             }
             .country{
                 font-size: 2rem;
-                padding:0 0 0 1.4rem;
             }
         }
     }

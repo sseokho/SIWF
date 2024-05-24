@@ -3445,12 +3445,20 @@ footer {
             }
             
             ul{
-                grid-gap:2rem 1.6rem;
-                gap:2rem 1.6rem;
+                width:100%;
+                display:flex;
+                flex-wrap:wrap;
+                gap:0;
+                margin:-1.6rem;
+                justify-content: center;
                 a{
                     @include font(2.2,300,#fff);
                 }
                 li{
+                    margin:1.6rem;
+                    min-width: 45%;
+                    width:max-content;
+                    text-align: center;
                     &.on{
                         a{
                             @include font(2.2,400,#ff9cb7);

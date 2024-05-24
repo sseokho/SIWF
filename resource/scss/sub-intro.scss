@@ -239,6 +239,7 @@
                 @include font(1.8,500,#000);
                 & + .stat-content{
                     margin-top:1rem;
+                    text-align: center;
                 }
             }
             &-content{
