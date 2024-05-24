@@ -139,9 +139,10 @@
                     .accordion-wrap{
                         display:flex;
                         height: auto;
+                        width: 100%;
                         &__item{
                             position: relative;
-                            flex:1 1 auto;
+                            flex:1;
                             width:12rem;
                             height: 32.7rem;
                             transition: all 0.5s;
@@ -156,9 +157,10 @@
                                 height: calc(100% - 2.7rem);
                             }
                             &.fix{
-                                flex:none;
+                                
                             }
                             &.on{
+                                flex:3;
                                 width: 45rem;
                                 &::before{
                                     display: none;
@@ -865,7 +867,7 @@
                                     &--tit{
                                         @include font(2.6,400,#000);
                                         line-height: 3.8rem;
-                                        & + .other-box--txt{
+                                        & + .other-box--data{
                                             margin-top:2rem;
                                         }
                                     }
@@ -1699,11 +1701,11 @@
             width:100%;
             margin-right:2rem;
             .accordion-wrap__item{
-                flex:1 1 auto;
                 .name{
                     font-size: 2.2rem;
                 }
                 .attProgram-wrap__refer{
+                    word-break: break-all;
                     bottom: -1rem;
                     font-size: 2.2rem;
                     left: 0;

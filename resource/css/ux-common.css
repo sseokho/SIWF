@@ -55,6 +55,9 @@ body.fixed .wrap > div:not(header) {
   background-color: #fff;
   height: auto;
 }
+.header .nav .navWrap ul li a.active {
+  color: #0066cc;
+}
 .header__top {
   display: -webkit-box;
   display: flex;
@@ -199,7 +202,7 @@ body.fixed .wrap > div:not(header) {
   overflow: hidden;
   margin-top: 0.9rem;
   margin-left: 0.4rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: normal;
   color: #000;
   letter-spacing: 0.04rem;
@@ -381,9 +384,6 @@ body.fixed .wrap > div:not(header) {
 }
 .header .nav .navWrap ul li.active a {
   color: #4568a9;
-}
-.header .nav .navWrap ul li:nth-child(1) a {
-  color: #0066cc;
 }
 .header .nav .navWrap ul li a {
   width: 100%;
@@ -1659,7 +1659,6 @@ footer .footerBottom .footer.info h1 img {
 .board-detail__file__inner {
   padding: 1.8rem 0;
   border-top: 1px solid #ebebeb;
-  border-bottom: 1px solid #ebebeb;
 }
 .board-detail__file__inner ul {
   display: -webkit-box;
@@ -3055,6 +3054,9 @@ footer .footerBottom .footer.info h1 img {
   .btn--list:hover {
     background-color: #004C98;
     color: #fff;
+  }
+  .header .nav .navWrap ul.depth_1 > li > a:hover {
+    color: #004C98;
   }
   .header .nav .navWrap ul.depth_2 li {
     display: block;

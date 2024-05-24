@@ -150,10 +150,10 @@
                     .accordion-wrap{
                         display:flex;
                         height: auto;
+                        width: 100%;
                         &__item{
                             position: relative;
-                            width:12rem;
-                            flex:1 1 auto;
+                            flex:1;
                             height: 32.7rem;
                             transition: all 0.3s;
                             &:before{
@@ -167,10 +167,10 @@
                                 height: calc(100% - 2.7rem);
                             }
                             &.fix{
-                                flex:none;
+                                
                             }
                             &.on{
-                                width: 45rem;
+                                flex:3;
                                 &::before{
                                     display: none;
                                 }
@@ -492,7 +492,7 @@
                                     &--tit{
                                         @include font(2.6,400,#000);
                                         line-height: 3.8rem;
-                                        & + .other-box--txt{
+                                        & + .other-box--data{
                                             margin-top:2rem;
                                         }
                                     }
@@ -742,7 +742,7 @@
                 @include font(1.8,400,#000);
                 span{
                     margin-right: 1.4rem;
-                    @include font(1.8,500,#000);
+                    @include font(1.8,500,#0066cc );
                 }
             }
         }
@@ -752,7 +752,7 @@
             margin-left: 2rem;
             .sub-tit{
                 line-height: 2.4rem;
-                @include font(1.6,600,#000);
+                @include font(1.6,600,#0066cc);
                 & + .tit{
                     margin-top:2.8rem;
                 }
@@ -1544,12 +1544,11 @@
             width:100%;
             margin-right:2rem;
             .accordion-wrap__item{
-                flex:1 1 auto;
-                
                 .name{
                     font-size: 2.2rem;
                 }
                 .attProgram-wrap__refer{
+                    word-break: break-all;
                     bottom: -1rem;
                     font-size: 2.2rem;
                     left: 0;

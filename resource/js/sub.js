@@ -36,6 +36,7 @@ function liveSwiper() {
 
         slidesPerView: 'auto',
         speed: 1000,
+        
         loop: true,
         autoplay: {
             delay: 1000,
@@ -181,9 +182,11 @@ function hisProgram(){
                 initialSlide :slideInx,
                 spaceBetween: 0,
                 slidesPerView: 1,
+                
                 loop: loopChk,
                 pagination: {
                     el: $(`.slider${index} .swiper-pagination`)[0],
+                    clickable : true,
                 },
                 on: {
                     activeIndexChange: function () {

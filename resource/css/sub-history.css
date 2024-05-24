@@ -132,12 +132,13 @@
   display: -ms-flexbox;
   display: flex;
   height: auto;
+  width: 100%;
 }
 .board-layout__view .attProgram-wrap__box--left .accordion-wrap__item {
   position: relative;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+      -ms-flex: 1;
+          flex: 1;
   width: 12rem;
   height: 32.7rem;
   -webkit-transition: all 0.5s;
@@ -153,12 +154,10 @@
   width: 100%;
   height: calc(100% - 2.7rem);
 }
-.board-layout__view .attProgram-wrap__box--left .accordion-wrap__item.fix {
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
-}
 .board-layout__view .attProgram-wrap__box--left .accordion-wrap__item.on {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
   width: 45rem;
 }
 .board-layout__view .attProgram-wrap__box--left .accordion-wrap__item.on::before {
@@ -912,7 +911,7 @@
   color: #000;
   line-height: 3.8rem;
 }
-.sub-container.history__program .board-layout.timeLine .other-all__item--right .other-box--tit + .other-box--txt {
+.sub-container.history__program .board-layout.timeLine .other-all__item--right .other-box--tit + .other-box--data {
   margin-top: 2rem;
 }
 .sub-container.history__program .board-layout.timeLine .other-all__item--right .other-box--txt {
@@ -1655,15 +1654,11 @@
     width: 100%;
     margin-right: 2rem;
   }
-  .board-layout__view .attProgram-wrap__box--left .accordion-wrap__item {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
-  }
   .board-layout__view .attProgram-wrap__box--left .accordion-wrap__item .name {
     font-size: 2.2rem;
   }
   .board-layout__view .attProgram-wrap__box--left .accordion-wrap__item .attProgram-wrap__refer {
+    word-break: break-all;
     bottom: -1rem;
     font-size: 2.2rem;
     left: 0;

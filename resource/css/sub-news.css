@@ -53,6 +53,7 @@
 }
 .sub-container.news__notice .board-detail__view, .sub-container.news__press .board-detail__view, .sub-container.news__comu .board-detail__view {
   padding: 0;
+  border-top: 1px solid #ebebeb;
 }
 .sub-container.news__notice .board-detail__view-inner *, .sub-container.news__press .board-detail__view-inner *, .sub-container.news__comu .board-detail__view-inner * {
   font-size: 1.8rem;
