@@ -3707,7 +3707,7 @@ footer {
                     &.on{
                         position: relative;
                         a{
-                            @include font(2.6,600,#000);
+                            @include font(2.6,600,#0066cc);
                         }
                         &:after{
                             content:'';
