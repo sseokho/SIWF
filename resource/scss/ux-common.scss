@@ -179,6 +179,7 @@ body {
                 font-family: "NotoSerifKR", serif;
                 width: 100%;
                 height: 100%;
+                line-height: 2rem;;
                 position: relative;
                 display: -webkit-box;
                 display: -ms-flexbox;
@@ -187,8 +188,8 @@ body {
                 -ms-flex-align: center;
                 align-items: center;
                 overflow: hidden;
-                margin-top:0.9rem;
-                margin-left:0.4rem;
+                margin-top:0.3rem;
+                margin-left:1.5rem;
                 @include font(1.5,normal,#000);
                 letter-spacing: 0.04rem;
                 -ms-flex-pack: distribute;
@@ -213,7 +214,7 @@ body {
                     &.on{
                         position: relative;
                         a{
-                            @include font(1.4,600,#000);
+                            @include font(1.4,600,#0066cc);
                         }
                         &:after{
                             content:'';
@@ -3250,6 +3251,77 @@ footer {
     }
     
     .header {
+        &__top--Right{
+            .menu{
+                li{
+                    a{
+                        max-width: 2.271rem;
+                    }
+                    &:nth-child(1){
+                        a{
+                            
+                            &:hover{
+                                img{
+                                    content: url(../image/common/icon/sns-icon--01--h.svg);
+                                }
+                            }
+                        }
+                        
+                    }
+                    &:nth-child(2){
+                        a{
+                            
+                            &:hover{
+                                img{
+                                    content: url(../image/common/icon/sns-icon--02--h.svg);
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(3){
+                        a{
+                            
+                            &:hover{
+                                img{
+                                    content: url(../image/common/icon/sns-icon--03--h.svg);
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(4){
+                        a{
+                            
+                            &:hover{
+                                img{
+                                    content: url(../image/common/icon/sns-icon--04--h.svg);
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(5){
+                        a{
+                            
+                            &:hover{
+                                img{
+                                    content: url(../image/common/icon/sns-icon--05--h.svg);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &__bottom--lanChange{
+            ul{
+                li{
+                    &:hover{
+                        a{
+                            color:#0066cc;
+                        }
+                    }
+                }
+            }
+        }
         .nav{
             .navWrap{
                 ul.depth_1{

@@ -145,7 +145,7 @@ function sideMenu(){
                 $('body').removeClass("overflow-hidden");
             }
         });
-        $('.side-menu--close').click(function(){
+        $('.side-menu--close,.side-menu__bg').click(function(){
             $('.sitemap').removeClass('is-click');
             $(".side-menu").removeClass('is-open');
             $('body').removeClass("overflow-hidden");
