@@ -3244,7 +3244,7 @@ footer .footerBottom .footer.info h1 img {
   }
   .footer .f_menu ul li {
     margin: 1.6rem;
-    min-width: 45%;
+    min-width: 13rem;
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;

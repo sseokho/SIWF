@@ -3185,9 +3185,6 @@ footer .footerBottom .footer.info h1 img {
     font-weight: 600;
     color: #000;
   }
-  .pop-wrap .board-detail-table th {
-    width: 3rem;
-  }
   .footerBottom .footer.info {
     padding: 0 !important;
   }
@@ -3247,7 +3244,7 @@ footer .footerBottom .footer.info h1 img {
   }
   .footer .f_menu ul li {
     margin: 1.6rem;
-    min-width: 45%;
+    min-width: 13rem;
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
@@ -3407,7 +3404,7 @@ footer .footerBottom .footer.info h1 img {
   .side-menu--lanChange ul li.on a {
     font-size: 2.6rem;
     font-weight: 600;
-    color: #000;
+    color: #0066cc;
   }
   .side-menu--lanChange ul li.on:after {
     content: "";
