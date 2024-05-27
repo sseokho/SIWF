@@ -3168,6 +3168,9 @@ footer .footerBottom .footer.info h1 img {
   .header__bottom-inner {
     position: relative;
   }
+  .header__bottom--logo .standard-year {
+    font-size: 2.2rem;
+  }
   .header__bottom--logo .logo a {
     width: 5.936rem;
     height: 6.89rem;

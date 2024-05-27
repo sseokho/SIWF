@@ -3478,6 +3478,11 @@ footer {
             }
             
             &--logo{
+                .standard-year{
+                    font-size: 2.2rem;
+                    line-height: 3rem;
+                    margin-top: 0;
+                }
                 .logo{
                     a{
                         width:5.936rem;
