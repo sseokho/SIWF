@@ -827,13 +827,21 @@
     }
     .board-tab__item{
         transition: all 0.3s;
+        
         &:hover{
             a{
                 font-weight: 400;
                 color:#0066cc;
                 background:#F6FBFF;
             }
+            a.active{
+                background: #0066cc;
+                font-size: 1.8rem;
+                font-weight: 400;
+                color: #fff;
+            }
         }
+        
     }
 }
 
