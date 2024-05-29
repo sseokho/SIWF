@@ -1471,6 +1471,9 @@
     font-size: 2.8rem;
     line-height: 5rem;
   }
+  .sub-container.thisYear .txt-wrap .txt-zip .txt br {
+    display: none;
+  }
   .sub-container.thisYear__topic .txt-wrap {
     height: auto;
     margin-top: 4rem;
