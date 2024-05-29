@@ -178,7 +178,7 @@
   opacity: 1;
 }
 .board-layout__view .attProgram-wrap__box--left .accordion-wrap__item + .accordion-wrap__item {
-  margin-left: 1rem;
+  padding-left: 1rem;
 }
 .board-layout__view .attProgram-wrap__box--left .accordion-wrap__item .cover {
   width: 100%;
