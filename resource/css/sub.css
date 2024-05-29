@@ -769,12 +769,6 @@
     color: #0066cc;
     background: #F6FBFF;
   }
-  .board-tab__item:hover a.active {
-    background: #0066cc;
-    font-size: 1.8rem;
-    font-weight: 400;
-    color: #fff;
-  }
 }
 @media (min-width: 320px) and (max-width: 1024px) {
   .bradcrumb-item {

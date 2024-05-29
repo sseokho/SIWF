@@ -2175,7 +2175,7 @@ section h2 {
   .container .mainVisual .conBox__inner .item.on .bottom.notice ul li:hover:before {
     width: 1.8rem;
     height: 1.8rem;
-    background: url(../image/common/icon/icon_Sun.png);
+    background: url(../image/common/icon/icon_sun.png);
     top: 0;
     background-size: contain;
   }
@@ -2582,10 +2582,6 @@ section h2 {
   }
   .main_popup .layer_cont {
     top: 19rem;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    right: auto;
   }
   .main_popup .img_wrap {
     width: 55rem;

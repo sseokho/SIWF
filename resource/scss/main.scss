@@ -2309,7 +2309,7 @@ section{
                                                 &:before{
                                                     width:1.8rem;
                                                     height:1.8rem;
-                                                    background:url(../image/common/icon/icon_Sun.png);
+                                                    background:url(../image/common/icon/icon_sun.png);
                                                     top:0;
                                                     background-size: contain;
                                                 }
@@ -2713,10 +2713,7 @@ section{
     }
     .main_popup{
         .layer_cont{
-            top: 19rem;
-            left: 50%;
-            transform: translateX(-50%);
-            right: auto;
+            top:19rem;
         }
         .img_wrap{
             width:55rem;
