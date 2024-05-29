@@ -2582,6 +2582,10 @@ section h2 {
   }
   .main_popup .layer_cont {
     top: 19rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    right: auto;
   }
   .main_popup .img_wrap {
     width: 55rem;

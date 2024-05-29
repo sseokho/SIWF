@@ -2713,7 +2713,10 @@ section{
     }
     .main_popup{
         .layer_cont{
-            top:19rem;
+            top: 19rem;
+            left: 50%;
+            transform: translateX(-50%);
+            right: auto;
         }
         .img_wrap{
             width:55rem;
