@@ -227,7 +227,7 @@ function Num_ani(){
             const scrollY = window.scrollY;
             if (scrollY >= numSecOffsetTop && !started) {
                 const counters = document.querySelectorAll('.number');
-                const maxValues = [61, 313, 200, 1000000];
+                const maxValues = [61, 25709, 201, 1000000];
                 counters.forEach((counterElement, index) => {
                     setTimeout(() => counter(counterElement, maxValues[index]), 0);
                 });
