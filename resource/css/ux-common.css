@@ -1073,7 +1073,7 @@ footer .footerBottom .footer.info h1 img {
 .sch-form__label .sch-form__btn {
   position: absolute;
   right: 0;
-  background: url("../image/common/icon/icon_sch.svg") no-repeat center center;
+  background: url("../image/common/icon/icon_sch.png") no-repeat center center;
   background-size: 2.4rem 2.4rem;
 }
 .sch-form__input {
@@ -1733,34 +1733,34 @@ footer .footerBottom .footer.info h1 img {
   background-position: center center;
 }
 .pagination > a.link-first {
-  background-image: url("../image/common/icon/icon-moveFirst.svg");
+  background-image: url("../image/common/icon/icon-moveFirst.png");
   background-size: 1.1rem 1.2rem;
 }
 .pagination > a.link-first.on {
-  background-image: url("../image/common/icon/icon-moveFirst.svg");
+  background-image: url("../image/common/icon/icon-moveFirst.png");
 }
 .pagination > a.link-prev {
   margin-right: 1rem;
-  background-image: url("../image/common/icon/icon-movePrev.svg");
+  background-image: url("../image/common/icon/icon-movePrev.png");
   background-size: 0.6rem 1.2rem;
 }
 .pagination > a.link-prev.on {
-  background-image: url("../image/common/icon/icon-movePrev.svg");
+  background-image: url("../image/common/icon/icon-movePrev.png");
 }
 .pagination > a.link-next {
   margin-left: 1rem;
   background-size: 0.6rem 1.2rem;
-  background-image: url("../image/common/icon/icon-moveNext.svg");
+  background-image: url("../image/common/icon/icon-moveNext.png");
 }
 .pagination > a.link-next.on {
-  background-image: url("../image/common/icon/icon-moveNext.svg");
+  background-image: url("../image/common/icon/icon-moveNext.png");
 }
 .pagination > a.link-last {
   background-size: 1.1rem 1.2rem;
-  background-image: url("../image/common/icon/icon-moveLast.svg");
+  background-image: url("../image/common/icon/icon-moveLast.png");
 }
 .pagination > a.link-last.on {
-  background-image: url("../image/common/icon/icon-moveLast.svg");
+  background-image: url("../image/common/icon/icon-moveLast.png");
 }
 .pagination > a.on:not(.link-move) {
   font-size: 1.6rem;
@@ -3120,7 +3120,7 @@ footer .footerBottom .footer.info h1 img {
             align-items: center;
   }
   .nav.mo .ham {
-    background: url(../image/common/icon/icon_hambuger.svg) center/contain no-repeat;
+    background: url(../image/common/icon/icon_hambuger.png) center/contain no-repeat;
     width: 4.6rem;
     height: 3rem;
     display: block;
@@ -3371,7 +3371,7 @@ footer .footerBottom .footer.info h1 img {
     padding-bottom: 0;
   }
   .side-menu--close {
-    background: url(../image/common/icon/icon_side-menu--close.svg) center/contain no-repeat;
+    background: url(../image/common/icon/icon_side-menu--close.png) center/contain no-repeat;
     position: absolute;
     width: 3.8rem;
     height: 3.8rem;

@@ -1216,16 +1216,16 @@ section h2 {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background: url(../image/common/icon/icon_linkMove.svg) center/contain no-repeat;
+  background: url(../image/common/icon/icon_linkMove.png) center/contain no-repeat;
   width: 1.6rem;
   height: 1rem;
 }
 .info-sec__item--way {
-  background: url(../image/main/info-sec--way.svg) no-repeat 90% center;
+  background: url(../image/main/info-sec--way.png) no-repeat 90% center;
 }
 .info-sec__item--contact {
   margin-left: 2rem;
-  background: url(../image/main/info-sec--contact.svg) no-repeat 90% center;
+  background: url(../image/main/info-sec--contact.png) no-repeat 90% center;
 }
 .info-sec__inner {
   display: -webkit-box;
@@ -2550,12 +2550,12 @@ section h2 {
     padding: 0;
   }
   .info-sec__item--way {
-    background: url(../image/main/info-sec--way.svg) no-repeat 93% center;
+    background: url(../image/main/info-sec--way.png) no-repeat 93% center;
     background-size: 6.7rem 6.185rem;
     margin: 1rem 0 0 0;
   }
   .info-sec__item--contact {
-    background: url(../image/main/info-sec--contact.svg) no-repeat 93% center;
+    background: url(../image/main/info-sec--contact.png) no-repeat 93% center;
     background-size: 6.7rem 6.185rem;
     margin: 1rem 0 0 0;
   }

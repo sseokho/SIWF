@@ -63,7 +63,7 @@
   width: 16.79%;
 }
 .board-layout .board-table__list tbody tr.fix td:nth-child(1) {
-  background: url(../image/common/icon/icon-table-fix.svg) center/contain no-repeat;
+  background: url(../image/common/icon/icon-table-fix.png) center/contain no-repeat;
   background-size: 2.2rem 2.2rem;
 }
 .board-layout .board-table__list tbody tr.fix td.td-title a {
@@ -677,7 +677,7 @@
   font-size: 1.6rem;
   font-weight: 300;
   color: #000;
-  background: url("../image/sub/icon-select--down.svg") no-repeat calc(100% - 3rem) center/1.2rem 0.6rem;
+  background: url("../image/sub/icon-select--down.png") no-repeat calc(100% - 3rem) center/1.2rem 0.6rem;
   text-align: left;
 }
 
@@ -687,7 +687,7 @@
 }
 
 .bradcrumb__tit.is-active {
-  background: url("../image/sub/icon-select--down.svg") no-repeat calc(100% - 3rem) center/1.2rem 0.6rem;
+  background: url("../image/sub/icon-select--down.png") no-repeat calc(100% - 3rem) center/1.2rem 0.6rem;
 }
 
 .bradcrumb__links {
@@ -836,7 +836,7 @@
     font-size: 2.6rem;
   }
   .bradcrumb__inner .bradcrumb__tit {
-    background: url("../image/sub/icon-select--down.svg") no-repeat calc(100% - 3rem) center/2.2rem 1.1rem;
+    background: url("../image/sub/icon-select--down.png") no-repeat calc(100% - 3rem) center/2.2rem 1.1rem;
   }
   .bradcrumb__inner .bradcrumb__links a {
     font-size: 2.6rem;

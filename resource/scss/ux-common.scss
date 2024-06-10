@@ -1142,7 +1142,7 @@ footer {
             .sch-form__btn{
                 position: absolute;
                 right:0;
-                background: url("../image/common/icon/icon_sch.svg") no-repeat center center;
+                background: url("../image/common/icon/icon_sch.png") no-repeat center center;
                 background-size: 2.4rem 2.4rem;
             }
         }
@@ -1787,33 +1787,33 @@ footer {
             background-position:center center;
         }
         &.link-first{
-            background-image:url('../image/common/icon/icon-moveFirst.svg');
+            background-image:url('../image/common/icon/icon-moveFirst.png');
             background-size: 1.1rem 1.2rem;
             &.on{
-                background-image:url('../image/common/icon/icon-moveFirst.svg');
+                background-image:url('../image/common/icon/icon-moveFirst.png');
             }
         }
         &.link-prev{
             margin-right: 1rem;
-            background-image:url('../image/common/icon/icon-movePrev.svg');
+            background-image:url('../image/common/icon/icon-movePrev.png');
             background-size: 0.6rem 1.2rem;
             &.on{
-                background-image:url('../image/common/icon/icon-movePrev.svg');
+                background-image:url('../image/common/icon/icon-movePrev.png');
             }
         }
         &.link-next{
             margin-left: 1rem;
             background-size: 0.6rem 1.2rem;
-            background-image:url('../image/common/icon/icon-moveNext.svg');
+            background-image:url('../image/common/icon/icon-moveNext.png');
             &.on{
-                background-image:url('../image/common/icon/icon-moveNext.svg');
+                background-image:url('../image/common/icon/icon-moveNext.png');
             }
         }
         &.link-last{
             background-size: 1.1rem 1.2rem;
-            background-image:url('../image/common/icon/icon-moveLast.svg');
+            background-image:url('../image/common/icon/icon-moveLast.png');
             &.on{
-                background-image:url('../image/common/icon/icon-moveLast.svg');
+                background-image:url('../image/common/icon/icon-moveLast.png');
             }
         }
         &.on:not(.link-move){
@@ -3405,7 +3405,7 @@ footer {
             @include d-flex;
             align-items: center;
             .ham{
-                background: url(../image/common/icon/icon_hambuger.svg) center / contain no-repeat ;
+                background: url(../image/common/icon/icon_hambuger.png) center / contain no-repeat ;
                 width:4.6rem;
                 height: 3rem;
                 display:block;
@@ -3683,7 +3683,7 @@ footer {
             }
         }
         &--close{
-            background: url(../image/common/icon/icon_side-menu--close.svg) center / contain no-repeat;
+            background: url(../image/common/icon/icon_side-menu--close.png) center / contain no-repeat;
             position: absolute;
             width: 3.8rem;
             height: 3.8rem;

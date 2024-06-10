@@ -1151,17 +1151,17 @@ section{
                     right:-3rem;
                     top:50%;
                     transform: translateY(-50%);
-                    background:url(../image/common/icon/icon_linkMove.svg)center/contain no-repeat;
+                    background:url(../image/common/icon/icon_linkMove.png)center/contain no-repeat;
                     width:1.6rem;
                     height: 1rem;
                 }
             }
             &--way{
-                background:url(../image/main/info-sec--way.svg) no-repeat 90% center;
+                background:url(../image/main/info-sec--way.png) no-repeat 90% center;
             }
             &--contact{
                 margin-left:2rem;
-                background:url(../image/main/info-sec--contact.svg) no-repeat 90% center;
+                background:url(../image/main/info-sec--contact.png) no-repeat 90% center;
                 
             }
         }
@@ -2684,12 +2684,12 @@ section{
                 width:100%;
                 padding:0;
                 &--way{
-                    background: url(../image/main/info-sec--way.svg) no-repeat 93% center;
+                    background: url(../image/main/info-sec--way.png) no-repeat 93% center;
                     background-size: 6.7rem 6.185rem;
                     margin:1rem 0 0 0;
                 }
                 &--contact{
-                    background: url(../image/main/info-sec--contact.svg) no-repeat 93% center;
+                    background: url(../image/main/info-sec--contact.png) no-repeat 93% center;
                     background-size: 6.7rem 6.185rem;
                     margin:1rem 0 0 0;
                 }
