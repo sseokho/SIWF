@@ -3060,19 +3060,19 @@ footer .footerBottom .footer.info h1 img {
     max-width: 2.271rem;
   }
   .header__top--Right .menu li:nth-child(1) a:hover img {
-    content: url(../image/common/icon/sns-icon--01--h.svg);
+    content: url(../image/common/icon/sns-icon--01--h.png);
   }
   .header__top--Right .menu li:nth-child(2) a:hover img {
-    content: url(../image/common/icon/sns-icon--02--h.svg);
+    content: url(../image/common/icon/sns-icon--02--h.png);
   }
   .header__top--Right .menu li:nth-child(3) a:hover img {
-    content: url(../image/common/icon/sns-icon--03--h.svg);
+    content: url(../image/common/icon/sns-icon--03--h.png);
   }
   .header__top--Right .menu li:nth-child(4) a:hover img {
-    content: url(../image/common/icon/sns-icon--04--h.svg);
+    content: url(../image/common/icon/sns-icon--04--h.png);
   }
   .header__top--Right .menu li:nth-child(5) a:hover img {
-    content: url(../image/common/icon/sns-icon--05--h.svg);
+    content: url(../image/common/icon/sns-icon--05--h.png);
   }
   .header__bottom--lanChange ul li:hover a {
     color: #0066cc;
